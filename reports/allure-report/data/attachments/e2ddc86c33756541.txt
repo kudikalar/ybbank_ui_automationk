@@ -1,0 +1,10 @@
+[32mINFO    [0m BasePage:base_page.py:53 Navigating to: https://demowebshop.tricentis.com/
+[32mINFO    [0m BasePage:base_page.py:53 Navigating to: https://demowebshop.tricentis.com/register
+[32mINFO    [0m BasePage:base_page.py:82 Clicked: ('id', 'gender-male')
+[32mINFO    [0m BasePage:base_page.py:143 Typing into ('id', 'FirstName'): 'Chen'
+[32mINFO    [0m BasePage:base_page.py:143 Typing into ('id', 'LastName'): 'Wei'
+[32mINFO    [0m BasePage:base_page.py:143 Typing into ('id', 'Email'): 'chen.wei+586a0a@testmail.com'
+[32mINFO    [0m BasePage:base_page.py:143 Typing into ('id', 'Password'): 'Chen@888'
+[32mINFO    [0m BasePage:base_page.py:143 Typing into ('id', 'ConfirmPassword'): 'Chen@888'
+[32mINFO    [0m BasePage:base_page.py:82 Clicked: ('id', 'register-button')
+[32mINFO    [0m BasePage:base_page.py:82 Clicked: ('link text', 'Log out')

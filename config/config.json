@@ -1,0 +1,9 @@
+{
+  "base_url": "https://demo.opencart.com",
+  "browser": "chrome",
+  "headless": false,
+  "remote": false,
+  "platform": "Windows",
+  "timeout": 15,
+  "poll": 0.3
+}

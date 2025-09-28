@@ -1,0 +1,11 @@
+[32mINFO    [0m BasePage:base_page.py:53 Navigating to: https://demowebshop.tricentis.com/
+[32mINFO    [0m BasePage:base_page.py:53 Navigating to: https://demowebshop.tricentis.com/register
+[32mINFO    [0m BasePage:base_page.py:82 Clicked: ('id', 'gender-male')
+[32mINFO    [0m BasePage:base_page.py:143 Typing into ('id', 'FirstName'): 'Aarav'
+[32mINFO    [0m BasePage:base_page.py:143 Typing into ('id', 'LastName'): 'Sharma'
+[32mINFO    [0m BasePage:base_page.py:143 Typing into ('id', 'Email'): 'aarav.sharma+eaf8e9@testmail.com'
+[32mINFO    [0m BasePage:base_page.py:143 Typing into ('id', 'Password'): 'Aa@12345'
+[32mINFO    [0m BasePage:base_page.py:143 Typing into ('id', 'ConfirmPassword'): 'Aa@12345'
+[32mINFO    [0m BasePage:base_page.py:82 Clicked: ('id', 'register-button')
+[32mINFO    [0m BasePage:base_page.py:82 Clicked: ('link text', 'Log out')
+[32mINFO    [0m pytest:conftest.py:36 === Pytest session finished ===

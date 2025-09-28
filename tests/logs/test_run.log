@@ -1,0 +1,78 @@
+2025-09-25 21:39:47,983 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-25 21:39:53,969 | INFO | MainProcess | MainThread | BasePage | Clicking on ('link text', 'Register')
+2025-09-25 21:39:54,950 | INFO | MainProcess | MainThread | BasePage | Clicking on ('id', 'gender-male')
+2025-09-25 21:39:55,286 | INFO | MainProcess | MainThread | BasePage | Entering ('id', 'FirstName'), value is: John
+2025-09-25 21:39:55,525 | INFO | MainProcess | MainThread | BasePage | Entering ('id', 'LastName'), value is: Doe
+2025-09-25 21:39:55,769 | INFO | MainProcess | MainThread | BasePage | Entering ('name', 'Email'), value is: john.doe+6b125f2c@testmail.com
+2025-09-25 21:39:56,074 | INFO | MainProcess | MainThread | BasePage | Entering ('name', 'Password'), value is: Password123!
+2025-09-25 21:40:11,220 | ERROR | MainProcess | MainThread | BasePage | ❌ Failed to type into element ('id', 'ConfirmPasswor') with value 'Password123!'. Error: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff742343f15+18309]
+	(No symbol) [0x0x7ff7422b15c0]
+	GetHandleVerifier [0x0x7ff742538f4c+2070460]
+	(No symbol) [0x0x7ff7420fe216]
+	(No symbol) [0x0x7ff7420fe50b]
+	(No symbol) [0x0x7ff74213f5d7]
+	(No symbol) [0x0x7ff74211fcbf]
+	(No symbol) [0x0x7ff7420f443b]
+	(No symbol) [0x0x7ff74213d082]
+	(No symbol) [0x0x7ff74211f943]
+	(No symbol) [0x0x7ff7420f38e6]
+	(No symbol) [0x0x7ff7420f2b52]
+	(No symbol) [0x0x7ff7420f3723]
+	(No symbol) [0x0x7ff7421e2f75]
+	(No symbol) [0x0x7ff7421ee74d]
+	GetHandleVerifier [0x0x7ff7423d9603+630387]
+	GetHandleVerifier [0x0x7ff7423e11a1+662033]
+	(No symbol) [0x0x7ff7422bd6a9]
+	(No symbol) [0x0x7ff7422b7044]
+	(No symbol) [0x0x7ff7422b7193]
+	(No symbol) [0x0x7ff7422ab016]
+	BaseThreadInitThunk [0x0x7ffd69a3e8d7+23]
+	RtlUserThreadStart [0x0x7ffd6a9e8d9c+44]
+Traceback (most recent call last):
+  File "C:\Selenium Python Basics\BDD cucumber\selenium-py-hybridframework\selenium-py-hybridframework\core\base_page.py", line 82, in type
+    el = self.find_visible(locator)
+  File "C:\Selenium Python Basics\BDD cucumber\selenium-py-hybridframework\selenium-py-hybridframework\core\base_page.py", line 56, in find_visible
+    return self.wait.visible(locator)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Selenium Python Basics\BDD cucumber\selenium-py-hybridframework\selenium-py-hybridframework\core\wait.py", line 30, in visible
+    return self.wait.until(EC.visibility_of_element_located(locator))
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ramesh K\PycharmProjects\selenium-py-hybridframework\.venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 138, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff742343f15+18309]
+	(No symbol) [0x0x7ff7422b15c0]
+	GetHandleVerifier [0x0x7ff742538f4c+2070460]
+	(No symbol) [0x0x7ff7420fe216]
+	(No symbol) [0x0x7ff7420fe50b]
+	(No symbol) [0x0x7ff74213f5d7]
+	(No symbol) [0x0x7ff74211fcbf]
+	(No symbol) [0x0x7ff7420f443b]
+	(No symbol) [0x0x7ff74213d082]
+	(No symbol) [0x0x7ff74211f943]
+	(No symbol) [0x0x7ff7420f38e6]
+	(No symbol) [0x0x7ff7420f2b52]
+	(No symbol) [0x0x7ff7420f3723]
+	(No symbol) [0x0x7ff7421e2f75]
+	(No symbol) [0x0x7ff7421ee74d]
+	GetHandleVerifier [0x0x7ff7423d9603+630387]
+	GetHandleVerifier [0x0x7ff7423e11a1+662033]
+	(No symbol) [0x0x7ff7422bd6a9]
+	(No symbol) [0x0x7ff7422b7044]
+	(No symbol) [0x0x7ff7422b7193]
+	(No symbol) [0x0x7ff7422ab016]
+	BaseThreadInitThunk [0x0x7ffd69a3e8d7+23]
+	RtlUserThreadStart [0x0x7ffd6a9e8d9c+44]
+
+2025-09-25 21:40:20,007 | INFO | MainProcess | MainThread | BasePage | Clicking on ('link text', 'Register')
+2025-09-25 21:40:20,997 | INFO | MainProcess | MainThread | BasePage | Clicking on ('id', 'register-button')
+2025-09-25 21:40:27,731 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-25 22:17:44,730 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-25 22:17:44,898 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-25 22:18:50,309 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-25 22:18:50,529 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-25 22:18:59,357 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-25 22:18:59,500 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===

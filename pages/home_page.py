@@ -11,6 +11,7 @@ class HomePage(BasePage):
     def open_home(self):
         self.open("/")
 
+    """Page object method"""
     def click_register_link(self):
         self.click(self.REGISTER_LINK)  # robust click
 

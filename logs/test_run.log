@@ -4286,3 +4286,245 @@ selenium.common.exceptions.WebDriverException: Message: Authorization Required
 2025-09-26 21:43:18,127 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): ''
 2025-09-26 21:43:18,851 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
 2025-09-26 21:43:22,583 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-29 21:08:38,679 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-29 21:10:18,564 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-29 21:10:23,352 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-09-29 21:10:24,777 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-09-29 21:10:24,790 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): ''
+2025-09-29 21:10:24,852 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): ''
+2025-09-29 21:10:24,862 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): ''
+2025-09-29 21:10:24,871 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): ''
+2025-09-29 21:10:24,901 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): ''
+2025-09-29 21:10:25,536 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-09-29 21:10:26,249 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-29 21:47:54,075 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-29 21:47:59,930 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-29 21:48:03,346 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-09-29 21:48:04,491 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-09-29 21:48:04,499 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): ''
+2025-09-29 21:48:04,547 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): ''
+2025-09-29 21:48:04,554 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): ''
+2025-09-29 21:48:04,563 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): ''
+2025-09-29 21:48:04,570 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): ''
+2025-09-29 21:48:05,350 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-09-29 21:48:05,937 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-30 12:02:01,733 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-30 12:02:08,662 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 12:02:13,717 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-09-30 12:02:15,144 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-09-30 12:02:15,150 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): ''
+2025-09-30 12:02:15,192 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): ''
+2025-09-30 12:02:15,200 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): ''
+2025-09-30 12:02:15,209 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): ''
+2025-09-30 12:02:15,225 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): ''
+2025-09-30 12:02:15,896 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-09-30 12:02:16,676 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-30 12:08:11,900 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-30 12:08:15,304 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 12:08:19,199 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-09-30 12:08:20,467 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-09-30 12:08:20,478 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): ''
+2025-09-30 12:08:20,520 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): ''
+2025-09-30 12:08:20,529 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): ''
+2025-09-30 12:08:20,542 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): ''
+2025-09-30 12:08:20,569 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): ''
+2025-09-30 12:08:21,189 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-09-30 12:08:21,655 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-30 12:09:37,449 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-30 12:09:40,406 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 12:09:44,672 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-09-30 12:09:45,927 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-09-30 12:09:45,938 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): ''
+2025-09-30 12:09:45,981 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): ''
+2025-09-30 12:09:45,990 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): ''
+2025-09-30 12:09:46,000 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): ''
+2025-09-30 12:09:46,020 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): ''
+2025-09-30 12:09:46,665 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-09-30 12:09:47,346 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-30 12:15:28,238 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-30 12:15:31,350 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 12:15:35,261 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-09-30 12:15:36,514 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-09-30 12:15:36,526 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): ''
+2025-09-30 12:15:36,579 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): ''
+2025-09-30 12:15:36,587 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): ''
+2025-09-30 12:15:36,595 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): ''
+2025-09-30 12:15:36,619 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): ''
+2025-09-30 12:15:37,257 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-09-30 12:15:37,934 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-30 21:29:07,540 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-30 21:29:33,183 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 21:29:39,483 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-09-30 21:29:41,032 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-09-30 21:29:41,046 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): ''
+2025-09-30 21:29:41,096 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): ''
+2025-09-30 21:29:41,104 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): ''
+2025-09-30 21:29:41,116 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): ''
+2025-09-30 21:29:41,145 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): ''
+2025-09-30 21:29:41,779 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-09-30 21:29:42,786 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-30 22:28:29,663 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-30 22:28:37,254 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 22:28:41,222 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/login
+2025-09-30 22:28:42,449 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', '/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[1]/div[2]/div[2]/form/div[5]/input')
+2025-09-30 22:28:57,530 | WARNING | MainProcess | MainThread | BasePage | Click failed (1/3) for ('class name', 'ico-logout'): Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-09-30 22:29:12,707 | WARNING | MainProcess | MainThread | BasePage | Click failed (2/3) for ('class name', 'ico-logout'): Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-09-30 22:29:27,837 | WARNING | MainProcess | MainThread | BasePage | Click failed (3/3) for ('class name', 'ico-logout'): Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-09-30 22:29:43,072 | ERROR | MainProcess | MainThread | BasePage | JS click failed for ('class name', 'ico-logout'): Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "/Users/sunilkattoju/PycharmProjects/ybbank_ui_automationk/core/base_page.py", line 97, in click
+    el = self.find_visible(locator)
+  File "/Users/sunilkattoju/PycharmProjects/ybbank_ui_automationk/core/base_page.py", line 66, in find_visible
+    return self.w.wait.until(EC.visibility_of_element_located(locator))
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sunilkattoju/PycharmProjects/yuvanbank_ui_automation_1/.venv/lib/python3.13/site-packages/selenium/webdriver/support/wait.py", line 138, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-09-30 22:29:47,806 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 22:29:51,642 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-09-30 22:29:52,881 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-09-30 22:29:52,888 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): ''
+2025-09-30 22:29:52,935 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): ''
+2025-09-30 22:29:52,945 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): ''
+2025-09-30 22:29:52,956 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): ''
+2025-09-30 22:29:52,967 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): ''
+2025-09-30 22:29:53,583 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-09-30 22:29:54,156 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-30 22:30:01,538 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-30 22:30:04,089 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 22:30:08,168 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/login
+2025-09-30 22:30:09,406 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', '/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[1]/div[2]/div[2]/form/div[5]/input')
+2025-09-30 22:30:24,465 | WARNING | MainProcess | MainThread | BasePage | Click failed (1/3) for ('class name', 'ico-logout'): Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-09-30 22:30:39,666 | WARNING | MainProcess | MainThread | BasePage | Click failed (2/3) for ('class name', 'ico-logout'): Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-09-30 22:30:54,797 | WARNING | MainProcess | MainThread | BasePage | Click failed (3/3) for ('class name', 'ico-logout'): Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-09-30 22:31:10,006 | ERROR | MainProcess | MainThread | BasePage | JS click failed for ('class name', 'ico-logout'): Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "/Users/sunilkattoju/PycharmProjects/ybbank_ui_automationk/core/base_page.py", line 97, in click
+    el = self.find_visible(locator)
+  File "/Users/sunilkattoju/PycharmProjects/ybbank_ui_automationk/core/base_page.py", line 66, in find_visible
+    return self.w.wait.until(EC.visibility_of_element_located(locator))
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sunilkattoju/PycharmProjects/yuvanbank_ui_automation_1/.venv/lib/python3.13/site-packages/selenium/webdriver/support/wait.py", line 138, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-09-30 22:31:10,655 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-30 22:32:32,242 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-30 22:32:35,829 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 22:32:40,312 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/login
+2025-09-30 22:32:41,594 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-30 22:40:16,059 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-30 22:40:21,026 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 22:40:25,314 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/login
+2025-09-30 22:40:26,859 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-30 22:43:22,779 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-30 22:43:28,327 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 22:43:32,858 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/login
+2025-09-30 22:43:33,513 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): 'myfirsttestcase@gmail.com'
+2025-09-30 22:43:33,548 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): 'test@123'
+2025-09-30 22:43:34,265 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', '/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[1]/div[2]/div[2]/form/div[5]/input')
+2025-09-30 22:43:36,104 | INFO | MainProcess | MainThread | BasePage | Clicked: ('class name', 'ico-logout')
+2025-09-30 22:43:41,919 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-30 22:45:00,244 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-30 22:45:03,531 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 22:45:07,954 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/login
+2025-09-30 22:45:08,602 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): 'myfirsttestcase@gmail.com'
+2025-09-30 22:45:08,638 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): 'test@123'
+2025-09-30 22:45:09,264 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', '/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[1]/div[2]/div[2]/form/div[5]/input')
+2025-09-30 22:45:11,078 | INFO | MainProcess | MainThread | BasePage | Clicked: ('class name', 'ico-logout')
+2025-09-30 22:45:16,934 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-30 22:45:54,457 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-30 22:45:57,696 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 22:46:01,732 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/login
+2025-09-30 22:46:02,332 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): 'myfirsttestcase@gmail.com'
+2025-09-30 22:46:02,371 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): 'test@123'
+2025-09-30 22:46:03,026 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', '/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[1]/div[2]/div[2]/form/div[5]/input')
+2025-09-30 22:46:04,893 | INFO | MainProcess | MainThread | BasePage | Clicked: ('class name', 'ico-logout')
+2025-09-30 22:46:13,517 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 22:46:17,466 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-09-30 22:46:18,660 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-09-30 22:46:18,666 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): ''
+2025-09-30 22:46:18,719 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): ''
+2025-09-30 22:46:18,740 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): ''
+2025-09-30 22:46:18,752 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): ''
+2025-09-30 22:46:18,778 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): ''
+2025-09-30 22:46:19,411 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-09-30 22:46:19,980 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-30 22:55:55,092 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-30 22:56:01,718 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 22:56:05,701 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/login
+2025-09-30 22:56:06,379 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): 'myfirsttestcase@gmail.com'
+2025-09-30 22:56:06,408 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): 'test@123'
+2025-09-30 22:56:07,068 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', '/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[1]/div[2]/div[2]/form/div[5]/input')
+2025-09-30 22:56:10,808 | INFO | MainProcess | MainThread | BasePage | Clicked: ('class name', 'ico-logout')
+2025-09-30 22:56:13,364 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-30 23:06:02,778 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-30 23:06:06,436 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 23:06:12,193 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/login
+2025-09-30 23:06:16,694 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 23:06:21,048 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-09-30 23:06:22,392 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-09-30 23:06:22,404 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): ''
+2025-09-30 23:06:22,444 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): ''
+2025-09-30 23:06:22,456 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): ''
+2025-09-30 23:06:22,466 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): ''
+2025-09-30 23:06:22,486 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): ''
+2025-09-30 23:06:23,131 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-09-30 23:06:23,584 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===

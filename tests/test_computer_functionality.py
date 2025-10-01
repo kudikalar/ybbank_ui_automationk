@@ -1,5 +1,5 @@
+import allure
 import pytest
-from time import sleep
 
 from pages.computers_functionality_page import ComputersPage
 from pages.home_page import HomePage
@@ -7,6 +7,7 @@ from pages.home_page import HomePage
 
 class TestComputerSelection:
 
+    @allure.story("Build Your Cheap PC")
     @pytest.mark.smoke
     def test_computer_functionality(self, driver, env):
         hp = HomePage(driver, env)

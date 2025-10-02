@@ -4528,3 +4528,20 @@ dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
 2025-09-30 23:06:22,486 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): ''
 2025-09-30 23:06:23,131 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
 2025-09-30 23:06:23,584 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-01 10:14:41,452 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-01 10:14:49,848 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-01 10:14:53,783 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/login
+2025-10-01 10:14:54,357 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): 'myfirsttestcase@gmail.com'
+2025-10-01 10:14:54,385 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): 'test@123'
+2025-10-01 10:14:55,023 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', '/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[1]/div[2]/div[2]/form/div[5]/input')
+2025-10-01 10:14:56,565 | INFO | MainProcess | MainThread | BasePage | Clicked: ('class name', 'ico-logout')
+2025-10-01 10:14:59,568 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-01 10:15:03,058 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-10-01 10:15:04,416 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-10-01 10:15:04,430 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): ''
+2025-10-01 10:15:04,469 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): ''
+2025-10-01 10:15:04,476 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): ''
+2025-10-01 10:15:04,485 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): ''
+2025-10-01 10:15:04,501 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): ''
+2025-10-01 10:15:05,143 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-10-01 10:15:05,623 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===

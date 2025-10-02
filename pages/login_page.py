@@ -2,17 +2,23 @@ from selenium.webdriver.common.by import By
 from core.base_page import BasePage
 from utils.data_reader import read_excel
 
+#utils/data reader.py = small helper read credentials from excel
+#ptional: load excel once (or you can read inside test)
+#Base page : reusable selenium helpers methods (open url, waits, clicks, type etc)
+#Here is basepage is parent-class to test login (child class).
+#Base page = Super class , #Login test = Sub class
 test_data = read_excel("data/register_test_data.xlsx")
 class LoginPage(BasePage):
     EMAIL = (By.ID, "Email")
     PASSWORD = (By.ID, "Password")
+# Prefer relative locators / attributes instead of absolute XPath
     LOGIN_BTN = (By.XPATH, "/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[1]/div[2]/div[2]/form/div[5]/input")
     LOGOUT_LINK =  (By.CLASS_NAME, "ico-logout")
 
     def __init__(self, driver, env):
         super().__init__(driver, env)
 
-    def open_login_page(self):
+    def open_login_page(self): # Navigate and wait until page ready
         self.open("/login")
         self.wait_url_contains("/login")
         self.wait_visible(self.LOGIN_BTN)
@@ -21,9 +27,9 @@ class LoginPage(BasePage):
         self.type(self.EMAIL, email)
     def enter_password(self, password):
         self.type(self.PASSWORD, password)
-    def click_login(self):
+    def click_login(self): # returns True if logout link is visible (meaning user is logged in)
         return self.click(self.LOGIN_BTN)
-    def click_logout(self):
+    def click_logout(self): # returns True if login button visible (meaning user is logged out)
         return self.click(self.LOGOUT_LINK)
 
 

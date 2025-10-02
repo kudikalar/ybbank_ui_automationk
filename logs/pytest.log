@@ -1,6 +1,10 @@
 INFO     pytest:conftest.py:34 === Pytest session started ===
 INFO     BasePage:base_page.py:53 Navigating to: https://demowebshop.tricentis.com/
 INFO     BasePage:base_page.py:53 Navigating to: https://demowebshop.tricentis.com/login
+INFO     BasePage:base_page.py:143 Typing into ('id', 'Email'): 'myfirsttestcase@gmail.com'
+INFO     BasePage:base_page.py:143 Typing into ('id', 'Password'): 'test@123'
+INFO     BasePage:base_page.py:82 Clicked: ('xpath', '/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div[1]/div[2]/div[2]/form/div[5]/input')
+INFO     BasePage:base_page.py:82 Clicked: ('class name', 'ico-logout')
 INFO     BasePage:base_page.py:53 Navigating to: https://demowebshop.tricentis.com/
 INFO     BasePage:base_page.py:53 Navigating to: https://demowebshop.tricentis.com/register
 INFO     BasePage:base_page.py:82 Clicked: ('id', 'gender-male')

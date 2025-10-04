@@ -1,7 +1,6 @@
 from selenium.webdriver.common.by import By
 from core.base_page import BasePage
 
-
 class ComputersPage(BasePage):
     COMPUTERS_MENU     = (By.LINK_TEXT, "Computers")
     DESKTOPS_MENU      = (By.LINK_TEXT, "Desktops")

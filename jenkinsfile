@@ -1,0 +1,48 @@
+pipeline {
+    agent any
+    tools {
+        allure 'Allure'    // Name configured under Global Tool Configuration
+    }
+    environment {
+        PY = 'python'      // or full path like C:\\Python312\\python.exe
+        HEADLESS = 'true'
+    }
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Setup Python') {
+            steps {
+                bat """
+                    %PY% --version
+                    %PY% -m venv venv
+                    call venv\\Scripts\\activate
+                    %PY% -m ensurepip --upgrade
+                    %PY% -m pip install -U pip setuptools wheel
+                    %PY% -m pip install -r requirements.txt
+                """
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                bat """
+                    call venv\\Scripts\\activate
+                    pytest -v -n auto --alluredir=reports\\allure-results
+                """
+            }
+        }
+    }
+
+    post {
+        always {
+            allure([
+                results: [[path: 'reports/allure-results']],
+                reportBuildPolicy: 'ALWAYS'
+            ])
+        }
+    }
+}

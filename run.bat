@@ -24,12 +24,17 @@ pip install -r requirements.txt --prefer-binary || (
   pip install -r requirements.txt --prefer-binary --no-build-isolation
 )
 
-REM ===== Sanity: pytest present? =====
-python -c "import pytest, sys; print('pytest', pytest.__version__)" || pip install pytest
+REM ===== Ensure critical plugins exist =====
+python -c "import pytest, sys;print('pytest',pytest.__version__)" || pip install pytest
+python -c "import allure_pytest" 2>nul || pip install allure-pytest
 python -c "import selenium" 2>nul || pip install selenium
 python -c "import webdriver_manager" 2>nul || pip install webdriver-manager
+python -m pytest --help | findstr /I allure || (
+  echo !!! Allure plugin not loaded. Check venv/site-packages and requirements.txt
+  exit /b 2
+)
 
-echo === Search for tests directory ===
+echo === Locate tests ===
 set "TEST_PATH="
 if exist tests\ (set "TEST_PATH=tests")
 if not defined TEST_PATH (
@@ -39,29 +44,53 @@ if not defined TEST_PATH (
   )
 )
 :found_tests
-
 if not defined TEST_PATH (
-  echo !!! Could not find a tests folder. Listing python files for hint:
+  echo !!! No tests folder found. Listing python files as hint:
   dir /s /b *.py
-  echo !!! Set TEST_PATH manually or add pytest.ini with testpaths.
-  exit /b 2
+  echo !!! Create tests\ or define testpaths in pytest.ini
+  exit /b 3
 )
-
 echo Using TEST_PATH=%TEST_PATH%
 dir /b %TEST_PATH%
 
-REM ===== Optional headless flag for your framework =====
+REM ===== Optional headless for your framework =====
 set HEADLESS=true
 
-REM ===== Run pytest explicitly on the found path =====
-python -m pytest "%TEST_PATH%" -v -n auto --alluredir=reports\allure-results
+REM ===== Clean previous results =====
+if exist reports\allure-results rmdir /s /q reports\allure-results
+
+REM ===== Run pytest (first pass without xdist to surface errors) =====
+python -m pytest "%TEST_PATH%" -v --alluredir=reports\allure-results
 set "PYTEST_EXIT=%ERRORLEVEL%"
 
-REM ===== Try to generate static HTML only if allure CLI exists =====
+echo === Contents of reports\allure-results ===
+if exist reports\allure-results (
+  dir /b reports\allure-results
+) else (
+  echo !!! allure-results directory not created (pytest did not run or crashed early)
+)
+
+REM ===== Fail early if no JSON produced =====
+for /f %%C in ('dir /b /a:-d reports\allure-results 2^>nul ^| find /c /v ""') do set COUNT=%%C
+if "%COUNT%"=="" set COUNT=0
+echo Files in allure-results: %COUNT%
+if %COUNT% LSS 2 (
+  echo !!! Allure results look empty. Common causes:
+  echo  - Test collection errors (see pytest log above)
+  echo  - Plugin not loaded (ensure allure-pytest installed)
+  echo  - No tests matched (check file names: test_*.py or *_test.py)
+  exit /b %PYTEST_EXIT%
+)
+
+REM ===== (Optional) second run with xdist once stable =====
+REM python -m pytest "%TEST_PATH%" -v -n auto --alluredir=reports\allure-results
+
+REM ===== Generate static HTML if Allure CLI exists =====
 where allure >nul 2>nul && (
   allure generate reports\allure-results -o reports\allure-report --clean
+  echo HTML report at reports\allure-report
 ) || (
-  echo (info) Allure CLI not found on PATH; Jenkins plugin will render results.
+  echo (info) Allure CLI not found on PATH; Jenkins Allure plugin can render results.
 )
 
 exit /b %PYTEST_EXIT%

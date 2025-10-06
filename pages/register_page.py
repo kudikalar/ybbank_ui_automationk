@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 from core.base_page import BasePage
 
 class RegisterPage(BasePage):
+    #Page Objects
     GENDER_MALE   = (By.ID, "gender-male")
     GENDER_FEMALE = (By.ID, "gender-female")
     FIRSTNAME     = (By.ID, "FirstName")

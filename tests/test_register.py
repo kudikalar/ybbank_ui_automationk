@@ -52,4 +52,4 @@ class TestRegister:
         rp.enter_password("")
         rp.enter_confirm_password("")
         rp.click_register_button()
-        # ##add asserts for error messages if needed
+        # ####add asserts for error messages if needed

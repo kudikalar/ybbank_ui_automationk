@@ -36,4 +36,4 @@ class RegisterPage(BasePage):
     def get_result_text(self):
         self.wait_visible(self.RESULT_BANNER)
         return self.text_of(self.RESULT_BANNER)
-    ##
+    ####

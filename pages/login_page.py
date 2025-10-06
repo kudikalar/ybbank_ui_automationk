@@ -32,3 +32,4 @@ class LoginPage(BasePage):
     def login_with_empty_data_error(self): return self.text_of(self.LOGIN_ERROR)
     def login_with_invalid_emailID_error(self): return self.text_of(self.LOGIN_ERROR_WITH_INVALID_EMAIL)
     def login_with_invalid_password_error(self): return self.text_of(self.LOGIN_ERROR_WITH_INVALID_PASSWORD)
+    ###

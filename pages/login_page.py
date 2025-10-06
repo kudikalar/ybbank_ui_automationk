@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from core.base_page import BasePage
 
 class LoginPage(BasePage):
-    EMAIL = (By.ID,"Email")
+    EMAIL = (By.ID, "Email")
     PASSWORD = (By.XPATH, "//*[@name='Password']")
     LOGIN_BTN = (By.XPATH, "//*[@value='Log in']")
     LOGIN_VERIFY = (By.XPATH, "//h2[contains(text(),'Welcome to our store')]")
@@ -12,19 +12,18 @@ class LoginPage(BasePage):
     LOGIN_ERROR_WITH_INVALID_EMAIL = (By.XPATH, "//span[contains(text(),'Please enter a valid email address.')]")
     LOGIN_ERROR_WITH_INVALID_PASSWORD = (By.XPATH, "//li[text()='The credentials provided are incorrect']")
 
-
-    def __init__(self, driver, base_url=None):
-        super().__init__(driver)
-        self.base_url = base_url
+    def __init__(self, driver, env):
+        super().__init__(driver, env)
 
     def open_login_page(self):
-        target = f"{self.base_url}/login" if self.base_url else "https://demowebshop.tricentis.com/login"
-        self.driver.get(target)
+        self.open("/login")
+        self.wait_url_contains("/login")
+        self.wait_visible(self.LOGIN_BTN)
 
     # One-line action methods
     def enter_email_address(self, email): self.type(self.EMAIL, email)
     def enter_password(self, pwd): self.type(self.PASSWORD, pwd)
-    def click_login_btn(self): self.driver.execute_script("arguments[0].click();", self.driver.find_element(*self.LOGIN_BTN))
+    def click_login_btn(self): self.click(self.LOGIN_BTN)
     def click_remember_me_checkbox(self): self.click(self.REMEMBER_ME_CHECK_BOX)
     def click_forgot_pwd_link(self): self.click(self.FORGOT_PWD_LINK)
 

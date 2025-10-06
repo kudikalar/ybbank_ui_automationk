@@ -1,88 +1,114 @@
-#verify login functionalitu with valid data
-#verify login functionalitu with valid data
-
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+import allure
+import pytest
 
 from core.wait import Waiter
 from pages.home_page import HomePage
 from pages.login_page import LoginPage
-from utils.assertion import assert_equals
+from utils.assertions import assert_equals
+from utils.data_reader import read_excel
 
+test_data = read_excel("data/register_test_data.xlsx")
 
+@allure.feature("Login")
 class TestLogin:
 
-    BASE_URL = "https://demowebshop.tricentis.com/"
-
-    def go_to_login_page(self, driver):
-        hp = HomePage(driver, self.BASE_URL)
+    @allure.story("Login with valid credentials")
+    @pytest.mark.smoke
+    @pytest.mark.parametrize("data", test_data)
+    def test_login_with_valid_credentials(self, driver, data, env):
+        hp = HomePage(driver, env)
         hp.open_home()
-        hp.click_login_link()
-        return LoginPage(driver)
 
-    def test_verify_login_functionality_with_valid_data(self, driver):
-        lp = self.go_to_login_page(driver)
-        lp.enter_email_address("test89test89@g.com")
-        lp.enter_password("Test123")
+        lp = LoginPage(driver, env)
+        lp.open_login_page()
+
+        lp.enter_email_address(data["EmailIDLogin"])
+        lp.enter_password(data["PasswordLogin"])
         lp.click_login_btn()
 
-        # Wait for success message
-        # wait for element visible
         Waiter(driver).visible(lp.LOGIN_VERIFY)
         assert_equals(
             "Welcome to our store",
             lp.login_verify(),
-            msg="user able to login"
+            msg="User should login successfully"
         )
 
+    @allure.story("Login with invalid email")
+    @pytest.mark.negative
+    @pytest.mark.parametrize("data", test_data)
+    def test_login_with_invalid_email(self, driver, data, env):
+        hp = HomePage(driver, env)
+        hp.open_home()
 
-        assert "Welcome to our store" in lp.login_verify()
+        lp = LoginPage(driver, env)
+        lp.open_login_page()
 
-    def test_verify_login_functionality_with_empty_data(self, driver):
-        lp = self.go_to_login_page(driver)
+        lp.enter_email_address(data["InvalidEmail"])
+        lp.enter_password(data["PasswordLogin"])
         lp.click_login_btn()
 
-        # wait for element visible
-        Waiter(driver).visible(lp.LOGIN_ERROR)
-        assert_equals(
-            "No customer account found",
-            lp.login_with_empty_data_error(),
-            msg="No user is not available with your creds"
-        )
-
-        #assert "No customer account found" in lp.login_with_empty_data_error()
-
-    def test_verify_login_functionality_with_invalid_emailID(self, driver):
-        lp = self.go_to_login_page(driver)
-        lp.enter_email_address("test@gsggd")
-        lp.enter_password("Testing")
-        lp.click_login_btn()
-
-        # wait for element visible
         Waiter(driver).visible(lp.LOGIN_ERROR_WITH_INVALID_EMAIL)
         assert_equals(
             "Please enter a valid email address.",
             lp.login_with_invalid_emailID_error(),
-            msg="User is matching enter incorrect email ID"
+            msg="Should show invalid email error"
         )
 
-        #assert "Please enter a valid email address." in lp.login_with_invalid_emailID_error()
+    @allure.story("Login with invalid password")
+    @pytest.mark.negative
+    @pytest.mark.parametrize("data", test_data)
+    def test_login_with_invalid_password(self, driver, data, env):
+        hp = HomePage(driver, env)
+        hp.open_home()
 
-    def test_verify_login_functionality_with_invalid_password(self, driver):
-        lp = self.go_to_login_page(driver)
-        lp.enter_email_address("test456@t.com")
-        lp.enter_password("jhgjhghgye")
+        lp = LoginPage(driver, env)
+        lp.open_login_page()
+
+        lp.enter_email_address(data["EmailIDLogin"])
+        lp.enter_password("WrongPassword123")
         lp.click_login_btn()
 
-        # wait for element visible
         Waiter(driver).visible(lp.LOGIN_ERROR_WITH_INVALID_PASSWORD)
         assert_equals(
             "The credentials provided are incorrect",
             lp.login_with_invalid_password_error(),
-            msg="Your entered incorrect pwd"
+            msg="Should show incorrect credentials error"
         )
 
+    @allure.story("Login with empty data")
+    def test_login_with_empty_data(self, driver, env):
+        hp = HomePage(driver, env)
+        hp.open_home()
 
-        #assert "The credentials provided are incorrect" in lp.login_with_invalid_password_error()
+        lp = LoginPage(driver, env)
+        lp.open_login_page()
+        lp.click_login_btn()
+
+        Waiter(driver).visible(lp.LOGIN_ERROR)
+        assert_equals(
+            "No customer account found",
+            lp.login_with_empty_data_error(),
+            msg="Should show account not found error"
+        )
+
+    @allure.story("Login with remember me checkbox")
+    @pytest.mark.parametrize("data", test_data)
+    def test_login_with_remember_me(self, driver, data, env):
+        hp = HomePage(driver, env)
+        hp.open_home()
+
+        lp = LoginPage(driver, env)
+        lp.open_login_page()
+
+        lp.enter_email_address(data["EmailIDLogin"])
+        lp.enter_password(data["PasswordLogin"])
+        lp.click_remember_me_checkbox()
+        lp.click_login_btn()
+
+        Waiter(driver).visible(lp.LOGIN_VERIFY)
+        assert_equals(
+            "Welcome to our store",
+            lp.login_verify(),
+            msg="User should login with remember me checked"
+        )
 

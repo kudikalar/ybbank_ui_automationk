@@ -17,4 +17,4 @@ class TestComputerSelection:
         cp.select_build_computer()
         cp.add_to_cart()
         cp.view_shopping_cart()
-        assert "Demo Web Shop. Build your own cheap computer" in driver.title #confirmation
+        assert "Demo Web Shop. Shopping Cart" in driver.title #confirmation

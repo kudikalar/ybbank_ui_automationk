@@ -7,7 +7,7 @@ from pages.login_page import LoginPage
 from utils.assertions import assert_equals
 from utils.data_reader import read_excel
 
-test_data = read_excel("data/register_test_data.xlsx")
+test_data = read_excel("data/Login_test_data.xlsx")
 
 @allure.feature("Login")
 class TestLogin:
@@ -34,7 +34,7 @@ class TestLogin:
         )
 
     @allure.story("Login with invalid email")
-    @pytest.mark.negative
+    @pytest.mark.regression
     @pytest.mark.parametrize("data", test_data)
     def test_login_with_invalid_email(self, driver, data, env):
         hp = HomePage(driver, env)
@@ -55,7 +55,7 @@ class TestLogin:
         )
 
     @allure.story("Login with invalid password")
-    @pytest.mark.negative
+    @pytest.mark.regression
     @pytest.mark.parametrize("data", test_data)
     def test_login_with_invalid_password(self, driver, data, env):
         hp = HomePage(driver, env)

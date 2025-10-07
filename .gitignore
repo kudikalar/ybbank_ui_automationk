@@ -2,13 +2,14 @@ index.html
 style.css
 script.js
 app.js
+*.json
+*.txt
 pages/*.html
 assets/js/*.js
 # Ignore all files inside the reports folder
-reports/*
+/reports/
 # But keep the folder itself (so it exists in repo)
 !reports/.gitkeep
 
 # Ignore reports and logs
-reports/
-logs/
+# Ignore reports and logs

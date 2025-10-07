@@ -3,11 +3,11 @@ import pytest
 
 from core.wait import Waiter
 from pages.home_page import HomePage
-from pages.forgot_password_page1 import ForgotPasswordPage
+from pages.forgot_password_page import ForgotPasswordPage
 from utils.assertions import assert_equals
 from utils.data_reader import read_excel
 
-test_data = read_excel("data/register_test_data.xlsx")
+test_data = read_excel("data/ForgotPassword.xlsx")
 
 
 @allure.feature("ForgotPassword")
@@ -25,7 +25,7 @@ class TestForgotPassword:
         fp.open_forgot_password_page()
 
         # Enter valid email and click Recover
-        fp.enter_recover_email_address(data["EmailIDLogin"])
+        fp.enter_recover_email_address(data["EmailID"])
         fp.click_recover_button()
 
         # Wait and verify confirmation message
@@ -48,7 +48,7 @@ class TestForgotPassword:
         fp.open_forgot_password_page()
 
         # Enter invalid email and click Recover
-        fp.enter_recover_email_address(data["InvalidEmail"])
+        fp.enter_recover_email_address(data["InvalidEmailID"])
         fp.click_recover_button()
 
         # Wait and verify invalid email error message

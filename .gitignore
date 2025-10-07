@@ -4,3 +4,11 @@ script.js
 app.js
 pages/*.html
 assets/js/*.js
+# Ignore all files inside the reports folder
+reports/*
+# But keep the folder itself (so it exists in repo)
+!reports/.gitkeep
+
+# Ignore reports and logs
+reports/
+logs/

@@ -16,4 +16,4 @@ class TestNotebooksSelection:
         np.select_notebook()
         np.add_to_cart()
         np.view_shopping_cart()
-        assert "Demo Web Shop. Shopping Cart" in driver.title #confirmation
+        assert "Demo Web Shop. Shopping Cart" in driver.title #confirmation end

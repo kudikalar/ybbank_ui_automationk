@@ -24,4 +24,4 @@ class NotebookPage(BasePage):
         self.click(self.ADD_TO_CART_BUTTON)
 
     def view_shopping_cart(self):
-        self.click(self.SHOPPING_CART_LINK)
+        self.click(self.SHOPPING_CART_LINK) #

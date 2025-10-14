@@ -13,22 +13,26 @@ jobs:
       fail-fast: false
       matrix:
         browser: [chrome, firefox, edge]
-        platform: [Windows 11]   # change to 'macOS 14' / 'Linux' if needed
-        region: [us-west-1]      # or 'eu-central-1'
+        platform: [Windows 11]
+        region: [us-west-1]
 
     env:
-      # Picked up by your tests/driver factory
+      SAUCE_USERNAME: oauth-seleniumden-669c6
+      SAUCE_ACCESS_KEY: 6cb29dd8-cc2e-4532-90ff-0c838c04b358
       SAUCE_BROWSER: ${{ matrix.browser }}
       SAUCE_PLATFORM: ${{ matrix.platform }}
       SAUCE_VERSION: latest
       SAUCE_REGION: ${{ matrix.region }}
       SAUCE_BUILD: "${{ github.ref_name }} #${{ github.run_number }}"
       SAUCE_NAME: "PyTest-${{ matrix.browser }} @ ${{ github.sha }}"
-      REMOTE_DRIVER: sauce          # flag your framework can read
+      REMOTE_DRIVER: sauce
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Set PYTHONPATH
+        run: echo "PYTHONPATH=$GITHUB_WORKSPACE" >> $GITHUB_ENV
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -45,19 +49,19 @@ jobs:
       - name: Install dependencies
         run: |
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          # Ensure test deps exist (safe if already present)
           pip install -U pytest selenium pytest-xdist allure-pytest
 
-      - name: Run PyTest on Sauce
-        env:
-          SAUCE_USERNAME: oauth-seleniumden-669c6
-          SAUCE_ACCESS_KEY: 6cb29dd8-cc2e-4532-90ff-0c838c04b358
+      - name: Check Sauce secrets present
+        if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
+        run: |
+          [ -n "${SAUCE_USERNAME}" ] && echo "SAUCE_USERNAME is set" || (echo "SAUCE_USERNAME missing" && exit 1)
+          [ -n "${SAUCE_ACCESS_KEY}" ] && echo "SAUCE_ACCESS_KEY is set" || (echo "SAUCE_ACCESS_KEY missing" && exit 1)
+
+      - name: Run PyTest on Sauce (smoke)
+        if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
         run: |
           mkdir -p reports allure-results
-          pytest -n auto --dist loadfile \
-            -m "smoke" \
-            --junitxml=reports/junit-${{ matrix.browser }}.xml \
-            -q
+          pytest -n auto --dist loadfile -m "smoke" --junitxml=reports/junit-${{ matrix.browser }}.xml -q
 
       - name: Upload JUnit XML
         if: always()

@@ -1,0 +1,75 @@
+name: UI Tests (Sauce Labs)
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chrome, firefox, edge]
+        platform: [Windows 11]   # change to 'macOS 14' / 'Linux' if needed
+        region: [us-west-1]      # or 'eu-central-1'
+
+    env:
+      # Picked up by your tests/driver factory
+      SAUCE_BROWSER: ${{ matrix.browser }}
+      SAUCE_PLATFORM: ${{ matrix.platform }}
+      SAUCE_VERSION: latest
+      SAUCE_REGION: ${{ matrix.region }}
+      SAUCE_BUILD: "${{ github.ref_name }} #${{ github.run_number }}"
+      SAUCE_NAME: "PyTest-${{ matrix.browser }} @ ${{ github.sha }}"
+      REMOTE_DRIVER: sauce          # flag your framework can read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ runner.os }}-${{ hashFiles('**/requirements*.txt') }}
+          restore-keys: pip-${{ runner.os }}-
+
+      - name: Install dependencies
+        run: |
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          # Ensure test deps exist (safe if already present)
+          pip install -U pytest selenium pytest-xdist allure-pytest
+
+      - name: Run PyTest on Sauce
+        env:
+          SAUCE_USERNAME: oauth-seleniumden-669c6
+          SAUCE_ACCESS_KEY: 6cb29dd8-cc2e-4532-90ff-0c838c04b358
+        run: |
+          mkdir -p reports allure-results
+          pytest -n auto --dist loadfile \
+            -m "smoke" \
+            --junitxml=reports/junit-${{ matrix.browser }}.xml \
+            -q
+
+      - name: Upload JUnit XML
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: junit-${{ matrix.browser }}
+          path: reports/*.xml
+
+      - name: Upload Allure results (if any)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results-${{ matrix.browser }}
+          path: allure-results
+          if-no-files-found: ignore

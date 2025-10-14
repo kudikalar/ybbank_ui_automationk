@@ -13,6 +13,17 @@ from selenium.webdriver.edge.service import Service as EdgeService
 
 log = logging.getLogger("DriverFactory")
 
+
+def _sauce_host(region: str) -> str:
+    """Return full Sauce OnDemand hub host (with /wd/hub)."""
+    r = (region or "us-west-1").lower()
+    if r in ("eu", "eu-central-1"):
+        return "ondemand.eu-central-1.saucelabs.com/wd/hub"
+    if r.startswith("apac") or r.startswith("ap-southeast-1"):
+        return "ondemand.apac-southeast-1.saucelabs.com/wd/hub"
+    return "ondemand.us-west-1.saucelabs.com/wd/hub"
+
+
 class DriverFactory:
     """Create local or remote WebDriver instances (local, Selenium Grid, Sauce Labs)."""
 
@@ -31,7 +42,10 @@ class DriverFactory:
         opts = FirefoxOptions()
         opts.headless = headless
         driver = webdriver.Firefox(service=FirefoxService(), options=opts)
-        driver.maximize_window()
+        try:
+            driver.maximize_window()
+        except Exception:
+            pass
         return driver
 
     @staticmethod
@@ -41,7 +55,10 @@ class DriverFactory:
             opts.add_argument("--headless=new")
             opts.add_argument("--window-size=1920,1080")
         driver = webdriver.Edge(service=EdgeService(), options=opts)
-        driver.maximize_window()
+        try:
+            driver.maximize_window()
+        except Exception:
+            pass
         return driver
 
     # ---------- Remote ----------
@@ -57,11 +74,42 @@ class DriverFactory:
         # W3C caps (used for Sauce)
         platform_name: str = "Windows 11",
         browser_version: str = "latest",
-        sauce_build: Optional[str] = "RegisterSuite",
+        sauce_build: Optional[str] = None,
         sauce_name: Optional[str] = None,
-        sauce_tags: Optional[str] = "pytest,demowebshop,register",
-        sauce_region: str = "us",
+        sauce_tags: Optional[str] = "pytest",
+        sauce_region: str = "us-west-1",
+        sauce_tunnel: Optional[str] = None,
     ):
+
+        """
+        Env overrides (used by GitHub Actions matrix):
+          REMOTE_DRIVER=sauce|grid|""     -> selects remote mode
+          SAUCE_BROWSER=chrome|firefox|edge
+          SAUCE_PLATFORM="Windows 11"     (maps to platformName)
+          SAUCE_VERSION="latest"          (maps to browserVersion)
+          SAUCE_REGION=us-west-1|eu-central-1|apac-southeast-1
+          SAUCE_BUILD, SAUCE_NAME, SAUCE_TAGS (comma-separated), SAUCE_TUNNEL
+        """
+
+        # --------- Resolve from environment (so CI can just set envs) ----------
+        env_remote = os.getenv("REMOTE_DRIVER", "").lower()
+        if env_remote in ("sauce", "grid"):
+            remote = True
+            cloud = "saucelabs" if env_remote == "sauce" else cloud
+
+        browser = os.getenv("SAUCE_BROWSER", browser).lower()
+        platform_name = os.getenv("SAUCE_PLATFORM", platform_name)
+        browser_version = os.getenv("SAUCE_VERSION", browser_version)
+        sauce_region = os.getenv("SAUCE_REGION", sauce_region)
+        sauce_build = os.getenv("SAUCE_BUILD", sauce_build or "GitHub Actions Build")
+        sauce_name = os.getenv("SAUCE_NAME", sauce_name or "PyTest Run")
+        sauce_tags = os.getenv("SAUCE_TAGS", sauce_tags or "pytest")
+        sauce_tunnel = os.getenv("SAUCE_TUNNEL", sauce_tunnel)
+
+        # GitHub context (show up in Sauce job details)
+        gh_sha = os.getenv("GITHUB_SHA")
+        gh_run_id = os.getenv("GITHUB_RUN_ID")
+
         b = (browser or "chrome").lower()
 
         # ---- Local path
@@ -81,45 +129,45 @@ class DriverFactory:
         else:
             raise ValueError(f"Unsupported remote browser: {browser}")
 
-        if headless:
+        # Headless flags are typically ignored by cloud providers; keep only for grids
+        if headless and cloud != "saucelabs":
             if b == "firefox":
                 opts.headless = True
             else:
                 opts.add_argument("--headless=new")
 
         # Always set W3C core caps
-        opts.set_capability("platformName",  platform_name)
+        opts.set_capability("platformName", platform_name)
         opts.set_capability("browserVersion", browser_version)
 
         # ---- Sauce Labs
         if cloud == "saucelabs":
-            # If a full Sauce URL is provided, use it directly (recommended)
+            # Endpoint
             if grid_url and grid_url.startswith(("http://", "https://")):
                 remote_url = grid_url
             else:
-                user = os.getenv("SAUCE_USERNAME")
-                key  = os.getenv("SAUCE_ACCESS_KEY")
+                user = os.environ.get("SAUCE_USERNAME")
+                key = os.environ.get("SAUCE_ACCESS_KEY")
                 if not user or not key:
                     raise RuntimeError(
-                        "No --grid-url provided and SAUCE_USERNAME/SAUCE_ACCESS_KEY not set."
+                        "SAUCE_USERNAME/SAUCE_ACCESS_KEY not set (and no grid_url provided)."
                     )
-
-                if sauce_region in ("eu", "eu-central-1"):
-                    host = "ondemand.eu-central-1.saucelabs.com:443/wd/hub"
-                elif sauce_region.startswith("apac"):
-                    host = "ondemand.apac-southeast-1.saucelabs.com:443/wd/hub"
-                else:
-                    host = "ondemand.us-west-1.saucelabs.com:443/wd/hub"
-
+                host = _sauce_host(sauce_region)
                 remote_url = f"https://{user}:{key}@{host}"
 
+            tags_list = [t.strip() for t in (sauce_tags or "").split(",") if t.strip()]
+
             sauce_options = {
-                "build": sauce_build or "Local-Build",
-                "name":  sauce_name or "Pytest Run",
-                "tags":  [t.strip() for t in (sauce_tags or "").split(",") if t.strip()],
+                "build": sauce_build,
+                "name": sauce_name,
+                "tags": tags_list,
                 "screenResolution": "1920x1080",
-                "seleniumVersion": "4.21.0",
+                "seleniumVersion": "4.25.0",
+                "github": {"sha": gh_sha, "runId": gh_run_id},
             }
+            if sauce_tunnel:
+                sauce_options["tunnelName"] = sauce_tunnel
+
             opts.set_capability("sauce:options", sauce_options)
 
             # Diagnostics (no credential leak)
@@ -137,6 +185,6 @@ class DriverFactory:
         # ---- Create session
         try:
             return webdriver.Remote(command_executor=remote_url, options=opts)
-        except Exception as e:
+        except Exception:
             log.error("Remote session creation failed at %s", remote_url, exc_info=True)
             raise

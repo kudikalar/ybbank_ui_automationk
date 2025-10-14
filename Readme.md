@@ -55,3 +55,10 @@ iOS Safari (iPhone 14)
 
 Then generate and open report:
 [allure generate reports/allure-results -o reports/allure-report --clean && allure open reports/allure-report]
+
+Run with Specific Class with a Test including allure report
+[pytest tests/test_register.py::TestRegister --alluredir=reports/allure-results]
+
+Generate Allure Report as Server
+[allure serve reports/allure-results]
+

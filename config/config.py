@@ -1,8 +1,8 @@
 # Application URLs per environment
 ENVIRONMENTS = {
-    "qa": "https://demowebshop.tricentis.com",
-    "stage": "https://stage.demowebshop.com",
-    "prod": "https://www.demowebshop.com"
+    "qa": "https://yuvanbank-qa-r1-test.netlify.app/",
+    "stage": "https://yuvanbank-stage-r1-test.netlify.app/",
+    "prod": "https://yuvanbank-prod.netlify.app/"
 }
 
 # Default environment

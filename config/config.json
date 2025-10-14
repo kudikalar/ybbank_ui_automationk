@@ -1,5 +1,5 @@
 {
-  "base_url": "https://demo.opencart.com",
+  "base_url": "https://yuvanbank-qa-r1-test.netlify.app/",
   "browser": "chrome",
   "headless": false,
   "remote": false,

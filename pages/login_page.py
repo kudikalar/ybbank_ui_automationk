@@ -11,6 +11,7 @@ class LoginPage(BasePage):
     LOGIN_ERROR = (By.XPATH, "//li[contains(text(),'No customer account found')]")
     LOGIN_ERROR_WITH_INVALID_EMAIL = (By.XPATH, "//span[contains(text(),'Please enter a valid email address.')]")
     LOGIN_ERROR_WITH_INVALID_PASSWORD = (By.XPATH, "//li[text()='The credentials provided are incorrect']")
+    WELCOME_MESSAGE = (By.XPATH, "//h1[contains(text(),'Welcome Back')]")
 
     def __init__(self, driver, env):
         super().__init__(driver, env)
@@ -32,4 +33,5 @@ class LoginPage(BasePage):
     def login_with_empty_data_error(self): return self.text_of(self.LOGIN_ERROR)
     def login_with_invalid_emailID_error(self): return self.text_of(self.LOGIN_ERROR_WITH_INVALID_EMAIL)
     def login_with_invalid_password_error(self): return self.text_of(self.LOGIN_ERROR_WITH_INVALID_PASSWORD)
-    #
+
+    def welcome_message(self): return self.text_of(self.WELCOME_MESSAGE)

@@ -84,25 +84,38 @@ jobs:
           mkdir -p allure-results
 
       - name: Run Pytest (regression on Chrome)
+        shell: bash
         run: |
-          set -e
-          CMD=(pytest -v "${{ inputs.tests_path }}" -m "${MARKER}")
-          # xdist workers
-          if [ "${{ inputs.workers }}" != "0" ]; then
-            CMD+=(-n "${{ inputs.workers }}")
+          set -euo pipefail
+
+          # Build optional args
+          ARGS=()
+          if [[ -n "${MARKER:-}" && "${MARKER,,}" != "all" ]]; then
+            ARGS+=(-m "${MARKER}")
           fi
-          # framework CLI flags
-          CMD+=(--remote --cloud saucelabs
-                --browser "${BROWSER}"
-                --sauce-region "${SAUCE_REGION}"
-                --junitxml "reports/junit-${BROWSER}-${MARKER}.xml"
-                --alluredir "allure-results/${BROWSER}-${MARKER}")
-          # optional headless
-          if [ "${HEADLESS}" = "true" ] || [ "${HEADLESS}" = "1" ]; then
-            CMD+=(--headless)
+
+          if [[ "${{ inputs.workers }}" != "0" ]]; then
+            ARGS+=(-n "${{ inputs.workers }}")
           fi
-          echo "CMD: ${CMD[@]}"
+
+          if [[ "${HEADLESS,,}" == "true" || "${HEADLESS}" == "1" ]]; then
+            ARGS+=(--headless)
+          fi
+
+          # Full command
+          CMD=(
+            pytest -v "${{ inputs.tests_path }}"
+            "${ARGS[@]}"
+            --remote --cloud saucelabs
+            --browser "${BROWSER}"
+            --sauce-region "${SAUCE_REGION}"
+            --junitxml "reports/junit-${BROWSER}-${MARKER}.xml"
+            --alluredir "allure-results/${BROWSER}-${MARKER}"
+          )
+
+          printf 'CMD: %q ' "${CMD[@]}"; echo
           "${CMD[@]}"
+      
 
       - name: Upload JUnit XML
         if: always()

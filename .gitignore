@@ -1,6 +1,20 @@
-index.html
-style.css
-script.js
-app.js
-pages/*.html
-assets/js/*.js
+# Environment
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Test reports
+reports/
+allure-results/
+allure-report/
+logs/
+*.log
+
+# IDE & system
+.idea/
+.vscode/
+
+# Cache
+*.cache
+*.tmp

@@ -11,6 +11,7 @@ test_data = read_excel("data/register_test_data.xlsx")
 
 
 @allure.feature("ForgotPassword")
+@pytest.mark.regression
 class TestForgotPassword:
 
     @allure.story("Verify forgot password with valid email")

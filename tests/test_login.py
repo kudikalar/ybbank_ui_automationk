@@ -34,7 +34,7 @@ class TestLogin:
         )
 
     @allure.story("Login with invalid email")
-    @pytest.mark.negative
+    @pytest.mark.smoke
     @pytest.mark.parametrize("data", test_data)
     def test_login_with_invalid_email(self, driver, data, env):
         hp = HomePage(driver, env)
@@ -55,7 +55,7 @@ class TestLogin:
         )
 
     @allure.story("Login with invalid password")
-    @pytest.mark.negative
+    @pytest.mark.regression
     @pytest.mark.parametrize("data", test_data)
     def test_login_with_invalid_password(self, driver, data, env):
         hp = HomePage(driver, env)
@@ -76,6 +76,7 @@ class TestLogin:
         )
 
     @allure.story("Login with empty data")
+    @pytest.mark.regression
     def test_login_with_empty_data(self, driver, env):
         hp = HomePage(driver, env)
         hp.open_home()
@@ -92,6 +93,7 @@ class TestLogin:
         )
 
     @allure.story("Login with remember me checkbox")
+    @pytest.mark.regression
     @pytest.mark.parametrize("data", test_data)
     def test_login_with_remember_me(self, driver, data, env):
         hp = HomePage(driver, env)

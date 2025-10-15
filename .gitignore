@@ -1,20 +1,38 @@
-# Environment
-venv/
+# Python
 __pycache__/
-*.pyc
-.DS_Store
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.env
 
-# Test reports
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Reports (don't push reports folder)
 reports/
 allure-results/
-allure-report/
-logs/
+*.html
+*.xml
+*.json
+
+# Logs
 *.log
+logs/
 
-# IDE & system
-.idea/
-.vscode/
+# Excel files (if you don't want to push test data)
+# data/*.xlsx
 
-# Cache
-*.cache
-*.tmp
+# Selenium
+webdriver/
+drivers/

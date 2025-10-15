@@ -5,6 +5,10 @@ on:
     branches: [ main, master ]
   pull_request:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   tests:
     runs-on: ubuntu-latest
@@ -13,7 +17,6 @@ jobs:
       fail-fast: false
       matrix:
         browser: [chrome, firefox, edge]
-        region: [us-west-1] # default; can add eu-central-1, apac-southeast-1
 
     env:
       # 🔐 Map GitHub secrets
@@ -24,11 +27,13 @@ jobs:
       SAUCE_BROWSER: ${{ matrix.browser }}
       SAUCE_PLATFORM: Windows 11
       SAUCE_VERSION: latest
-      SAUCE_REGION: ${{ matrix.region }}
+      # ⚠️ No SAUCE_REGION here; DriverFactory will auto-pick DC (US/EU/APAC)
       SAUCE_BUILD: "${{ github.ref_name }} #${{ github.run_number }}"
       SAUCE_NAME: "PyTest-${{ matrix.browser }} @ ${{ github.sha }}"
       SAUCE_TAGS: "pytest,gha"
       REMOTE_DRIVER: sauce
+      # Optional: narrow to your app under test, if your conftest supports it
+      # BASE_URL: https://yuvanbank-qa-r1-test.netlify.app/
 
     steps:
       - name: Checkout
@@ -53,9 +58,10 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           pip install -U pytest selenium pytest-xdist allure-pytest python-dotenv
 
-      - name: Set PYTHONPATH
+      - name: Set PYTHONPATH (absolute imports from repo root)
         run: echo "PYTHONPATH=$GITHUB_WORKSPACE" >> $GITHUB_ENV
 
+      # 🔒 Ensure secrets are present (forked PRs won't have them)
       - name: Check Sauce secrets present
         if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
         run: |
@@ -63,21 +69,12 @@ jobs:
           test -n "${SAUCE_ACCESS_KEY}" || (echo "❌ SAUCE_ACCESS_KEY missing"; exit 1)
           echo "✅ Sauce secrets detected"
 
-      # Optional: keep the step, but don't hard-fail builds if probe fails
-      - name: Detect Sauce data center (best effort)
-        if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
-        shell: bash
-        run: |
-          set -e
-          echo "Using SAUCE_REGION=${SAUCE_REGION}"
-          # If you want: export a fallback like below (commented)
-          # echo "SAUCE_REGION=us-west-1" >> $GITHUB_ENV
-
+      # 🚀 Run smoke tests on Sauce
       - name: Run PyTest on Sauce (smoke)
         if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
         run: |
           mkdir -p reports allure-results
-          # -n auto parallelizes by file; add -m "smoke" to keep CI fast
+          # -n auto parallelizes by file; keep CI fast with the smoke marker
           pytest -n auto --dist loadfile -m "smoke" \
                 --junitxml=reports/junit-${{ matrix.browser }}.xml -q
 
@@ -87,6 +84,7 @@ jobs:
         with:
           name: junit-${{ matrix.browser }}
           path: reports/*.xml
+          retention-days: 7
 
       - name: Upload Allure results (if any)
         if: always()
@@ -95,3 +93,4 @@ jobs:
           name: allure-results-${{ matrix.browser }}
           path: allure-results
           if-no-files-found: ignore
+          retention-days: 7

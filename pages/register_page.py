@@ -11,6 +11,7 @@ class RegisterPage(BasePage):
     REGISTER_BTN  = (By.ID, "submit")
     EMAIL_ALREADY_EXISTS = (By.ID, "emailErr")
 
+    # Constructor
     def __init__(self, driver, env):
         super().__init__(driver, env)
 

@@ -31,7 +31,7 @@ on:
         type: boolean
         default: true
       workers:
-        description: "pytest -n (xdist) workers"
+        description: "pytest -n (xdist) workers (0 to disable)"
         type: number
         default: 2
 
@@ -44,8 +44,10 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
+      # Sauce creds from repo secrets
       SAUCE_USERNAME: ${{ secrets.SAUCE_UNAME }}
       SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_KEY }}
+      # Common env for your framework (read by your CLI flags)
       SAUCE_PLATFORM: ${{ inputs.sauce_platform }}
       SAUCE_VERSION: latest
       SAUCE_REGION: ${{ inputs.region }}
@@ -83,52 +85,66 @@ jobs:
           test -n "${SAUCE_ACCESS_KEY}" || (echo "❌ SAUCE_ACCESS_KEY missing"; exit 1)
           echo "✅ Sauce credentials available"
 
-      - name: Compute browser matrix
-        id: m
+      - name: Compute browser list
+        id: browsers
         run: |
           if [ "${{ inputs.browsers }}" = "all" ]; then
-            echo 'list=["chrome","firefox","edge"]' >> $GITHUB_OUTPUT
+            echo 'json=["chrome","firefox","edge"]' >> $GITHUB_OUTPUT
           else
-            echo 'list=["${{ inputs.browsers }}"]' >> $GITHUB_OUTPUT
+            echo 'json=["${{ inputs.browsers }}"]' >> $GITHUB_OUTPUT
           fi
 
-      - name: Run per-browser
-        uses: nick-invision/retry@v2
-        with:
-          timeout_minutes: 30
-          max_attempts: 1
-          command: |
-            python - <<'PY'
-            import json, os, subprocess, sys
-            browsers = json.loads(os.environ["BROWSERS_JSON"])
-            tests_path = os.environ["TESTS"]
-            marker = os.environ["MARKER"]
-            region = os.environ["REGION"]
-            headless = os.environ["HEADLESS"]
-            workers = os.environ["WORKERS"]
+      - name: Create result folders
+        run: |
+          mkdir -p reports
+          mkdir -p allure-results
 
-            for b in browsers:
-                print(f"\n=== Running on {b} ===")
-                mark_args = [] if marker == "all" else ["-m", marker]
-                xdist = ["-n", workers] if workers and workers != "0" else []
-                cmd = [
-                    "pytest", "-v", tests_path, *mark_args,
-                    "--remote", "--cloud", "saucelabs",
-                    "--browser", b, "--sauce-region", region,
-                    "--junitxml", f"reports/junit-{b}-{marker}.xml",
-                    "--alluredir", f"allure-results/{b}-{marker}"
-                ]
-                # headless flag (if your framework reads it)
-                if headless.lower() in ("1","true","yes"):
-                    cmd += ["--headless"]
-                cmd += xdist
-                print("CMD:", " ".join(cmd))
-                rc = subprocess.call(cmd)
-                if rc != 0:
-                    sys.exit(rc)
-            PY
+      - name: Run per-browser (marker-aware)
+        run: |
+          python - <<'PY'
+          import json, os, subprocess, sys, shlex
+
+          browsers = json.loads(os.environ["BROWSERS_JSON"])
+          tests_path = os.environ["TESTS"]
+          marker = os.environ["MARKER"]
+          region = os.environ["REGION"]
+          headless = str(os.environ.get("HEADLESS", "")).lower()
+          workers = str(os.environ.get("WORKERS", "0"))
+
+          for b in browsers:
+              print(f"\n=== Running on {b} ===", flush=True)
+
+              # Build pytest command
+              cmd = ["pytest", "-v", tests_path]
+
+              # Marker handling: "all" => no -m filter
+              if marker and marker.lower() != "all":
+                  cmd += ["-m", marker]
+
+              # xdist workers
+              if workers and workers != "0":
+                  cmd += ["-n", workers]
+
+              # Common CLI flags expected by your framework
+              cmd += [
+                  "--remote", "--cloud", "saucelabs",
+                  "--browser", b,
+                  "--sauce-region", region,
+                  "--junitxml", f"reports/junit-{b}-{marker}.xml",
+                  "--alluredir", f"allure-results/{b}-{marker}"
+              ]
+
+              # Optional headless
+              if headless in ("1", "true", "yes"):
+                  cmd += ["--headless"]
+
+              print("CMD:", " ".join(shlex.quote(c) for c in cmd), flush=True)
+              rc = subprocess.call(cmd)
+              if rc != 0:
+                  sys.exit(rc)
+          PY
         env:
-          BROWSERS_JSON: ${{ steps.m.outputs.list }}
+          BROWSERS_JSON: ${{ steps.browsers.outputs.json }}
           TESTS: ${{ inputs.tests_path }}
           MARKER: ${{ inputs.marker }}
           REGION: ${{ inputs.region }}

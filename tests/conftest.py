@@ -95,8 +95,7 @@ def _on_sauce(driver) -> bool:
     caps = getattr(driver, "capabilities", {}) or {}
     return any(str(k).startswith("sauce:") for k in caps.keys())
 
-
-@pytest.fixture(autouse=True)
+@pytest.fixture(autouse=True, scope="session")
 def driver(request):
     log = get_logger("driver")
     browser  = str(request.config.getoption("browser") or "").strip().lower()
@@ -162,3 +161,23 @@ def pytest_runtest_makereport(item, call):
     rep = outcome.get_result()
     if rep.when == "call":
         setattr(item, "rep_call", rep)
+
+@pytest.fixture
+def seed_registered_user(driver, request):
+    """Ensure a user with given email already exists in localStorage."""
+    email = request.param["Email"]
+    user = {
+        "first": request.param.get("FirstName", "Seed"),
+        "last": request.param.get("LastName", "User"),
+        "email": email,
+        "password": request.param.get("Password", "Seed@123")
+    }
+    # Navigate once so JS context exists
+    driver.get("https://yuvanbank-qa-r1-test.netlify.app/")
+    driver.execute_script("""
+        const key = 'yuvanbank_users';
+        const existing = JSON.parse(localStorage.getItem(key) || '[]');
+        const filtered = existing.filter(u => u.email !== arguments[0].email);
+        filtered.push(arguments[0]);
+        localStorage.setItem(key, JSON.stringify(filtered));
+    """, user)

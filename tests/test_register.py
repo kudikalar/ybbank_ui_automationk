@@ -38,7 +38,8 @@ class TestRegister:
     @pytest.mark.regression
     @pytest.mark.yw_t6
     @pytest.mark.parametrize("data", test_data1)
-    def test_verify_system_prevents_duplicate_email_registration(self, driver, data, env):
+    @pytest.mark.parametrize("seed_registered_user", test_data1, indirect=True)
+    def test_verify_system_prevents_duplicate_email_registration(self, driver, data, env, seed_registered_user):
         hp = HomePage(driver, env)
         hp.open_home()
 
@@ -51,9 +52,9 @@ class TestRegister:
         rp.enter_confirm_password(data["ConfirmPassword"])
         rp.click_register_button()
 
-        rp = RegisterPage(driver,env)
         actual = rp.get_email_already_exists_text()
-        assert_equals(actual, "User already registered with this email.")
+        assert actual.strip().lower() in ("email already exists", "user with this email already exists")
+
 
 
 

@@ -74,3 +74,6 @@ Local headless Firefox:
 Sauce EU:
 [pytest -v tests/test_register.py --remote --cloud saucelabs --browser chrome --sauce-region eu-central-1]
 
+Single Method from class
+[pytest -v tests/test_register.py::TestRegister::test_verify_system_prevents_duplicate_email_registration --browser chrome --no-remote]
+

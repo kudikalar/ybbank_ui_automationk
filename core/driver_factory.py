@@ -37,7 +37,6 @@ def _norm(val, *, lower=True, default=None):
     s = str(val).strip()
     return s.lower() if lower else s
 
-# Probe Sauce REST API for HTTP status
 def _probe_sauce_dc(dc: str, user: str, key: str, timeout: int = 5) -> int:
     """
     Returns HTTP status from Sauce REST API for the given DC.

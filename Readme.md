@@ -4,6 +4,9 @@
 #run headless in saucelab
 [pytest -v tests/test_register.py --remote --cloud saucelabs --browser chrome --headless --sauce-region eu]
 
+#run headless in saucelab specific test
+[pytest tests/test_register.py::TestRegister::test_verify_system_prevents_duplicate_email_registration --remote --cloud saucelabs --browser chrome --headless --sauce-region eu]
+
 🔹 1. Run Locally (Chrome, UI mode)
 [pytest -v tests/test_register.py --browser chrome]
 

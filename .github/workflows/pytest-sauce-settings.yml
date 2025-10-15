@@ -1,4 +1,4 @@
-name: YuvanBank Regression UI Tests (Sauce Labs)
+name: YuvanBank settings  UI Tests (Sauce Labs)
 
 on:
   push:

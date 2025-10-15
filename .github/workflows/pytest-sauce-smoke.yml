@@ -1,4 +1,4 @@
-name: UI Tests (Sauce Labs)
+name: YuvanBank Smoke UI Tests (Sauce Labs)
 
 on:
   push:

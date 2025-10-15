@@ -1,4 +1,4 @@
-name: UI Tests – Manual (Sauce Labs)
+name: UI Tests – Manual (Sauce Labs, Regression on Chrome)
 
 on:
   workflow_dispatch:
@@ -7,16 +7,6 @@ on:
         description: "Pytest path (folder/file::test)"
         type: string
         default: "tests"
-      marker:
-        description: "Pytest marker/tag (smoke, regression, functional, all)"
-        type: choice
-        options: [smoke, regression, functional, all]
-        default: smoke
-      browsers:
-        description: "Browsers to run (chrome, firefox, edge, all)"
-        type: choice
-        options: [chrome, firefox, edge, all]
-        default: chrome
       region:
         description: "Sauce region"
         type: choice
@@ -45,13 +35,16 @@ jobs:
 
     env:
       # Sauce creds from repo secrets
-      SAUCE_USERNAME: ${{ secrets.SAUCE_UNAME }}
-      SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_KEY }}
+      SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
+      SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_ACCESS_KEY }}
       # Common env for your framework (read by your CLI flags)
       SAUCE_PLATFORM: ${{ inputs.sauce_platform }}
       SAUCE_VERSION: latest
       SAUCE_REGION: ${{ inputs.region }}
       HEADLESS: ${{ inputs.headless }}
+      # Fixed for this workflow
+      BROWSER: chrome
+      MARKER: regression
 
     steps:
       - name: Checkout
@@ -85,77 +78,37 @@ jobs:
           test -n "${SAUCE_ACCESS_KEY}" || (echo "❌ SAUCE_ACCESS_KEY missing"; exit 1)
           echo "✅ Sauce credentials available"
 
-      - name: Compute browser list
-        id: browsers
-        run: |
-          if [ "${{ inputs.browsers }}" = "all" ]; then
-            echo 'json=["chrome","firefox","edge"]' >> $GITHUB_OUTPUT
-          else
-            echo 'json=["${{ inputs.browsers }}"]' >> $GITHUB_OUTPUT
-          fi
-
       - name: Create result folders
         run: |
           mkdir -p reports
           mkdir -p allure-results
 
-      - name: Run per-browser (marker-aware)
+      - name: Run Pytest (regression on Chrome)
         run: |
-          python - <<'PY'
-          import json, os, subprocess, sys, shlex
-
-          browsers = json.loads(os.environ["BROWSERS_JSON"])
-          tests_path = os.environ["TESTS"]
-          marker = os.environ["MARKER"]
-          region = os.environ["REGION"]
-          headless = str(os.environ.get("HEADLESS", "")).lower()
-          workers = str(os.environ.get("WORKERS", "0"))
-
-          for b in browsers:
-              print(f"\n=== Running on {b} ===", flush=True)
-
-              # Build pytest command
-              cmd = ["pytest", "-v", tests_path]
-
-              # Marker handling: "all" => no -m filter
-              if marker and marker.lower() != "all":
-                  cmd += ["-m", marker]
-
-              # xdist workers
-              if workers and workers != "0":
-                  cmd += ["-n", workers]
-
-              # Common CLI flags expected by your framework
-              cmd += [
-                  "--remote", "--cloud", "saucelabs",
-                  "--browser", b,
-                  "--sauce-region", region,
-                  "--junitxml", f"reports/junit-{b}-{marker}.xml",
-                  "--alluredir", f"allure-results/{b}-{marker}"
-              ]
-
-              # Optional headless
-              if headless in ("1", "true", "yes"):
-                  cmd += ["--headless"]
-
-              print("CMD:", " ".join(shlex.quote(c) for c in cmd), flush=True)
-              rc = subprocess.call(cmd)
-              if rc != 0:
-                  sys.exit(rc)
-          PY
-        env:
-          BROWSERS_JSON: ${{ steps.browsers.outputs.json }}
-          TESTS: ${{ inputs.tests_path }}
-          MARKER: ${{ inputs.marker }}
-          REGION: ${{ inputs.region }}
-          HEADLESS: ${{ inputs.headless }}
-          WORKERS: ${{ inputs.workers }}
+          set -e
+          CMD=(pytest -v "${{ inputs.tests_path }}" -m "${MARKER}")
+          # xdist workers
+          if [ "${{ inputs.workers }}" != "0" ]; then
+            CMD+=(-n "${{ inputs.workers }}")
+          fi
+          # framework CLI flags
+          CMD+=(--remote --cloud saucelabs
+                --browser "${BROWSER}"
+                --sauce-region "${SAUCE_REGION}"
+                --junitxml "reports/junit-${BROWSER}-${MARKER}.xml"
+                --alluredir "allure-results/${BROWSER}-${MARKER}")
+          # optional headless
+          if [ "${HEADLESS}" = "true" ] || [ "${HEADLESS}" = "1" ]; then
+            CMD+=(--headless)
+          fi
+          echo "CMD: ${CMD[@]}"
+          "${CMD[@]}"
 
       - name: Upload JUnit XML
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: "junit-${{ inputs.marker }}"
+          name: "junit-regression-chrome"
           path: reports/*.xml
           if-no-files-found: ignore
 
@@ -163,6 +116,6 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: "allure-results-${{ inputs.marker }}"
+          name: "allure-results-regression-chrome"
           path: allure-results
           if-no-files-found: ignore

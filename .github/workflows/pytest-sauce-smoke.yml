@@ -1,4 +1,4 @@
-name: YuvanBank Smoke UI Tests (Sauce Labs)
+name: YuvanBank UI Tests (Sauce Labs)
 
 on:
   push:
@@ -13,10 +13,31 @@ jobs:
   tests:
     runs-on: ubuntu-latest
 
+    # Matrix controls browser & test type (tag/marker)
     strategy:
       fail-fast: false
       matrix:
-        browser: [chrome] # running only chrome per your command
+        include:
+          # --- Chrome Smoke ---
+          - browser: chrome
+            tag: smoke
+            marker: smoke
+          # --- Chrome Regression ---
+          - browser: chrome
+            tag: regression
+            marker: regression
+          # --- Chrome Functional ---
+          - browser: chrome
+            tag: functional
+            marker: functional
+
+          # To run Firefox/Edge too, add entries like:
+          # - browser: firefox
+          #   tag: smoke
+          #   marker: smoke
+          # - browser: edge
+          #   tag: regression
+          #   marker: regression
 
     env:
       # 🔐 Sauce credentials
@@ -27,10 +48,15 @@ jobs:
       REMOTE_DRIVER: sauce
       SAUCE_PLATFORM: Windows 11
       SAUCE_VERSION: latest
-      SAUCE_REGION: eu
+      SAUCE_REGION: eu # "eu" normalized to eu-central-1 in your DriverFactory
       SAUCE_BUILD: "${{ github.ref_name }} #${{ github.run_number }}"
-      SAUCE_NAME: "PyTest-${{ matrix.browser }} @ ${{ github.sha }}"
-      SAUCE_TAGS: "pytest,gha"
+      # Show tag + browser in name (nice in Sauce dashboard)
+      SAUCE_NAME: "YuvanBank ${{ matrix.tag }} UI - ${{ matrix.browser }} @ ${{ github.sha }}"
+      # Send dynamic tag to Sauce; keep a few stable ones too
+      SAUCE_TAGS: "pytest,gha,${{ matrix.tag }},ui,yuvanbank"
+
+      # Optional: headless for CI (ignored by Sauce but fine for grids)
+      HEADLESS: "1"
 
     steps:
       - name: Checkout
@@ -64,28 +90,31 @@ jobs:
           test -n "${SAUCE_ACCESS_KEY}" || (echo "❌ SAUCE_ACCESS_KEY missing"; exit 1)
           echo "✅ Sauce credentials available"
 
-      - name: Run Register Test on Sauce Labs (EU region)
+      # 👉 Adjust the test path and -m selector as needed for your repo
+      - name: Run ${{ matrix.tag }} tests on Sauce Labs (${{ matrix.browser }})
         run: |
           mkdir -p reports allure-results
-          pytest -v tests/test_register.py \
+          echo "Running marker: ${{ matrix.marker }}"
+          pytest -v tests \
+            -m "${{ matrix.marker }}" \
             --remote \
             --cloud saucelabs \
-            --browser chrome \
+            --browser "${{ matrix.browser }}" \
             --headless \
             --sauce-region eu \
-            --junitxml=reports/junit-chrome.xml
+            --junitxml="reports/junit-${{ matrix.browser }}-${{ matrix.tag }}.xml"
 
       - name: Upload JUnit XML
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: junit-chrome
+          name: "junit-${{ matrix.browser }}-${{ matrix.tag }}"
           path: reports/*.xml
 
       - name: Upload Allure Results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-results-chrome
+          name: "allure-results-${{ matrix.browser }}-${{ matrix.tag }}"
           path: allure-results
           if-no-files-found: ignore

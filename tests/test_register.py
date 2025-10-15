@@ -15,6 +15,7 @@ class TestRegister:
 
     @allure.story("YW-T2-Verify register functionality with valid data")
     @pytest.mark.smoke
+    @pytest.mark.regression
     @pytest.mark.yw_t2
     @pytest.mark.parametrize("data", test_data)
     def test_verify_register_functionality_with_valid_data(self, driver, data, env):
@@ -34,7 +35,7 @@ class TestRegister:
         assert_equals(lp.welcome_message(), "Welcome Back")
 
     @allure.story("YW-T6-Verify system prevents duplicate email registration")
-    @pytest.mark.functional
+    @pytest.mark.regression
     @pytest.mark.yw_t6
     @pytest.mark.parametrize("data", test_data1)
     def test_verify_system_prevents_duplicate_email_registration(self, driver, data, env):

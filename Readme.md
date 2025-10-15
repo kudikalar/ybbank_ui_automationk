@@ -65,3 +65,12 @@ Run with Specific Class with a Test including allure report
 Generate Allure Report as Server
 [allure serve reports/allure-results]
 
+Local Execution on Chrome without headless or browser visible
+[pytest -v tests/test_register.py --browser chrome --no-remote]
+
+Local headless Firefox:
+[pytest -v tests/test_register.py --browser firefox --no-remote --headless]
+
+Sauce EU:
+[pytest -v tests/test_register.py --remote --cloud saucelabs --browser chrome --sauce-region eu-central-1]
+

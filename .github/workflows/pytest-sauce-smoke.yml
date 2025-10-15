@@ -13,18 +13,21 @@ jobs:
       fail-fast: false
       matrix:
         browser: [chrome, firefox, edge]
-        platform: [Windows 11]   # change to 'macOS 14' / 'Linux' if needed
-        region: [us-west-1]      # or 'eu-central-1'
+        region: [us-west-1] # default; can add eu-central-1, apac-southeast-1
 
     env:
+      # 🔐 Map GitHub secrets
       SAUCE_USERNAME: ${{ secrets.SAUCE_UNAME }}
       SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_KEY }}
+
+      # 🧪 DriverFactory / pytest inputs
       SAUCE_BROWSER: ${{ matrix.browser }}
-      SAUCE_PLATFORM: ${{ matrix.platform }}
+      SAUCE_PLATFORM: Windows 11
       SAUCE_VERSION: latest
       SAUCE_REGION: ${{ matrix.region }}
       SAUCE_BUILD: "${{ github.ref_name }} #${{ github.run_number }}"
       SAUCE_NAME: "PyTest-${{ matrix.browser }} @ ${{ github.sha }}"
+      SAUCE_TAGS: "pytest,gha"
       REMOTE_DRIVER: sauce
 
     steps:
@@ -41,21 +44,42 @@ jobs:
         with:
           path: ~/.cache/pip
           key: pip-${{ runner.os }}-${{ hashFiles('**/requirements*.txt') }}
-          restore-keys: pip-${{ runner.os }}-
+          restore-keys: |
+            pip-${{ runner.os }}-
 
       - name: Install dependencies
         run: |
+          python -m pip install -U pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          # Ensure test deps exist (safe if already present)
-          pip install -U pytest selenium pytest-xdist allure-pytest
+          pip install -U pytest selenium pytest-xdist allure-pytest python-dotenv
 
-      - name: Run PyTest on Sauce
-        env:
-          SAUCE_USERNAME: oauth-seleniumden-669c6
-          SAUCE_ACCESS_KEY: 6cb29dd8-cc2e-4532-90ff-0c838c04b358
+      - name: Set PYTHONPATH
+        run: echo "PYTHONPATH=$GITHUB_WORKSPACE" >> $GITHUB_ENV
+
+      - name: Check Sauce secrets present
+        if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
+        run: |
+          test -n "${SAUCE_USERNAME}" || (echo "❌ SAUCE_USERNAME missing"; exit 1)
+          test -n "${SAUCE_ACCESS_KEY}" || (echo "❌ SAUCE_ACCESS_KEY missing"; exit 1)
+          echo "✅ Sauce secrets detected"
+
+      # Optional: keep the step, but don't hard-fail builds if probe fails
+      - name: Detect Sauce data center (best effort)
+        if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
+        shell: bash
+        run: |
+          set -e
+          echo "Using SAUCE_REGION=${SAUCE_REGION}"
+          # If you want: export a fallback like below (commented)
+          # echo "SAUCE_REGION=us-west-1" >> $GITHUB_ENV
+
+      - name: Run PyTest on Sauce (smoke)
+        if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
         run: |
           mkdir -p reports allure-results
-          pytest -n auto --dist loadfile -m "smoke" --junitxml=reports/junit-${{ matrix.browser }}.xml -q
+          # -n auto parallelizes by file; add -m "smoke" to keep CI fast
+          pytest -n auto --dist loadfile -m "smoke" \
+                --junitxml=reports/junit-${{ matrix.browser }}.xml -q
 
       - name: Upload JUnit XML
         if: always()

@@ -1,5 +1,6 @@
+import pytest
 import allure
-import pytest, uuid
+
 from pages.home_page import HomePage
 from pages.login_page import LoginPage
 from pages.register_page import RegisterPage

@@ -1,4 +1,3 @@
-# tests/conftest.py
 import os
 import pytest
 from pathlib import Path
@@ -10,7 +9,6 @@ from config.config import DEFAULT_ENV
 # --- Load .env early (local runs) ---
 try:
     from dotenv import load_dotenv
-    # repo_root/tests/conftest.py -> repo_root/.env
     env_path = Path(__file__).resolve().parents[1] / ".env"
     if env_path.exists():
         load_dotenv(dotenv_path=env_path)
@@ -20,7 +18,6 @@ except Exception:
 _cfg = Config()
 
 def _region_normalize(val: str) -> str:
-    """Map short aliases to Sauce DCs."""
     v = (val or "").lower().strip()
     if v in ("us", "us-west-1", ""):
         return "us-west-1"
@@ -30,16 +27,23 @@ def _region_normalize(val: str) -> str:
         return "apac-southeast-1"
     return v
 
+def _bool_env(name: str, fallback: bool = False) -> bool:
+    v = os.getenv(name)
+    if v is None:
+        return fallback
+    return str(v).strip().lower() in ("1", "true", "yes", "y", "on")
+
 def pytest_addoption(parser):
-    parser.addoption("--browser",   action="store",  default=os.getenv("SAUCE_BROWSER", _cfg.browser), help="chrome|firefox|edge")
+    parser.addoption("--browser",   action="store",  default=(os.getenv("SAUCE_BROWSER") or _cfg.browser))
     parser.addoption("--platform",  action="store",  default=_cfg.platform)
-    parser.addoption("--cloud",     action="store",  default=os.getenv("CLOUD", _cfg.cloud or ""))
-    parser.addoption("--grid-url",  action="store",  default=os.getenv("GRID_URL", _cfg.grid_url or ""))
+    parser.addoption("--cloud",     action="store",  default=(os.getenv("CLOUD") or (_cfg.cloud or "")))
+    parser.addoption("--grid-url",  action="store",  default=(os.getenv("GRID_URL") or (_cfg.grid_url or "")))
     parser.addoption("--base-url",  action="store",  default=getattr(_cfg, "base_url", ""))
     parser.addoption("--env",       action="store",  default=DEFAULT_ENV, help="Environment alias or full URL")
-    # remote/headless default to env if present, else config
-    parser.addoption("--remote",    action="store_true", default=(os.getenv("REMOTE_DRIVER", "").lower() in ("sauce", "grid") or bool(getattr(_cfg, "remote", False))))
-    parser.addoption("--headless",  action="store_true", default=bool(os.getenv("HEADLESS", getattr(_cfg, "headless", False))))
+    parser.addoption("--remote",    action="store_true",
+                     default=(str(os.getenv("REMOTE_DRIVER", "")).strip().lower() in ("sauce", "grid")
+                              or bool(getattr(_cfg, "remote", False))))
+    parser.addoption("--headless",  action="store_true", default=_bool_env("HEADLESS", getattr(_cfg, "headless", False)))
     parser.addoption("--sauce-region", action="store",
                      choices=["us","eu","apac","us-west-1","eu-central-1","apac-southeast-1"],
                      default=_region_normalize(os.getenv("SAUCE_REGION", "us")))
@@ -59,10 +63,8 @@ def _log_banner():
     yield
     log.info("=== Pytest session finished ===")
 
-# SINGLE env fixture (do not duplicate)
 @pytest.fixture
 def env(pytestconfig):
-    # Prefer --env if provided; otherwise fall back to --base-url.
     opt_env = pytestconfig.getoption("env")
     if opt_env:
         return opt_env
@@ -70,19 +72,20 @@ def env(pytestconfig):
 
 def _on_sauce(driver) -> bool:
     caps = getattr(driver, "capabilities", {}) or {}
+    # presence of top-level 'sauce:options' indicates Sauce run
     return any(k.startswith("sauce:") for k in caps.keys())
 
 @pytest.fixture
 def driver(request):
-    log       = get_logger("driver")
-    browser   = request.config.getoption("browser")
-    platform  = request.config.getoption("platform")
-    cloud     = (request.config.getoption("cloud") or "").strip() or None
-    grid_url  = (request.config.getoption("grid_url") or "").strip() or None
-    remote    = bool(request.config.getoption("remote"))
-    headless  = bool(request.config.getoption("headless"))
+    log = get_logger("driver")
+    browser  = str(request.config.getoption("browser") or "").strip().lower()
+    platform = str(request.config.getoption("platform") or "").strip()
+    cloud    = str(request.config.getoption("cloud") or "").strip().lower() or None
+    grid_url = str(request.config.getoption("grid_url") or "").strip() or None
+    remote   = bool(request.config.getoption("remote"))
+    headless = bool(request.config.getoption("headless"))
 
-    # Defaults (may be overridden by env inside DriverFactory)
+    # Defaults (may be overridden inside DriverFactory via env)
     platform_name   = "Windows 11"
     browser_version = "latest"
     sauce_build     = os.getenv("SAUCE_BUILD", "RegisterSuite-1")
@@ -90,7 +93,10 @@ def driver(request):
     sauce_tags      = os.getenv("SAUCE_TAGS", "pytest,demowebshop,register")
     sauce_region    = _region_normalize(request.config.getoption("sauce_region"))
 
-    # Friendly skip if Sauce creds missing for remote Saucelabs run without explicit grid_url
+    # If REMOTE_DRIVER=sauce but --cloud not set, default to saucelabs
+    if remote and not cloud and str(os.getenv("REMOTE_DRIVER","")).strip().lower() == "sauce":
+        cloud = "saucelabs"
+
     if remote and (cloud == "saucelabs") and (not grid_url):
         if not (os.getenv("SAUCE_USERNAME") and os.getenv("SAUCE_ACCESS_KEY")):
             pytest.skip("SAUCE_USERNAME/SAUCE_ACCESS_KEY not set and no --grid-url provided; skipping Sauce run.")
@@ -114,7 +120,7 @@ def driver(request):
         drv.implicitly_wait(0)
         yield drv
 
-        # Mark job result on Sauce only
+        # Mark job result on Sauce
         try:
             if _on_sauce(drv):
                 outcome = "passed"

@@ -16,24 +16,21 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        browser: [chrome, firefox, edge]
+        browser: [chrome] # running only chrome per your command
 
     env:
-      # 🔐 Map GitHub secrets
+      # 🔐 Sauce credentials
       SAUCE_USERNAME: ${{ secrets.SAUCE_UNAME }}
       SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_KEY }}
 
-      # 🧪 DriverFactory / pytest inputs
-      SAUCE_BROWSER: ${{ matrix.browser }}
+      # 🧪 DriverFactory / pytest parameters
+      REMOTE_DRIVER: sauce
       SAUCE_PLATFORM: Windows 11
       SAUCE_VERSION: latest
-      # ⚠️ No SAUCE_REGION here; DriverFactory will auto-pick DC (US/EU/APAC)
+      SAUCE_REGION: eu
       SAUCE_BUILD: "${{ github.ref_name }} #${{ github.run_number }}"
       SAUCE_NAME: "PyTest-${{ matrix.browser }} @ ${{ github.sha }}"
       SAUCE_TAGS: "pytest,gha"
-      REMOTE_DRIVER: sauce
-      # Optional: narrow to your app under test, if your conftest supports it
-      # BASE_URL: https://yuvanbank-qa-r1-test.netlify.app/
 
     steps:
       - name: Checkout
@@ -58,39 +55,37 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           pip install -U pytest selenium pytest-xdist allure-pytest python-dotenv
 
-      - name: Set PYTHONPATH (absolute imports from repo root)
+      - name: Set PYTHONPATH
         run: echo "PYTHONPATH=$GITHUB_WORKSPACE" >> $GITHUB_ENV
 
-      # 🔒 Ensure secrets are present (forked PRs won't have them)
-      - name: Check Sauce secrets present
-        if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
+      - name: Verify Sauce credentials
         run: |
           test -n "${SAUCE_USERNAME}" || (echo "❌ SAUCE_USERNAME missing"; exit 1)
           test -n "${SAUCE_ACCESS_KEY}" || (echo "❌ SAUCE_ACCESS_KEY missing"; exit 1)
-          echo "✅ Sauce secrets detected"
+          echo "✅ Sauce credentials available"
 
-      # 🚀 Run smoke tests on Sauce
-      - name: Run PyTest on Sauce (smoke)
-        if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
+      - name: Run Register Test on Sauce Labs (EU region)
         run: |
           mkdir -p reports allure-results
-          # -n auto parallelizes by file; keep CI fast with the smoke marker
-          pytest -n auto --dist loadfile -m "smoke" \
-                --junitxml=reports/junit-${{ matrix.browser }}.xml -q
+          pytest -v tests/test_register.py \
+            --remote \
+            --cloud saucelabs \
+            --browser chrome \
+            --headless \
+            --sauce-region eu \
+            --junitxml=reports/junit-chrome.xml
 
       - name: Upload JUnit XML
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: junit-${{ matrix.browser }}
+          name: junit-chrome
           path: reports/*.xml
-          retention-days: 7
 
-      - name: Upload Allure results (if any)
+      - name: Upload Allure Results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-results-${{ matrix.browser }}
+          name: allure-results-chrome
           path: allure-results
           if-no-files-found: ignore
-          retention-days: 7

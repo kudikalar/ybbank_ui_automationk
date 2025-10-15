@@ -9,6 +9,7 @@ class RegisterPage(BasePage):
     PASSWORD      = (By.ID, "pass")
     CONFIRM_PWD   = (By.ID, "confirm")
     REGISTER_BTN  = (By.ID, "submit")
+    EMAIL_ALREADY_EXISTS = (By.ID, "emailErr")
 
     def __init__(self, driver, env):
         super().__init__(driver, env)
@@ -24,3 +25,6 @@ class RegisterPage(BasePage):
     def enter_password(self, v):         self.type(self.PASSWORD, v)
     def enter_confirm_password(self, v): self.type(self.CONFIRM_PWD, v)
     def click_register_button(self):     self.click(self.REGISTER_BTN)
+
+    def get_email_already_exists_text(self):
+        return self.text_of(self.EMAIL_ALREADY_EXISTS)

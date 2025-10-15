@@ -75,7 +75,7 @@ def _on_sauce(driver) -> bool:
     # presence of top-level 'sauce:options' indicates Sauce run
     return any(k.startswith("sauce:") for k in caps.keys())
 
-@pytest.fixture
+@pytest.fixture(autouse=True, scope="session")
 def driver(request):
     log = get_logger("driver")
     browser  = str(request.config.getoption("browser") or "").strip().lower()

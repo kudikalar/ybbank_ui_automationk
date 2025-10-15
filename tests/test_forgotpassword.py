@@ -2,8 +2,8 @@ import allure
 import pytest
 
 from core.wait import Waiter
+from pages.forgot_password_page import ForgotPasswordPage
 from pages.home_page import HomePage
-from pages.forgot_password_page1 import ForgotPasswordPage
 from utils.assertions import assert_equals
 from utils.data_reader import read_excel
 

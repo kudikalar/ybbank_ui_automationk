@@ -50,7 +50,7 @@ def _on_sauce(driver) -> bool:
     # When running on Sauce, capabilities usually include 'sauce:options' or 'sauce:jobName'
     return any(k.startswith("sauce:") for k in caps.keys())
 
-@pytest.fixture
+@pytest.fixture(autouse=True, scope="session")
 def driver(request):
     log = get_logger("driver")
     browser   = request.config.getoption("browser")

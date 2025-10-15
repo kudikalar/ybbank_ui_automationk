@@ -21,8 +21,8 @@ jobs:
 
     env:
       # 🔐 Sauce credentials
-      SAUCE_USERNAME: ${{ secrets.SAUCE_UNAME }}
-      SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_KEY }}
+      SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
+      SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_ACCESS_KEY }}
 
       # 🧪 DriverFactory / pytest params
       REMOTE_DRIVER: sauce

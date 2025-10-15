@@ -6,4 +6,3 @@ allure-pytest==2.13.5
 python-dotenv==1.0.1
 pandas==2.2.2
 openpyxl==3.1.5
-allure==2.35.1

@@ -1,7 +1,12 @@
+# core/driver_factory.py
 import os
 import json
+import base64
 import logging
 from typing import Optional
+from urllib import request as _urlreq
+from urllib.error import HTTPError, URLError
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
@@ -12,6 +17,10 @@ from selenium.webdriver.edge.service import Service as EdgeService
 
 log = logging.getLogger("DriverFactory")
 
+
+# --- Sauce helpers ------------------------------------------------------------
+
+_SAUCE_DCS = ("us-west-1", "eu-central-1", "apac-southeast-1")
 
 def _sauce_host(region: str) -> str:
     r = (region or "us-west-1").lower()
@@ -28,6 +37,58 @@ def _norm(val, *, lower=True, default=None):
     s = str(val).strip()
     return s.lower() if lower else s
 
+
+def _probe_sauce_dc(dc: str, user: str, key: str, timeout: int = 5) -> int:
+    """
+    Returns HTTP status from Sauce REST API for the given DC.
+    200 -> creds valid in this DC; 401/403 -> invalid (or wrong DC); 0 -> network error.
+    """
+    url = f"https://api.{dc}.saucelabs.com/v1/users/{user}"
+    req = _urlreq.Request(url)
+    token = base64.b64encode(f"{user}:{key}".encode("utf-8")).decode("utf-8")
+    req.add_header("Authorization", f"Basic {token}")
+    try:
+        with _urlreq.urlopen(req, timeout=timeout) as resp:
+            return getattr(resp, "status", 200)
+    except HTTPError as e:
+        return e.code
+    except URLError:
+        return 0
+    except Exception:
+        return 0
+
+
+def _pick_sauce_region(preferred: str, user: str, key: str) -> str:
+    """
+    Try preferred first; if not 200, fall back across known DCs.
+    """
+    order = []
+    p = (preferred or "").strip().lower()
+    if p:
+        # normalize short aliases
+        if p in ("us", ""):
+            p = "us-west-1"
+        elif p == "eu":
+            p = "eu-central-1"
+        elif p == "apac" or p == "ap-southeast-1":
+            p = "apac-southeast-1"
+        order.append(p)
+    # add remaining DCs to try
+    for dc in _SAUCE_DCS:
+        if dc not in order:
+            order.append(dc)
+
+    for dc in order:
+        code = _probe_sauce_dc(dc, user, key)
+        log.info("Sauce DC probe %s -> HTTP %s", dc, code)
+        if code == 200:
+            return dc
+
+    # if all else fails, keep preferred (or US West) and let session error surface
+    return p or "us-west-1"
+
+
+# --- Driver factory -----------------------------------------------------------
 
 class DriverFactory:
     @staticmethod
@@ -126,29 +187,35 @@ class DriverFactory:
         else:
             raise ValueError(f"Unsupported remote browser: {browser!r}")
 
-        # Headless ignored by Sauce (kept for grids)
+        # Headless is ignored by Sauce but kept for generic grids
         if headless and cloud != "saucelabs":
             if b == "firefox":
                 opts.headless = True
             else:
                 opts.add_argument("--headless=new")
 
-        # Standard W3C caps
+        # W3C caps
         opts.set_capability("platformName", platform_name)
         opts.set_capability("browserVersion", browser_version)
 
         # ---- Sauce Labs
+
         if cloud == "saucelabs":
             user = _norm(os.environ.get("SAUCE_USERNAME"), lower=False)
-            key  = _norm(os.environ.get("SAUCE_ACCESS_KEY"), lower=False)
+            key = _norm(os.environ.get("SAUCE_ACCESS_KEY"), lower=False)
             if not user or not key:
                 raise RuntimeError("SAUCE_USERNAME/SAUCE_ACCESS_KEY not set (and no grid_url provided).")
 
-            remote_url = (
-                grid_url
-                if grid_url and grid_url.startswith(("http://", "https://"))
-                else f"https://{_sauce_host(sauce_region)}"
-            )
+            # normalize incoming hint; we’ll still try others on 401
+            def _norm_dc(x: str) -> str:
+                x = (x or "").strip().lower()
+                if x in ("", "us", "us-west-1"): return "us-west-1"
+                if x in ("eu", "eu-central-1"):  return "eu-central-1"
+                if x in ("apac", "ap-southeast-1", "apac-southeast-1"): return "apac-southeast-1"
+                return x
+
+            dc_hint = _norm_dc(sauce_region)
+            dc_order = [dc_hint] + [dc for dc in ("us-west-1", "eu-central-1", "apac-southeast-1") if dc != dc_hint]
 
             tags_list = [t.strip() for t in (sauce_tags or "").split(",") if t.strip()]
             sauce_options = {
@@ -163,27 +230,43 @@ class DriverFactory:
             }
             if sauce_tunnel:
                 sauce_options["tunnelName"] = sauce_tunnel
-
-            # Attach sauce:options at top level (Selenium will nest appropriately)
             opts.set_capability("sauce:options", sauce_options)
 
-            try:
-                caps = getattr(opts, "capabilities", {}) or {}
-                log.info("Sauce endpoint: %s", remote_url)
-                log.info("Capabilities: %s", json.dumps(caps, indent=2))
-            except Exception:
-                pass
+            last_err = None
+            for dc in dc_order:
+                # Build both forms of endpoint. We’ll prefer the one with Basic auth in URL.
+                host_path = _sauce_host(dc)  # e.g. ondemand.eu-central-1.saucelabs.com/wd/hub
+                remote_url_auth = f"https://{user}:{key}@{host_path}"
+                remote_url_naked = f"https://{host_path}"
 
-            try:
-                return webdriver.Remote(command_executor=remote_url, options=opts)
-            except Exception:
-                log.error("Remote session creation failed at %s", remote_url, exc_info=True)
-                raise
+                # Don’t leak secrets in logs
+                log.info("Trying Sauce data center: %s", dc)
+                try:
+                    # Use the auth-in-URL endpoint first to avoid 401s caused by ignored sauce:options
+                    log.info("Sauce endpoint: https://%s", host_path)
+                    # Optional: print capabilities without secrets
+                    try:
+                        caps = getattr(opts, "capabilities", {}) or {}
+                        cap_redacted = json.loads(json.dumps(caps))
+                        if "sauce:options" in cap_redacted:
+                            cap_redacted["sauce:options"]["username"] = "***"
+                            cap_redacted["sauce:options"]["accessKey"] = "***"
+                        log.info("Capabilities: %s", json.dumps(cap_redacted, indent=2))
+                    except Exception:
+                        pass
 
-        # ---- Selenium Grid / other cloud
-        remote_url = grid_url or "http://localhost:4444/wd/hub"
-        try:
-            return webdriver.Remote(command_executor=remote_url, options=opts)
-        except Exception:
-            log.error("Remote session creation failed at %s", remote_url, exc_info=True)
-            raise
+                    return webdriver.Remote(command_executor=remote_url_auth, options=opts)
+                except Exception as e:
+                    # If the failure smells like auth (401), try the next DC; otherwise save and break
+                    msg = str(e)
+                    last_err = e
+                    if "Authorization Required" in msg or "401" in msg:
+                        log.warning("Auth failed on %s, will try next DC if available.", dc)
+                        continue
+                    else:
+                        log.error("Remote session creation failed at https://%s", host_path, exc_info=True)
+                        break
+
+            # If we’re here, all DC attempts failed
+            raise last_err or RuntimeError("Could not create Sauce session in any data center.")
+        return None

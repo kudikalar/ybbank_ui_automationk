@@ -1,0 +1,152 @@
+name: UI Tests – Manual (Sauce Labs)
+
+on:
+  workflow_dispatch:
+    inputs:
+      tests_path:
+        description: "Pytest path (folder/file::test)"
+        type: string
+        default: "tests"
+      marker:
+        description: "Pytest marker/tag (smoke, regression, functional, all)"
+        type: choice
+        options: [smoke, regression, functional, all]
+        default: smoke
+      browsers:
+        description: "Browsers to run (chrome, firefox, edge, all)"
+        type: choice
+        options: [chrome, firefox, edge, all]
+        default: chrome
+      region:
+        description: "Sauce region"
+        type: choice
+        options: [us-west-1, eu-central-1, apac-southeast-1]
+        default: eu-central-1
+      sauce_platform:
+        description: "Platform name"
+        type: string
+        default: "Windows 11"
+      headless:
+        description: "Headless (true/false)"
+        type: boolean
+        default: true
+      workers:
+        description: "pytest -n (xdist) workers"
+        type: number
+        default: 2
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    env:
+      SAUCE_USERNAME: ${{ secrets.SAUCE_UNAME }}
+      SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_KEY }}
+      SAUCE_PLATFORM: ${{ inputs.sauce_platform }}
+      SAUCE_VERSION: latest
+      SAUCE_REGION: ${{ inputs.region }}
+      HEADLESS: ${{ inputs.headless }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ runner.os }}-${{ hashFiles('**/requirements*.txt') }}
+          restore-keys: |
+            pip-${{ runner.os }}-
+
+      - name: Install dependencies
+        run: |
+          python -m pip install -U pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install -U pytest selenium pytest-xdist allure-pytest python-dotenv
+
+      - name: Set PYTHONPATH
+        run: echo "PYTHONPATH=$GITHUB_WORKSPACE" >> $GITHUB_ENV
+
+      - name: Verify Sauce credentials
+        run: |
+          test -n "${SAUCE_USERNAME}" || (echo "❌ SAUCE_USERNAME missing"; exit 1)
+          test -n "${SAUCE_ACCESS_KEY}" || (echo "❌ SAUCE_ACCESS_KEY missing"; exit 1)
+          echo "✅ Sauce credentials available"
+
+      - name: Compute browser matrix
+        id: m
+        run: |
+          if [ "${{ inputs.browsers }}" = "all" ]; then
+            echo 'list=["chrome","firefox","edge"]' >> $GITHUB_OUTPUT
+          else
+            echo 'list=["${{ inputs.browsers }}"]' >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run per-browser
+        uses: nick-invision/retry@v2
+        with:
+          timeout_minutes: 30
+          max_attempts: 1
+          command: |
+            python - <<'PY'
+            import json, os, subprocess, sys
+            browsers = json.loads(os.environ["BROWSERS_JSON"])
+            tests_path = os.environ["TESTS"]
+            marker = os.environ["MARKER"]
+            region = os.environ["REGION"]
+            headless = os.environ["HEADLESS"]
+            workers = os.environ["WORKERS"]
+
+            for b in browsers:
+                print(f"\n=== Running on {b} ===")
+                mark_args = [] if marker == "all" else ["-m", marker]
+                xdist = ["-n", workers] if workers and workers != "0" else []
+                cmd = [
+                    "pytest", "-v", tests_path, *mark_args,
+                    "--remote", "--cloud", "saucelabs",
+                    "--browser", b, "--sauce-region", region,
+                    "--junitxml", f"reports/junit-{b}-{marker}.xml",
+                    "--alluredir", f"allure-results/{b}-{marker}"
+                ]
+                # headless flag (if your framework reads it)
+                if headless.lower() in ("1","true","yes"):
+                    cmd += ["--headless"]
+                cmd += xdist
+                print("CMD:", " ".join(cmd))
+                rc = subprocess.call(cmd)
+                if rc != 0:
+                    sys.exit(rc)
+            PY
+        env:
+          BROWSERS_JSON: ${{ steps.m.outputs.list }}
+          TESTS: ${{ inputs.tests_path }}
+          MARKER: ${{ inputs.marker }}
+          REGION: ${{ inputs.region }}
+          HEADLESS: ${{ inputs.headless }}
+          WORKERS: ${{ inputs.workers }}
+
+      - name: Upload JUnit XML
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: "junit-${{ inputs.marker }}"
+          path: reports/*.xml
+          if-no-files-found: ignore
+
+      - name: Upload Allure Results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: "allure-results-${{ inputs.marker }}"
+          path: allure-results
+          if-no-files-found: ignore

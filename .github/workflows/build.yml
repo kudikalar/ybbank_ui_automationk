@@ -1,0 +1,69 @@
+name: Build (Python)
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+  workflow_dispatch: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ runner.os }}-${{ hashFiles('**/requirements*.txt') }}
+          restore-keys: |
+            pip-${{ runner.os }}-
+
+      - name: Install deps
+        run: |
+          python -m pip install -U pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          # Optional linters (won't fail if not present)
+          pip install -q flake8 || true
+          pip install -q mypy || true
+
+      - name: Lint (best-effort)
+        continue-on-error: true
+        run: |
+          if command -v flake8 >/dev/null 2>&1; then flake8 . || true; fi
+
+      - name: Type-check (best-effort)
+        continue-on-error: true
+        run: |
+          if command -v mypy >/dev/null 2>&1; then mypy . || true; fi
+
+      - name: Build wheel (if pyproject exists)
+        run: |
+          if [ -f pyproject.toml ]; then
+            python -m pip install build
+            python -m build --wheel
+          else
+            echo "No pyproject.toml; skipping wheel build."
+          fi
+
+      - name: Upload dist artifacts (if any)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: python-dist
+          path: |
+            dist/*.whl
+            dist/*.tar.gz
+          if-no-files-found: ignore

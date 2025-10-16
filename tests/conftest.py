@@ -1,6 +1,9 @@
+# conftest.py
 import os
 import pytest
+from argparse import BooleanOptionalAction
 from pathlib import Path
+
 from core.driver_factory import DriverFactory
 from utils.config_reader import Config
 from core.logger import setup_logging, shutdown_logging, get_logger
@@ -17,6 +20,7 @@ except Exception:
 
 _cfg = Config()
 
+
 def _region_normalize(val: str) -> str:
     v = (val or "").lower().strip()
     if v in ("us", "us-west-1", ""):
@@ -27,11 +31,13 @@ def _region_normalize(val: str) -> str:
         return "apac-southeast-1"
     return v
 
+
 def _bool_env(name: str, fallback: bool = False) -> bool:
     v = os.getenv(name)
     if v is None:
         return fallback
     return str(v).strip().lower() in ("1", "true", "yes", "y", "on")
+
 
 def pytest_addoption(parser):
     parser.addoption("--browser",   action="store",  default=(os.getenv("SAUCE_BROWSER") or _cfg.browser))
@@ -40,21 +46,34 @@ def pytest_addoption(parser):
     parser.addoption("--grid-url",  action="store",  default=(os.getenv("GRID_URL") or (_cfg.grid_url or "")))
     parser.addoption("--base-url",  action="store",  default=getattr(_cfg, "base_url", ""))
     parser.addoption("--env",       action="store",  default=DEFAULT_ENV, help="Environment alias or full URL")
-    parser.addoption("--remote",    action="store_true",
-                     default=(str(os.getenv("REMOTE_DRIVER", "")).strip().lower() in ("sauce", "grid")
-                              or bool(getattr(_cfg, "remote", False))))
+
+    # ✅ Explicit toggle. Default is local (False). Use --remote to enable,
+    # or --no-remote to force local even if configs suggest otherwise.
+    parser.addoption(
+        "--remote",
+        action=BooleanOptionalAction,
+        default=False,
+        help="Use remote driver (Sauce/Grid). Use --no-remote to force local."
+    )
+
     parser.addoption("--headless",  action="store_true", default=_bool_env("HEADLESS", getattr(_cfg, "headless", False)))
-    parser.addoption("--sauce-region", action="store",
-                     choices=["us","eu","apac","us-west-1","eu-central-1","apac-southeast-1"],
-                     default=_region_normalize(os.getenv("SAUCE_REGION", "us")))
+    parser.addoption(
+        "--sauce-region",
+        action="store",
+        choices=["us", "eu", "apac", "us-west-1", "eu-central-1", "apac-southeast-1"],
+        default=_region_normalize(os.getenv("SAUCE_REGION", "us")),
+    )
+
 
 @pytest.hookimpl(tryfirst=True)
 def pytest_sessionstart(session):
     setup_logging(log_dir="logs", log_file="test_run.log")
 
+
 @pytest.hookimpl(trylast=True)
 def pytest_sessionfinish(session, exitstatus):
     shutdown_logging()
+
 
 @pytest.fixture(autouse=True, scope="session")
 def _log_banner():
@@ -63,6 +82,7 @@ def _log_banner():
     yield
     log.info("=== Pytest session finished ===")
 
+
 @pytest.fixture
 def env(pytestconfig):
     opt_env = pytestconfig.getoption("env")
@@ -70,12 +90,12 @@ def env(pytestconfig):
         return opt_env
     return pytestconfig.getoption("base_url")
 
+
 def _on_sauce(driver) -> bool:
     caps = getattr(driver, "capabilities", {}) or {}
-    # presence of top-level 'sauce:options' indicates Sauce run
-    return any(k.startswith("sauce:") for k in caps.keys())
+    return any(str(k).startswith("sauce:") for k in caps.keys())
 
-@pytest.fixture
+@pytest.fixture(autouse=True, scope="session")
 def driver(request):
     log = get_logger("driver")
     browser  = str(request.config.getoption("browser") or "").strip().lower()
@@ -85,18 +105,15 @@ def driver(request):
     remote   = bool(request.config.getoption("remote"))
     headless = bool(request.config.getoption("headless"))
 
-    # Defaults (may be overridden inside DriverFactory via env)
+    # Defaults (may be overridden inside DriverFactory via env for Sauce values only)
     platform_name   = "Windows 11"
     browser_version = "latest"
-    sauce_build     = os.getenv("SAUCE_BUILD", "RegisterSuite-1")
-    sauce_name      = request.node.name
-    sauce_tags      = os.getenv("SAUCE_TAGS", "pytest,demowebshop,register")
+    sauce_build     = os.getenv("SAUCE_BUILD", "Local/Test Run")
+    sauce_name      = getattr(request.node, "name", "PyTest Run")
+    sauce_tags      = os.getenv("SAUCE_TAGS", "pytest")
     sauce_region    = _region_normalize(request.config.getoption("sauce_region"))
 
-    # If REMOTE_DRIVER=sauce but --cloud not set, default to saucelabs
-    if remote and not cloud and str(os.getenv("REMOTE_DRIVER","")).strip().lower() == "sauce":
-        cloud = "saucelabs"
-
+    # If remote Sauce requested but creds missing, skip (avoids blowing up local runs)
     if remote and (cloud == "saucelabs") and (not grid_url):
         if not (os.getenv("SAUCE_USERNAME") and os.getenv("SAUCE_ACCESS_KEY")):
             pytest.skip("SAUCE_USERNAME/SAUCE_ACCESS_KEY not set and no --grid-url provided; skipping Sauce run.")
@@ -120,7 +137,7 @@ def driver(request):
         drv.implicitly_wait(0)
         yield drv
 
-        # Mark job result on Sauce
+        # Mark job result on Sauce (best-effort)
         try:
             if _on_sauce(drv):
                 outcome = "passed"
@@ -137,9 +154,30 @@ def driver(request):
         except Exception as e:
             log.error(f"driver.quit() failed: {e}", exc_info=True)
 
+
 @pytest.hookimpl(hookwrapper=True, tryfirst=True)
 def pytest_runtest_makereport(item, call):
     outcome = yield
     rep = outcome.get_result()
     if rep.when == "call":
         setattr(item, "rep_call", rep)
+
+@pytest.fixture
+def seed_registered_user(driver, request):
+    """Ensure a user with given email already exists in localStorage."""
+    email = request.param["Email"]
+    user = {
+        "first": request.param.get("FirstName", "Seed"),
+        "last": request.param.get("LastName", "User"),
+        "email": email,
+        "password": request.param.get("Password", "Seed@123")
+    }
+    # Navigate once so JS context exists
+    driver.get("https://yuvanbank-qa-r1-test.netlify.app/")
+    driver.execute_script("""
+        const key = 'yuvanbank_users';
+        const existing = JSON.parse(localStorage.getItem(key) || '[]');
+        const filtered = existing.filter(u => u.email !== arguments[0].email);
+        filtered.push(arguments[0]);
+        localStorage.setItem(key, JSON.stringify(filtered));
+    """, user)

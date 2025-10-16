@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 from core.base_page import BasePage
+import allure
 
 class RegisterPage(BasePage):
     #Page Objects

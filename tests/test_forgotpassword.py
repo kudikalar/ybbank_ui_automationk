@@ -11,11 +11,12 @@ test_data = read_excel("data/register_test_data.xlsx")
 
 
 @allure.feature("ForgotPassword")
+@pytest.mark.regression
 class TestForgotPassword:
 
-    @allure.story("Verify forgot password with valid email")
-    @pytest.mark.smoke
-    @pytest.mark.parametrize("data", test_data)
+    # @allure.story("Verify forgot password with valid email")
+    # @pytest.mark.smoke
+    # @pytest.mark.parametrize("data", test_data)
     def test_verify_forgot_password_functionality_with_valid_data(self, driver, data, env):
         hp = HomePage(driver, env)
         hp.open_home()
@@ -36,9 +37,9 @@ class TestForgotPassword:
             msg="Password recovery email sent successfully"
         )
 
-    @allure.story("Verify forgot password with invalid email")
-    @pytest.mark.regression
-    @pytest.mark.parametrize("data", test_data)
+    # @allure.story("Verify forgot password with invalid email")
+    # @pytest.mark.regression
+    # @pytest.mark.parametrize("data", test_data)
     def test_verify_forgot_password_functionality_with_invalid_data(self, driver, data, env):
         hp = HomePage(driver, env)
         hp.open_home()

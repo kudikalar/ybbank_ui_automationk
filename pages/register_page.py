@@ -10,7 +10,6 @@ class RegisterPage(BasePage):
     PASSWORD      = (By.ID, "pass")
     CONFIRM_PWD   = (By.ID, "confirm")
     REGISTER_BTN  = (By.ID, "submit")
-    EMAIL_ALREADY_EXISTS = (By.ID, "emailErr")
     EMAIL_VALIDATION_ERROR = (By.ID,"emailErr")
 
     def __init__(self, driver, env):

@@ -61,19 +61,24 @@ Then generate and open report:
 
 Run with Specific Class with a Test including allure report
 [pytest tests/test_register.py::TestRegister --alluredir=reports/allure-results]
+[pytest tests/test_login.py::TestLogin --alluredir=reports/allure-results]
 
 Generate Allure Report as Server
 [allure serve reports/allure-results]
 
 Local Execution on Chrome without headless or browser visible
 [pytest -v tests/test_register.py --browser chrome --no-remote]
+[pytest -v tests/test_login.py --browser chrome --no-remote]
 
 Local headless Firefox:
 [pytest -v tests/test_register.py --browser firefox --no-remote --headless]
+[pytest -v tests/test_login.py --browser firefox --no-remote --headless]
 
 Sauce EU:
 [pytest -v tests/test_register.py --remote --cloud saucelabs --browser chrome --sauce-region eu-central-1]
+[pytest -v tests/test_login.py --remote --cloud saucelabs --browser chrome --sauce-region eu-central-1]
 
 Single Method from class
 [pytest -v tests/test_register.py::TestRegister::test_verify_system_prevents_duplicate_email_registration --browser chrome --no-remote]
+[pytest -v tests/test_login.py::TestLogin::test_login_with_valid_credentials --browser chrome --no-remote]
 

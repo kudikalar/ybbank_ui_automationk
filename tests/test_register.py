@@ -54,13 +54,6 @@ class TestRegister:
         actual = rp.get_email_already_exists_text()
         assert actual.strip().lower() in ("email already exists", "user with this email already exists")
 
-
-
-
-
-
-
-
     @allure.story("YW-T3-Verify register functionality with Invalid Email")
     @pytest.mark.functional
     @pytest.mark.yw_t3

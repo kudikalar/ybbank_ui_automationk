@@ -11,6 +11,7 @@ class RegisterPage(BasePage):
     CONFIRM_PWD   = (By.ID, "confirm")
     REGISTER_BTN  = (By.ID, "submit")
     EMAIL_VALIDATION_ERROR = (By.ID,"emailErr")
+    ERROR_MESSAGE = (By.ID, "emailErr")
 
     def __init__(self, driver, env):
         super().__init__(driver, env)
@@ -27,3 +28,4 @@ class RegisterPage(BasePage):
     def enter_confirm_password(self, v): self.type(self.CONFIRM_PWD, v)
     def click_register_button(self):     self.click(self.REGISTER_BTN)
     def email_validation_error(self):    return self.text_of(self.EMAIL_VALIDATION_ERROR)
+    def get_email_error_text(self):   return self.text_of(self.ERROR_MESSAGE).strip()

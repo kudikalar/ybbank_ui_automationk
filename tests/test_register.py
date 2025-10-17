@@ -73,3 +73,23 @@ class TestRegister:
 
         error_text = rp.email_validation_error()
         assert error_text == "Enter a valid email address."
+
+    @allure.story("Verify error message when email field is left blank")
+    @pytest.mark.functional
+    @pytest.mark.YWT26
+    @pytest.mark.parametrize("data", test_data)
+    def test_Verify_error_shown_when_email_field_is_blank(self, driver, data, env):
+        hp = HomePage(driver, env)
+        hp.open_home()
+
+        rp = RegisterPage(driver, env)
+        rp.open_register_page()
+        rp.enter_first_name(data["FirstName"])
+        rp.enter_last_name(data["LastName"])
+        # Intentionally do NOT set email to trigger validation
+        rp.enter_password(data["Password"])
+        rp.enter_confirm_password(data["ConfirmPassword"])
+        rp.click_register_button()
+
+        error_text = rp.get_email_error_text()
+        assert error_text == "Email is required."

@@ -93,3 +93,24 @@ class TestRegister:
 
         error_text = rp.get_email_error_text()
         assert error_text == "Email is required."
+
+    @allure.story("Verify error when confirm password does not match password")
+    @pytest.mark.regreession
+    @pytest.mark.YWT12
+    @pytest.mark.parametrize("data", test_data)
+    def test_Verify_error_when_confirm_password_does_not_match_password(self, driver, data, env):
+        hp = HomePage(driver, env)
+        hp.open_home()
+
+        rp = RegisterPage(driver, env)
+        rp.open_register_page()
+        rp.enter_first_name(data["FirstName"])
+        rp.enter_last_name(data["LastName"])
+        rp.enter_email_address(data["Email"])
+
+        rp.enter_password(data["Password"])
+        rp.enter_confirm_password(data["ConfirmPassword"])
+        rp.click_register_button()
+
+        cnf_password_error_text = rp.get_cnf_password_error_text()
+        assert cnf_password_error_text == "Passwords do not match."

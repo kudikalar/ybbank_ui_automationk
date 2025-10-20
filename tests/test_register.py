@@ -6,6 +6,7 @@ from pages.login_page import LoginPage
 from pages.register_page import RegisterPage
 from utils.assertions import assert_equals
 from utils.data_reader import read_excel
+from core.base_page import WebElement, WebDriver
 # Read by sheet name
 test_data = read_excel("data/register_test_data.xlsx", sheet_name="Sheet1")
 test_data1 = read_excel("data/register_test_data.xlsx", sheet_name=2)
@@ -93,3 +94,36 @@ class TestRegister:
 
         error_text = rp.get_email_error_text()
         assert error_text == "Email is required."
+
+    @allure.story("Verify user able to see all the fields in register page as per requirements")
+    @pytest.mark.functional
+    @pytest.mark.YWT8
+    # @pytest.mark.parametrize("data", test_data)
+    def test_verify_user_visibility_of_register_page(self,driver,env):
+
+        hp = HomePage(driver,env)
+        hp.open_home()
+
+        rp = RegisterPage(driver,env)
+        rp.open_register_page()
+        #checking the visibility of the first name, the first name field locator is already placed in register page
+        #and the required locators are placed in register page
+        # rp.is_visible(rp.FIRSTNAME) # returns true if visible
+        # rp.is_visible(rp.LASTNAME)
+        # rp.is_visible(rp.EMAIL)
+        # rp.is_visible(rp.PASSWORD)
+        # rp.is_visible(rp.CONFIRM_PWD)
+        # rp.is_visible(rp.REGISTER_BTN)
+        assert rp.is_visible(rp.FIRSTNAME)
+        assert rp.is_visible(rp.LASTNAME)
+        assert rp.is_visible(rp.EMAIL)
+        assert rp.is_visible(rp.CONFIRM_PWD)
+        assert rp.is_visible(rp.REGISTER_BTN)
+        #if any of locator is not found or visible, the test is gonna fail, make sure all the locators are visible to run the test.
+
+
+        # rp.wait_visible(rp.FIRSTNAME) # this is used to wait until the web-element is visible
+
+
+
+

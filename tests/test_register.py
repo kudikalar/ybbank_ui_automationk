@@ -8,7 +8,7 @@ from utils.assertions import assert_equals
 from utils.data_reader import read_excel
 # Read by sheet name
 test_data = read_excel("data/register_test_data.xlsx", sheet_name="Sheet1")
-test_data1 = read_excel("data/register_test_data.xlsx", sheet_name=2)
+test_data1 = read_excel("data/register_test_data.xlsx", sheet_name="Fieldsblank")
 
 @allure.feature("Registration")
 class TestRegister:
@@ -93,3 +93,37 @@ class TestRegister:
 
         error_text = rp.get_email_error_text()
         assert error_text == "Email is required."
+
+    @allure.story("Verify error displayed when form submits blank")
+    @pytest.mark.functional
+    @pytest.mark.YWT45
+    @pytest.mark.parametrize("data", test_data1)
+    def test_Verify_error_displayed_when_form_submits_blank(self, driver, data, env):
+        hp = HomePage(driver, env)
+        hp.open_home()
+
+        rp = RegisterPage(driver, env)
+        rp.open_register_page()
+        # Intentionally do NOT set required fields to trigger validation
+        # rp.enter_first_name(data["FirstName"])
+        # rp.enter_last_name(data["LastName"])
+        # rp.enter_email_address(data["Email"])
+        # rp.enter_password(data["Password"])
+        # rp.enter_confirm_password(data["ConfirmPassword"])
+        rp.click_register_button()
+
+        error_text = rp.get_first_name_error_text()
+        assert error_text == "First Name is required."
+        error_text = rp.get_last_name_error_text()
+        assert error_text == "Last Name is required."
+        error_text = rp.get_email1_error_text()
+        assert error_text == "Email is required."
+        error_text = rp.get_password_error_text()
+        assert error_text == "Password is required."
+        error_text = rp.get_confirm1_password_text()
+        assert error_text == "Confirm Password is required."
+
+
+
+
+

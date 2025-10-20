@@ -12,6 +12,11 @@ class RegisterPage(BasePage):
     REGISTER_BTN  = (By.ID, "submit")
     EMAIL_VALIDATION_ERROR = (By.ID,"emailErr")
     ERROR_MESSAGE = (By.ID, "emailErr")
+    FIRSTNAME_ERROR_MSG = (By.ID, "firstErr")
+    LASTNAME_ERROR_MSG = (By.ID, "lastErr")
+    EMAIL_ADDRESS_ERROR_MSG = (By.XPATH,"//*[@id='emailErr']")
+    PASSWORD_ERROR_MSG = (By.XPATH, "//*[@id='passErr']")
+    CONFIRM_PWD_ERROR_MSG = (By.XPATH, "//*[@id='confirmErr']")
 
     def __init__(self, driver, env):
         super().__init__(driver, env)
@@ -29,3 +34,8 @@ class RegisterPage(BasePage):
     def click_register_button(self):     self.click(self.REGISTER_BTN)
     def email_validation_error(self):    return self.text_of(self.EMAIL_VALIDATION_ERROR)
     def get_email_error_text(self):   return self.text_of(self.ERROR_MESSAGE).strip()
+    def get_first_name_error_text(self): return self.text_of(self.FIRSTNAME_ERROR_MSG)
+    def get_last_name_error_text(self): return self.text_of(self.LASTNAME_ERROR_MSG)
+    def get_email1_error_text(self): return self.text_of(self.EMAIL_ADDRESS_ERROR_MSG)
+    def get_password_error_text(self): return self.text_of(self.PASSWORD_ERROR_MSG)
+    def get_confirm1_password_text(self): return self.text_of(self.CONFIRM_PWD_ERROR_MSG)

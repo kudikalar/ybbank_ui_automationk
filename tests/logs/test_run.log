@@ -76,3 +76,324 @@ Stacktrace:
 2025-09-25 22:18:50,529 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
 2025-09-25 22:18:59,357 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
 2025-09-25 22:18:59,500 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-01 06:29:51,220 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-01 06:30:00,833 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-01 06:30:05,131 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/books
+2025-10-01 06:30:07,768 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Computing and Internet')
+2025-10-01 06:30:09,075 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'addtocart_13_EnteredQuantity'): '8'
+2025-10-01 06:30:09,752 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'add-to-cart-button-13')
+2025-10-01 06:30:10,396 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//*[@id='topcartlink']/a/span[1]")
+2025-10-01 06:30:11,528 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ZipPostalCode'): '500081'
+2025-10-01 06:30:12,182 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'termsofservice')
+2025-10-01 06:30:12,835 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'checkout')
+2025-10-01 06:30:22,712 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-01 06:45:04,813 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-01 06:45:11,077 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-01 06:45:15,913 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Computers')
+2025-10-01 06:45:17,737 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Desktops')
+2025-10-01 06:45:19,979 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Build your own cheap computer')
+2025-10-01 06:45:22,169 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'add-to-cart-button-72')
+2025-10-01 06:45:22,821 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//*[@id='topcartlink']/a/span[1]")
+2025-10-01 06:45:32,068 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-01 09:18:16,112 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-01 09:18:16,957 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-01 09:22:32,006 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-01 09:22:39,452 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-01 09:22:45,293 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Computers')
+2025-10-01 09:22:47,021 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Desktops')
+2025-10-01 09:22:48,872 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Build your own cheap computer')
+2025-10-01 09:22:51,366 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'add-to-cart-button-72')
+2025-10-01 09:22:52,002 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//*[@id='topcartlink']/a/span[1]")
+2025-10-01 09:22:55,403 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-04 10:03:32,888 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-04 10:04:34,456 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-04 10:04:40,750 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Computers')
+2025-10-04 10:04:43,078 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Desktops')
+2025-10-04 10:04:45,041 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Build your own cheap computer')
+2025-10-04 10:04:46,811 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'add-to-cart-button-72')
+2025-10-04 10:04:47,549 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//*[@id='topcartlink']/a/span[1]")
+2025-10-04 10:04:53,705 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-04 10:06:40,509 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-04 10:06:47,465 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-04 10:06:55,153 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Computers')
+2025-10-04 10:06:56,625 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Desktops')
+2025-10-04 10:06:58,679 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Build your own cheap computer')
+2025-10-04 10:07:00,301 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'add-to-cart-button-72')
+2025-10-04 10:07:00,988 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//*[@id='topcartlink']/a/span[1]")
+2025-10-04 10:07:04,954 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-08 16:26:42,381 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-08 16:26:46,827 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-08 16:26:51,727 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Computers')
+2025-10-08 16:26:53,151 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Notebooks')
+2025-10-08 16:26:55,718 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', '14.1-inch Laptop')
+2025-10-08 16:26:56,375 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'add-to-cart-button-31')
+2025-10-08 16:26:57,914 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//*[@id='topcartlink']/a/span[1]")
+2025-10-08 16:27:00,104 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-08 16:32:42,936 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-08 16:32:44,283 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-08 16:32:49,135 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Computers')
+2025-10-08 16:32:50,542 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Notebooks')
+2025-10-08 16:32:52,474 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', '14.1-inch Laptop')
+2025-10-08 16:32:53,160 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'add-to-cart-button-31')
+2025-10-08 16:32:54,715 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//*[@id='topcartlink']/a/span[1]")
+2025-10-08 16:32:56,909 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-08 16:37:45,008 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-08 16:37:46,289 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-08 16:37:51,718 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Computers')
+2025-10-08 16:37:53,145 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Notebooks')
+2025-10-08 16:37:55,158 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', '14.1-inch Laptop')
+2025-10-08 16:37:55,843 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'add-to-cart-button-31')
+2025-10-08 16:37:57,337 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//*[@id='topcartlink']/a/span[1]")
+2025-10-08 16:37:59,524 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-08 16:43:32,455 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-08 16:43:33,732 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-08 16:43:39,003 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Computers')
+2025-10-08 16:43:40,415 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Notebooks')
+2025-10-08 16:43:42,429 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', '14.1-inch Laptop')
+2025-10-08 16:43:43,093 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'add-to-cart-button-31')
+2025-10-08 16:43:44,687 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//*[@id='topcartlink']/a/span[1]")
+2025-10-08 16:43:46,856 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-08 16:44:27,225 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-08 16:44:28,551 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-08 16:44:34,206 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Computers')
+2025-10-08 16:44:35,684 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Notebooks')
+2025-10-08 16:44:37,158 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', '14.1-inch Laptop')
+2025-10-08 16:44:37,791 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'add-to-cart-button-31')
+2025-10-08 16:44:39,300 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//*[@id='topcartlink']/a/span[1]")
+2025-10-08 16:44:41,495 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-08 16:48:47,449 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-08 16:48:48,779 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-08 16:48:54,365 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Computers')
+2025-10-08 16:48:55,815 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Notebooks')
+2025-10-08 16:48:57,849 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', '14.1-inch Laptop')
+2025-10-08 16:48:58,505 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'add-to-cart-button-31')
+2025-10-08 16:49:00,048 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//*[@id='topcartlink']/a/span[1]")
+2025-10-08 16:49:02,242 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-08 17:49:12,600 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-08 17:49:14,407 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-08 17:49:20,161 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Computers')
+2025-10-08 17:49:21,597 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Notebooks')
+2025-10-08 17:49:23,618 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', '14.1-inch Laptop')
+2025-10-08 17:49:24,285 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'add-to-cart-button-31')
+2025-10-08 17:49:25,836 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//*[@id='topcartlink']/a/span[1]")
+2025-10-08 17:49:26,060 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ZipPostalCode'): '500081'
+2025-10-08 17:49:26,773 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'termsofservice')
+2025-10-08 17:49:27,441 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'checkout')
+2025-10-08 17:49:29,628 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-08 21:00:21,445 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-08 21:01:16,767 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-08 21:01:34,521 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Computers')
+2025-10-08 21:01:36,380 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Notebooks')
+2025-10-08 21:01:39,698 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', '14.1-inch Laptop')
+2025-10-08 21:01:40,439 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'add-to-cart-button-31')
+2025-10-08 21:01:42,082 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//*[@id='topcartlink']/a/span[1]")
+2025-10-08 21:01:42,591 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ZipPostalCode'): '500081'
+2025-10-08 21:01:43,451 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'termsofservice')
+2025-10-08 21:01:45,202 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'checkout')
+2025-10-08 21:01:49,227 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 13:30:57,169 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 13:30:59,846 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-14 13:31:04,716 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Register')
+2025-10-14 13:31:04,774 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): 'John'
+2025-10-14 13:31:04,853 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): 'Doe'
+2025-10-14 13:31:04,919 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): ''
+2025-10-14 13:31:04,990 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): 'Password123'
+2025-10-14 13:31:05,076 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): 'Password123'
+2025-10-14 13:31:05,773 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-10-14 13:31:08,279 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 13:32:34,965 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 13:32:36,419 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 13:32:52,237 | WARNING | MainProcess | MainThread | BasePage | Click failed (1/3) for ('link text', 'Register'): Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff711e2e955+80021]
+	GetHandleVerifier [0x0x7ff711e2e9b0+80112]
+	(No symbol) [0x0x7ff711bb060f]
+	(No symbol) [0x0x7ff711c08854]
+	(No symbol) [0x0x7ff711c08b1c]
+	(No symbol) [0x0x7ff711c5c927]
+	(No symbol) [0x0x7ff711c3126f]
+	(No symbol) [0x0x7ff711c5968a]
+	(No symbol) [0x0x7ff711c31003]
+	(No symbol) [0x0x7ff711bf95d1]
+	(No symbol) [0x0x7ff711bfa3f3]
+	GetHandleVerifier [0x0x7ff7120edd0d+2960461]
+	GetHandleVerifier [0x0x7ff7120e7fca+2936586]
+	GetHandleVerifier [0x0x7ff712108a07+3070279]
+	GetHandleVerifier [0x0x7ff711e4843e+185214]
+	GetHandleVerifier [0x0x7ff711e4fe8f+216527]
+	GetHandleVerifier [0x0x7ff711e37b94+117460]
+	GetHandleVerifier [0x0x7ff711e37d4f+117903]
+	GetHandleVerifier [0x0x7ff711e1dc28+11112]
+	BaseThreadInitThunk [0x0x7fff281ce8d7+23]
+	RtlUserThreadStart [0x0x7fff2918c53c+44]
+
+2025-10-14 13:33:02,579 | WARNING | MainProcess | MainThread | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001ED83557110>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/d749253f36ed93ba1a07cd81306654f5
+2025-10-14 13:33:06,671 | WARNING | MainProcess | MainThread | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001ED83583260>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/d749253f36ed93ba1a07cd81306654f5
+2025-10-14 13:33:10,772 | WARNING | MainProcess | MainThread | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001ED83581910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/d749253f36ed93ba1a07cd81306654f5
+2025-10-14 13:33:14,878 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 13:33:53,598 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 13:33:54,905 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 13:34:10,661 | WARNING | MainProcess | MainThread | BasePage | Click failed (1/3) for ('class name', 'btn register-btn'): Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff711e2e955+80021]
+	GetHandleVerifier [0x0x7ff711e2e9b0+80112]
+	(No symbol) [0x0x7ff711bb060f]
+	(No symbol) [0x0x7ff711c08854]
+	(No symbol) [0x0x7ff711c08b1c]
+	(No symbol) [0x0x7ff711c5c927]
+	(No symbol) [0x0x7ff711c3126f]
+	(No symbol) [0x0x7ff711c5968a]
+	(No symbol) [0x0x7ff711c31003]
+	(No symbol) [0x0x7ff711bf95d1]
+	(No symbol) [0x0x7ff711bfa3f3]
+	GetHandleVerifier [0x0x7ff7120edd0d+2960461]
+	GetHandleVerifier [0x0x7ff7120e7fca+2936586]
+	GetHandleVerifier [0x0x7ff712108a07+3070279]
+	GetHandleVerifier [0x0x7ff711e4843e+185214]
+	GetHandleVerifier [0x0x7ff711e4fe8f+216527]
+	GetHandleVerifier [0x0x7ff711e37b94+117460]
+	GetHandleVerifier [0x0x7ff711e37d4f+117903]
+	GetHandleVerifier [0x0x7ff711e1dc28+11112]
+	BaseThreadInitThunk [0x0x7fff281ce8d7+23]
+	RtlUserThreadStart [0x0x7fff2918c53c+44]
+
+2025-10-14 13:34:20,705 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 13:34:42,512 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 13:34:43,892 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 13:34:45,369 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', '/html/body/header/div[2]/button[1]')
+2025-10-14 13:35:00,527 | WARNING | MainProcess | MainThread | urllib3.connectionpool | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F2A495F9B0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/f71f29a675634e07688290039c22b6ee
+2025-10-14 13:35:04,631 | WARNING | MainProcess | MainThread | urllib3.connectionpool | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F2A49E3FE0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/f71f29a675634e07688290039c22b6ee
+2025-10-14 13:35:08,745 | WARNING | MainProcess | MainThread | urllib3.connectionpool | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F2A49E1940>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/f71f29a675634e07688290039c22b6ee
+2025-10-14 13:35:12,835 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 13:36:29,024 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 13:36:30,308 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 13:36:32,022 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', '/html/body/header/div[2]/button[1]')
+2025-10-14 13:36:32,080 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'John'
+2025-10-14 13:36:32,209 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Doe'
+2025-10-14 13:36:32,290 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): ''
+2025-10-14 13:36:32,357 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Password123'
+2025-10-14 13:36:32,436 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Password123'
+2025-10-14 13:36:33,135 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 13:36:35,412 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 13:39:52,896 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 13:39:54,377 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 13:39:55,868 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', '/html/body/header/div[2]/button[1]')
+2025-10-14 13:39:55,927 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'John'
+2025-10-14 13:39:56,048 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Doe'
+2025-10-14 13:39:56,133 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): ''
+2025-10-14 13:39:56,230 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Password123'
+2025-10-14 13:39:56,324 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Password123'
+2025-10-14 13:39:57,021 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 13:39:59,327 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 13:40:02,901 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 13:40:04,150 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 13:40:05,689 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', '/html/body/header/div[2]/button[1]')
+2025-10-14 13:40:05,747 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'John'
+2025-10-14 13:40:05,834 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Doe'
+2025-10-14 13:40:05,918 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): ''
+2025-10-14 13:40:06,012 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Password123'
+2025-10-14 13:40:06,096 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Password123'
+2025-10-14 13:40:06,792 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 13:40:09,092 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 13:41:38,202 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 13:41:39,479 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 13:41:41,025 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', '/html/body/header/div[2]/button[1]')
+2025-10-14 13:41:41,084 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'John'
+2025-10-14 13:41:41,200 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Doe'
+2025-10-14 13:41:41,316 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): ''
+2025-10-14 13:41:41,383 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Password123'
+2025-10-14 13:41:41,483 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Password123'
+2025-10-14 13:41:42,221 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 13:41:44,568 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 13:42:14,538 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 13:42:15,878 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 13:42:19,376 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', '/html/body/header/div[2]/button[1]')
+2025-10-14 13:42:19,436 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'John'
+2025-10-14 13:42:19,539 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Doe'
+2025-10-14 13:42:19,618 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): ''
+2025-10-14 13:42:19,688 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Password123'
+2025-10-14 13:42:19,765 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Password123'
+2025-10-14 13:42:20,480 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 13:42:22,785 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 13:47:06,768 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 13:47:08,096 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 13:47:09,609 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', '/html/body/header/div[2]/button[1]')
+2025-10-14 13:47:09,667 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'John'
+2025-10-14 13:47:09,788 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Doe'
+2025-10-14 13:47:09,906 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): ''
+2025-10-14 13:47:10,001 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Password123'
+2025-10-14 13:47:10,093 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Password123'
+2025-10-14 13:47:10,791 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 13:47:13,051 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 13:49:08,090 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 13:49:09,362 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 13:49:11,411 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', '/html/body/header/div[2]/button[1]')
+2025-10-14 13:49:11,472 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'John'
+2025-10-14 13:49:11,588 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Doe'
+2025-10-14 13:49:11,722 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): ''
+2025-10-14 13:49:11,805 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Password123'
+2025-10-14 13:49:11,892 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Password123'
+2025-10-14 13:49:12,585 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 13:49:14,754 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 13:50:57,022 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 13:50:58,304 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 13:50:59,866 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', '/html/body/header/div[2]/button[1]')
+2025-10-14 13:50:59,923 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'John'
+2025-10-14 13:51:00,037 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Doe'
+2025-10-14 13:51:00,125 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): ''
+2025-10-14 13:51:00,189 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Password123'
+2025-10-14 13:51:00,271 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Password123'
+2025-10-14 13:51:00,966 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 13:51:03,278 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 13:51:41,771 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 13:51:43,058 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 13:51:45,594 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', '/html/body/header/div[2]/button[1]')
+2025-10-14 13:51:45,652 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'John'
+2025-10-14 13:51:45,757 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Doe'
+2025-10-14 13:51:45,835 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): ''
+2025-10-14 13:51:45,907 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Password123'
+2025-10-14 13:51:45,989 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Password123'
+2025-10-14 13:51:46,692 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 13:51:49,051 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 13:55:50,456 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 13:55:51,811 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 13:55:53,504 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', '/html/body/header/div[2]/button[1]')
+2025-10-14 13:55:53,563 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'sai'
+2025-10-14 13:55:53,675 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'ram'
+2025-10-14 13:55:53,755 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): ''
+2025-10-14 13:55:53,830 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'sai123'
+2025-10-14 13:55:53,912 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'sai123'
+2025-10-14 13:55:54,616 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 13:55:56,794 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 15:51:01,075 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 15:51:05,369 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 15:51:07,897 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', '/html/body/header/div[2]/button[1]')
+2025-10-14 15:51:08,094 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'sai'
+2025-10-14 15:51:08,401 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'ram'
+2025-10-14 15:51:08,661 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): ''
+2025-10-14 15:51:08,897 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'sai123'
+2025-10-14 15:51:09,166 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'sai123'
+2025-10-14 15:51:10,073 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 15:51:12,469 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 20:53:49,150 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 20:54:32,549 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 20:54:35,926 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 20:54:40,864 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 20:54:41,803 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 20:54:46,332 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 20:54:47,701 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 20:54:52,040 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 20:54:55,769 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 20:55:00,083 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 20:55:00,965 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 20:55:05,629 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 20:55:07,610 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 20:55:11,955 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 20:55:13,379 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 20:55:17,736 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 20:55:20,196 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 20:55:25,207 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 20:55:26,939 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 20:55:31,395 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 20:55:32,515 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 20:55:34,907 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===

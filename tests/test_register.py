@@ -114,3 +114,24 @@ class TestRegister:
 
         cnf_password_error_text = rp.get_cnf_password_error_text()
         assert cnf_password_error_text == "Passwords do not match."
+
+    @allure.story("Verify error when password shorter than 6 characters")
+    @pytest.mark.regreession
+    @pytest.mark.YWT11
+    @pytest.mark.parametrize("data", test_data)
+    def test_Verify_error_when_password_shorter_than_6_characters(self, driver, data, env):
+        hp = HomePage(driver, env)
+        hp.open_home()
+
+        rp = RegisterPage(driver, env)
+        rp.open_register_page()
+        rp.enter_first_name(data["FirstName"])
+        rp.enter_last_name(data["LastName"])
+        rp.enter_email_address(data["Email"])
+
+        rp.enter_password('test1')
+        rp.enter_confirm_password('test1')
+        rp.click_register_button()
+
+        password_length_error_text = rp.get_password_length_error_text()
+        assert password_length_error_text == "6–25 chars; include number & special."

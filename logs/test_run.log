@@ -4286,3 +4286,1847 @@ selenium.common.exceptions.WebDriverException: Message: Authorization Required
 2025-09-26 21:43:18,127 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): ''
 2025-09-26 21:43:18,851 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
 2025-09-26 21:43:22,583 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-29 21:59:18,756 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-29 21:59:57,691 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-29 22:00:01,528 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-09-29 22:00:03,874 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-09-29 22:00:03,924 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): ''
+2025-09-29 22:00:04,138 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): ''
+2025-09-29 22:00:04,237 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): ''
+2025-09-29 22:00:04,341 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): ''
+2025-09-29 22:00:04,434 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): ''
+2025-09-29 22:00:05,251 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-09-29 22:00:10,361 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-29 22:04:33,748 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-29 22:04:40,452 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-29 22:04:44,562 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-09-29 22:04:46,245 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-09-29 22:04:46,269 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): ''
+2025-09-29 22:04:46,364 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): ''
+2025-09-29 22:04:46,422 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): ''
+2025-09-29 22:04:46,488 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): ''
+2025-09-29 22:04:46,537 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): ''
+2025-09-29 22:04:47,237 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-09-29 22:04:53,153 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-30 18:43:50,299 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-30 18:43:57,883 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 18:44:02,155 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-09-30 18:44:03,788 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-09-30 18:44:03,812 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): ''
+2025-09-30 18:44:03,887 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): ''
+2025-09-30 18:44:03,951 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): ''
+2025-09-30 18:44:04,005 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): ''
+2025-09-30 18:44:04,057 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): ''
+2025-09-30 18:44:04,779 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-09-30 18:44:08,371 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-30 19:01:45,560 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-30 19:01:51,399 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 19:01:55,074 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-09-30 19:01:56,490 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-09-30 19:01:56,508 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): 'sai'
+2025-09-30 19:01:56,564 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): 'kiran'
+2025-09-30 19:01:56,591 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): 'saikiran@gmail.com'
+2025-09-30 19:01:56,617 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): 'sai1'
+2025-09-30 19:01:56,640 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): 'sai1'
+2025-09-30 19:01:57,273 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-09-30 19:02:00,458 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-30 21:29:40,726 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-30 21:30:21,776 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 21:30:25,803 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/books
+2025-09-30 21:30:27,824 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Computing and Internet')
+2025-09-30 21:30:29,431 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'addtocart_13_EnteredQuantity'): '8'
+2025-09-30 21:30:30,053 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'add-to-cart-button-13')
+2025-09-30 21:30:30,744 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//*[@id='topcartlink']/a/span[1]")
+2025-09-30 21:30:31,853 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ZipPostalCode'): '500081'
+2025-09-30 21:30:32,480 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'termsofservice')
+2025-09-30 21:30:33,131 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'checkout')
+2025-09-30 21:30:48,184 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 21:30:51,680 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-09-30 21:30:53,051 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-09-30 21:30:53,072 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): 'Ravi'
+2025-09-30 21:30:53,149 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): 'Kumar'
+2025-09-30 21:30:53,187 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): 'ravi.kumar+e27645@testmail.com'
+2025-09-30 21:30:53,230 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): 'Ravi@2024'
+2025-09-30 21:30:53,266 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): 'Ravi@2024'
+2025-09-30 21:30:53,916 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-09-30 21:30:56,137 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Log out')
+2025-09-30 21:31:05,269 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 21:31:08,714 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-09-30 21:31:10,064 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-09-30 21:31:10,081 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): 'Maria'
+2025-09-30 21:31:10,152 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): 'Lopez'
+2025-09-30 21:31:10,189 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): 'maria.lopez+7f9710@testmail.com'
+2025-09-30 21:31:10,235 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): 'Maria#321'
+2025-09-30 21:31:10,270 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): 'Maria#321'
+2025-09-30 21:31:10,921 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-09-30 21:31:13,135 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Log out')
+2025-09-30 21:31:22,070 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 21:31:25,853 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-09-30 21:31:27,160 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-09-30 21:31:27,183 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): 'Emily'
+2025-09-30 21:31:27,256 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): 'Clark'
+2025-09-30 21:31:27,288 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): 'emily.clark+a9f082@testmail.com'
+2025-09-30 21:31:27,319 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): 'Emi!2025'
+2025-09-30 21:31:27,359 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): 'Emi!2025'
+2025-09-30 21:31:28,023 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-09-30 21:31:30,244 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Log out')
+2025-09-30 21:31:39,103 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 21:31:43,247 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-09-30 21:31:44,661 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-09-30 21:31:44,679 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): 'Omar'
+2025-09-30 21:31:44,739 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): 'Farouk'
+2025-09-30 21:31:44,774 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): 'omar.farouk+ded8b8@testmail.com'
+2025-09-30 21:31:44,813 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): 'Omar#789'
+2025-09-30 21:31:44,847 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): 'Omar#789'
+2025-09-30 21:31:45,498 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-09-30 21:31:47,724 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Log out')
+2025-09-30 21:31:56,570 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 21:31:59,883 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-09-30 21:32:01,235 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-09-30 21:32:01,254 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): ''
+2025-09-30 21:32:01,307 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): ''
+2025-09-30 21:32:01,341 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): ''
+2025-09-30 21:32:01,368 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): ''
+2025-09-30 21:32:01,391 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): ''
+2025-09-30 21:32:02,042 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-09-30 21:32:05,561 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-09-30 21:33:04,794 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-09-30 21:33:10,923 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-09-30 21:33:14,400 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/books
+2025-09-30 21:33:16,523 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Computing and Internet')
+2025-09-30 21:33:17,491 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'addtocart_13_EnteredQuantity'): '8'
+2025-09-30 21:33:18,159 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'add-to-cart-button-13')
+2025-09-30 21:33:18,806 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//*[@id='topcartlink']/a/span[1]")
+2025-09-30 21:33:20,806 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ZipPostalCode'): '500081'
+2025-09-30 21:33:21,428 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'termsofservice')
+2025-09-30 21:33:22,081 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'checkout')
+2025-09-30 21:33:33,580 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-01 09:27:45,727 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-01 09:27:51,981 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-01 09:27:56,940 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/books
+2025-10-01 09:27:59,541 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Computing and Internet')
+2025-10-01 09:28:01,455 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'addtocart_13_EnteredQuantity'): '8'
+2025-10-01 09:28:02,115 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'add-to-cart-button-13')
+2025-10-01 09:28:02,760 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//*[@id='topcartlink']/a/span[1]")
+2025-10-01 09:28:03,884 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ZipPostalCode'): '500081'
+2025-10-01 09:28:04,541 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'termsofservice')
+2025-10-01 09:28:05,169 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'checkout')
+2025-10-01 09:28:20,792 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-01 09:28:30,617 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Computers')
+2025-10-01 09:28:32,602 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Desktops')
+2025-10-01 09:28:34,449 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Build your own cheap computer')
+2025-10-01 09:28:36,974 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'add-to-cart-button-72')
+2025-10-01 09:28:37,663 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//*[@id='topcartlink']/a/span[1]")
+2025-10-01 09:28:47,196 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-01 09:28:52,164 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-10-01 09:28:53,778 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-10-01 09:28:53,799 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): 'Ravi'
+2025-10-01 09:28:53,873 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): 'Kumar'
+2025-10-01 09:28:53,919 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): 'ravi.kumar+5850d0@testmail.com'
+2025-10-01 09:28:53,980 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): 'Ravi@2024'
+2025-10-01 09:28:54,027 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): 'Ravi@2024'
+2025-10-01 09:28:54,760 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-10-01 09:28:57,307 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Log out')
+2025-10-01 09:29:06,703 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-01 09:29:11,633 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-10-01 09:29:13,136 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-10-01 09:29:13,152 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): 'Maria'
+2025-10-01 09:29:13,216 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): 'Lopez'
+2025-10-01 09:29:13,267 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): 'maria.lopez+18bf3a@testmail.com'
+2025-10-01 09:29:13,311 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): 'Maria#321'
+2025-10-01 09:29:13,355 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): 'Maria#321'
+2025-10-01 09:29:14,030 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-10-01 09:29:16,319 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Log out')
+2025-10-01 09:29:25,975 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-01 09:29:30,359 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-10-01 09:29:32,078 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-10-01 09:29:32,100 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): 'Emily'
+2025-10-01 09:29:32,169 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): 'Clark'
+2025-10-01 09:29:32,217 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): 'emily.clark+1f0258@testmail.com'
+2025-10-01 09:29:32,263 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): 'Emi!2025'
+2025-10-01 09:29:32,305 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): 'Emi!2025'
+2025-10-01 09:29:33,019 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-10-01 09:29:35,565 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Log out')
+2025-10-01 09:29:44,867 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-01 09:29:49,629 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/register
+2025-10-01 09:29:51,250 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'gender-male')
+2025-10-01 09:29:51,270 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'FirstName'): 'Omar'
+2025-10-01 09:29:51,353 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'LastName'): 'Farouk'
+2025-10-01 09:29:51,410 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Email'): 'omar.farouk+cc0903@testmail.com'
+2025-10-01 09:29:51,536 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'Password'): 'Omar#789'
+2025-10-01 09:29:51,581 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ConfirmPassword'): 'Omar#789'
+2025-10-01 09:29:52,276 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'register-button')
+2025-10-01 09:29:54,844 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Log out')
+2025-10-01 09:29:58,110 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-08 16:51:37,238 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-08 16:51:38,516 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-08 16:51:43,496 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Computers')
+2025-10-08 16:51:44,945 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Notebooks')
+2025-10-08 16:51:46,412 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', '14.1-inch Laptop')
+2025-10-08 16:51:47,076 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'add-to-cart-button-31')
+2025-10-08 16:51:48,599 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//*[@id='topcartlink']/a/span[1]")
+2025-10-08 16:51:50,833 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-08 16:53:57,873 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-08 16:53:59,172 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-08 16:54:08,516 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Computers')
+2025-10-08 16:54:09,986 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Notebooks')
+2025-10-08 16:54:11,950 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', '14.1-inch Laptop')
+2025-10-08 16:54:12,633 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'add-to-cart-button-31')
+2025-10-08 16:54:14,263 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//*[@id='topcartlink']/a/span[1]")
+2025-10-08 16:54:16,518 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-08 18:32:50,509 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-08 18:32:53,264 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://demowebshop.tricentis.com/
+2025-10-08 18:33:04,658 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Computers')
+2025-10-08 18:33:06,270 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', 'Notebooks')
+2025-10-08 18:33:08,598 | INFO | MainProcess | MainThread | BasePage | Clicked: ('link text', '14.1-inch Laptop')
+2025-10-08 18:33:09,315 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'add-to-cart-button-31')
+2025-10-08 18:33:10,941 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//*[@id='topcartlink']/a/span[1]")
+2025-10-08 18:33:11,502 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'ZipPostalCode'): '500081'
+2025-10-08 18:33:12,409 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'termsofservice')
+2025-10-08 18:33:14,092 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'checkout')
+2025-10-08 18:33:16,609 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 18:07:14,682 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 18:07:35,965 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 18:07:36,984 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 18:07:37,273 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-14 18:07:37,503 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-14 18:07:37,922 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-14 18:07:38,190 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-14 18:07:38,445 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-14 18:07:39,287 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 18:07:44,107 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 18:07:44,950 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 18:07:45,226 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-14 18:07:45,461 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-14 18:07:45,715 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@testmail.com'
+2025-10-14 18:07:46,042 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-14 18:07:46,278 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-14 18:07:47,091 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 18:07:50,110 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 18:14:22,552 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 18:14:26,343 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 18:25:47,307 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 18:25:48,876 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 18:25:50,214 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 18:25:50,523 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-14 18:25:50,791 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-14 18:25:50,983 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-14 18:25:51,275 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-14 18:25:51,522 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-14 18:25:52,372 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 18:25:57,005 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 18:25:58,517 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 18:25:58,805 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-14 18:25:59,009 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-14 18:25:59,319 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@testmail.com'
+2025-10-14 18:25:59,558 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-14 18:25:59,777 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-14 18:26:00,613 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 18:26:03,634 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 18:28:58,577 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 18:29:02,381 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 18:30:33,924 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 18:30:37,735 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 18:31:12,436 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 18:31:16,278 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 18:43:15,438 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 18:43:17,153 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 18:43:20,874 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 18:43:21,231 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-14 18:43:21,511 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-14 18:43:21,735 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-14 18:43:21,990 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-14 18:43:22,245 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-14 18:43:23,103 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 18:43:27,817 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 18:43:28,693 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 18:43:29,047 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-14 18:43:29,301 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-14 18:43:29,541 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@testmail.com'
+2025-10-14 18:43:29,850 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-14 18:43:30,089 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-14 18:43:30,911 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 18:43:34,094 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 18:44:24,142 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 18:44:27,967 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 18:45:08,039 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 18:45:09,675 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 18:45:14,084 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 18:45:14,374 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-14 18:45:14,654 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-14 18:45:14,816 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-14 18:45:14,992 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-14 18:45:15,760 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 18:45:19,632 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 18:45:20,682 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 18:45:21,010 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-14 18:45:21,251 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-14 18:45:21,457 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-14 18:45:21,678 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-14 18:45:22,514 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 18:45:24,832 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 18:46:43,417 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 18:46:45,030 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 18:46:47,451 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 18:46:47,775 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-14 18:46:48,022 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-14 18:46:48,214 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-14 18:46:48,393 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-14 18:46:49,191 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 18:46:53,735 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 18:46:55,172 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 18:46:55,577 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-14 18:46:55,832 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-14 18:46:56,030 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-14 18:46:56,242 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-14 18:46:57,049 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 18:46:59,410 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 18:48:45,205 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 18:48:46,886 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 18:48:48,281 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 18:48:48,633 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-14 18:48:48,914 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-14 18:48:49,137 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-14 18:48:49,311 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-14 18:48:50,130 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 18:48:54,374 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 18:49:22,069 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 18:49:33,720 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 18:49:35,130 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 18:49:35,940 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 18:49:36,292 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-14 18:49:36,432 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-14 18:49:36,601 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-14 18:49:36,705 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-14 18:49:37,427 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 18:49:40,895 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 18:49:41,772 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 18:49:42,187 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-14 18:49:42,502 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-14 18:49:42,856 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-14 18:49:43,110 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-14 18:49:43,976 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 18:49:46,174 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 18:52:08,363 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 18:52:09,669 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 18:52:10,712 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 18:52:11,186 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-14 18:52:11,372 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-14 18:52:11,492 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-14 18:52:11,641 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-14 18:52:12,371 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 18:52:15,892 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 18:52:17,844 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 18:52:18,056 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-14 18:52:18,219 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-14 18:52:18,345 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-14 18:52:18,485 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-14 18:52:19,253 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 18:52:21,504 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 18:55:19,578 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 18:55:20,874 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 18:55:34,687 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 18:55:38,288 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 18:55:38,465 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-14 18:55:38,584 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-14 18:55:38,693 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-14 18:55:38,810 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-14 18:55:39,555 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 18:55:41,761 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-14 18:55:55,267 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-14 18:55:56,570 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 18:55:59,058 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 18:55:59,221 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-14 18:55:59,316 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-14 18:55:59,403 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-14 18:55:59,491 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-14 18:56:00,185 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 18:56:03,891 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-14 18:56:06,324 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-14 18:56:06,573 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-14 18:56:06,668 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-14 18:56:06,745 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-14 18:56:06,825 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-14 18:56:07,536 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-14 18:56:09,702 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-15 21:56:34,206 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-15 21:56:34,208 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: us-west-1
+2025-10-15 21:56:34,208 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.us-west-1.saucelabs.com/wd/hub
+2025-10-15 21:56:34,209 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  }
+}
+2025-10-15 21:56:35,545 | WARNING | MainProcess | MainThread | DriverFactory | Auth failed on us-west-1, will try next DC if available.
+2025-10-15 21:56:35,548 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: eu-central-1
+2025-10-15 21:56:35,549 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.eu-central-1.saucelabs.com/wd/hub
+2025-10-15 21:56:35,551 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  },
+  "goog:chromeOptions": {
+    "extensions": [],
+    "args": []
+  }
+}
+2025-10-15 21:56:41,628 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-15 21:56:43,328 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-15 21:56:45,554 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-15 21:56:47,332 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-15 21:56:48,642 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-15 21:56:50,016 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-15 21:56:52,368 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-15 21:56:55,332 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: us-west-1
+2025-10-15 21:56:55,333 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.us-west-1.saucelabs.com/wd/hub
+2025-10-15 21:56:55,334 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  }
+}
+2025-10-15 21:56:56,905 | WARNING | MainProcess | MainThread | DriverFactory | Auth failed on us-west-1, will try next DC if available.
+2025-10-15 21:56:56,908 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: eu-central-1
+2025-10-15 21:56:56,909 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.eu-central-1.saucelabs.com/wd/hub
+2025-10-15 21:56:56,910 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  },
+  "goog:chromeOptions": {
+    "extensions": [],
+    "args": []
+  }
+}
+2025-10-15 21:57:03,972 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-15 21:57:05,783 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-15 21:57:08,197 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-15 21:57:09,536 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-15 21:57:10,849 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-15 21:57:12,224 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-15 21:57:14,660 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-15 21:57:17,510 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-15 21:59:58,885 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-15 21:59:58,887 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: us-west-1
+2025-10-15 21:59:58,887 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.us-west-1.saucelabs.com/wd/hub
+2025-10-15 21:59:58,888 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  }
+}
+2025-10-15 22:00:02,317 | WARNING | MainProcess | MainThread | DriverFactory | Auth failed on us-west-1, will try next DC if available.
+2025-10-15 22:00:02,318 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: eu-central-1
+2025-10-15 22:00:02,319 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.eu-central-1.saucelabs.com/wd/hub
+2025-10-15 22:00:02,320 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  },
+  "goog:chromeOptions": {
+    "extensions": [],
+    "args": []
+  }
+}
+2025-10-15 22:00:08,391 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-15 22:00:09,853 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-15 22:00:12,387 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-15 22:00:13,851 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-15 22:00:15,272 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-15 22:00:16,765 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-15 22:00:19,610 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-15 22:00:22,520 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: us-west-1
+2025-10-15 22:00:22,523 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.us-west-1.saucelabs.com/wd/hub
+2025-10-15 22:00:22,524 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  }
+}
+2025-10-15 22:00:25,469 | WARNING | MainProcess | MainThread | DriverFactory | Auth failed on us-west-1, will try next DC if available.
+2025-10-15 22:00:25,470 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: eu-central-1
+2025-10-15 22:00:25,471 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.eu-central-1.saucelabs.com/wd/hub
+2025-10-15 22:00:25,472 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  },
+  "goog:chromeOptions": {
+    "extensions": [],
+    "args": []
+  }
+}
+2025-10-15 22:00:31,034 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-15 22:00:32,611 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-15 22:00:35,574 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-15 22:00:37,008 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-15 22:00:38,316 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-15 22:00:39,685 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-15 22:00:42,238 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-15 22:00:44,473 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-15 22:02:03,230 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-15 22:02:03,231 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: us-west-1
+2025-10-15 22:02:03,231 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.us-west-1.saucelabs.com/wd/hub
+2025-10-15 22:02:03,232 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  }
+}
+2025-10-15 22:02:04,550 | WARNING | MainProcess | MainThread | DriverFactory | Auth failed on us-west-1, will try next DC if available.
+2025-10-15 22:02:04,551 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: eu-central-1
+2025-10-15 22:02:04,553 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.eu-central-1.saucelabs.com/wd/hub
+2025-10-15 22:02:04,555 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  },
+  "goog:chromeOptions": {
+    "extensions": [],
+    "args": []
+  }
+}
+2025-10-15 22:02:11,122 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-15 22:02:12,808 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-15 22:02:15,085 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-15 22:02:16,802 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-15 22:02:18,033 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-15 22:02:19,262 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-15 22:02:21,554 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-15 22:02:24,159 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: us-west-1
+2025-10-15 22:02:24,161 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.us-west-1.saucelabs.com/wd/hub
+2025-10-15 22:02:24,164 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  }
+}
+2025-10-15 22:02:26,174 | WARNING | MainProcess | MainThread | DriverFactory | Auth failed on us-west-1, will try next DC if available.
+2025-10-15 22:02:26,176 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: eu-central-1
+2025-10-15 22:02:26,177 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.eu-central-1.saucelabs.com/wd/hub
+2025-10-15 22:02:26,178 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  },
+  "goog:chromeOptions": {
+    "extensions": [],
+    "args": []
+  }
+}
+2025-10-15 22:02:31,750 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-15 22:02:33,311 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-15 22:02:35,755 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-15 22:02:37,208 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-15 22:02:38,516 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-15 22:02:39,870 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-15 22:02:42,536 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-15 22:02:44,979 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-15 22:21:20,975 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-15 22:21:20,975 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: us-west-1
+2025-10-15 22:21:20,976 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.us-west-1.saucelabs.com/wd/hub
+2025-10-15 22:21:20,976 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  }
+}
+2025-10-15 22:21:22,440 | WARNING | MainProcess | MainThread | DriverFactory | Auth failed on us-west-1, will try next DC if available.
+2025-10-15 22:21:22,441 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: eu-central-1
+2025-10-15 22:21:22,442 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.eu-central-1.saucelabs.com/wd/hub
+2025-10-15 22:21:22,444 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  },
+  "goog:chromeOptions": {
+    "extensions": [],
+    "args": []
+  }
+}
+2025-10-15 22:21:27,861 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-15 22:21:29,335 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-15 22:21:31,704 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-15 22:21:33,100 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-15 22:21:34,399 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-15 22:21:35,799 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-15 22:21:38,108 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-15 22:21:42,500 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: us-west-1
+2025-10-15 22:21:42,503 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.us-west-1.saucelabs.com/wd/hub
+2025-10-15 22:21:42,504 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  }
+}
+2025-10-15 22:21:44,740 | WARNING | MainProcess | MainThread | DriverFactory | Auth failed on us-west-1, will try next DC if available.
+2025-10-15 22:21:44,742 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: eu-central-1
+2025-10-15 22:21:44,743 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.eu-central-1.saucelabs.com/wd/hub
+2025-10-15 22:21:44,744 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  },
+  "goog:chromeOptions": {
+    "extensions": [],
+    "args": []
+  }
+}
+2025-10-15 22:21:51,042 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-15 22:21:52,382 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-15 22:21:55,219 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-15 22:21:56,606 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-15 22:21:58,365 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-15 22:21:59,840 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-15 22:22:02,206 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-15 22:22:05,428 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-15 22:31:54,471 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-15 22:31:54,473 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: us-west-1
+2025-10-15 22:31:54,473 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.us-west-1.saucelabs.com/wd/hub
+2025-10-15 22:31:54,474 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  }
+}
+2025-10-15 22:31:55,664 | WARNING | MainProcess | MainThread | DriverFactory | Auth failed on us-west-1, will try next DC if available.
+2025-10-15 22:31:55,665 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: eu-central-1
+2025-10-15 22:31:55,667 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.eu-central-1.saucelabs.com/wd/hub
+2025-10-15 22:31:55,668 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  },
+  "goog:chromeOptions": {
+    "extensions": [],
+    "args": []
+  }
+}
+2025-10-15 22:32:01,360 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-15 22:32:02,999 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-15 22:32:05,153 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-15 22:32:06,425 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-15 22:32:08,000 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-15 22:32:09,238 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-15 22:32:12,069 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-15 22:32:16,435 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: us-west-1
+2025-10-15 22:32:16,439 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.us-west-1.saucelabs.com/wd/hub
+2025-10-15 22:32:16,442 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  }
+}
+2025-10-15 22:32:18,831 | WARNING | MainProcess | MainThread | DriverFactory | Auth failed on us-west-1, will try next DC if available.
+2025-10-15 22:32:18,833 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: eu-central-1
+2025-10-15 22:32:18,834 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.eu-central-1.saucelabs.com/wd/hub
+2025-10-15 22:32:18,835 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  },
+  "goog:chromeOptions": {
+    "extensions": [],
+    "args": []
+  }
+}
+2025-10-15 22:32:25,755 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-15 22:32:27,415 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-15 22:32:29,620 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-15 22:32:31,038 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-15 22:32:32,381 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-15 22:32:33,671 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-15 22:32:35,959 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-15 22:32:39,784 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-16 10:58:10,109 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-16 10:58:10,110 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: us-west-1
+2025-10-16 10:58:10,111 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.us-west-1.saucelabs.com/wd/hub
+2025-10-16 10:58:10,111 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  }
+}
+2025-10-16 10:58:11,462 | WARNING | MainProcess | MainThread | DriverFactory | Auth failed on us-west-1, will try next DC if available.
+2025-10-16 10:58:11,464 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: eu-central-1
+2025-10-16 10:58:11,465 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.eu-central-1.saucelabs.com/wd/hub
+2025-10-16 10:58:11,466 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  },
+  "goog:chromeOptions": {
+    "extensions": [],
+    "args": []
+  }
+}
+2025-10-16 10:58:17,613 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-16 10:58:19,451 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-16 10:58:21,603 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-16 10:58:23,142 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-16 10:58:24,498 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-16 10:58:25,929 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-16 10:58:29,462 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-16 10:58:33,561 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: us-west-1
+2025-10-16 10:58:33,562 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.us-west-1.saucelabs.com/wd/hub
+2025-10-16 10:58:33,563 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  }
+}
+2025-10-16 10:58:34,914 | WARNING | MainProcess | MainThread | DriverFactory | Auth failed on us-west-1, will try next DC if available.
+2025-10-16 10:58:34,915 | INFO | MainProcess | MainThread | DriverFactory | Trying Sauce data center: eu-central-1
+2025-10-16 10:58:34,916 | INFO | MainProcess | MainThread | DriverFactory | Sauce endpoint: https://ondemand.eu-central-1.saucelabs.com/wd/hub
+2025-10-16 10:58:34,917 | INFO | MainProcess | MainThread | DriverFactory | Capabilities: {
+  "browserName": "chrome",
+  "pageLoadStrategy": "normal",
+  "platformName": "Windows 11",
+  "browserVersion": "latest",
+  "sauce:options": {
+    "username": "***",
+    "accessKey": "***",
+    "build": "Local-Build",
+    "name": "Local Smoke Run",
+    "tags": [
+      "pytest",
+      "smoke",
+      "yuvanbank"
+    ],
+    "screenResolution": "1920x1080",
+    "seleniumVersion": "4.25.0",
+    "github": {
+      "sha": null,
+      "runId": null
+    }
+  },
+  "goog:chromeOptions": {
+    "extensions": [],
+    "args": []
+  }
+}
+2025-10-16 10:58:40,343 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-16 10:58:41,774 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-16 10:58:44,334 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-16 10:58:45,569 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-16 10:58:46,762 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-16 10:58:48,021 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-16 10:58:50,376 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-16 10:58:54,374 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-17 11:46:32,644 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-17 11:46:39,440 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-17 11:46:39,801 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-17 11:46:40,050 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-17 11:46:40,211 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-17 11:46:40,317 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-17 11:46:40,448 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-17 11:46:40,562 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-17 11:46:41,309 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-17 11:46:41,817 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-17 11:46:42,113 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-17 11:46:42,288 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-17 11:46:42,377 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-17 11:46:42,520 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-17 11:46:42,754 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-17 11:46:42,907 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-17 11:46:43,656 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-17 11:46:43,927 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-17 11:46:44,196 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-17 11:46:44,337 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-17 11:46:44,435 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-17 11:46:44,547 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-17 11:46:44,651 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-17 11:46:44,767 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-17 11:46:45,476 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-17 11:46:45,746 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-17 11:46:46,022 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-17 11:46:46,186 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-17 11:46:46,279 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-17 11:46:46,381 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-17 11:46:46,499 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-17 11:46:46,596 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-17 11:46:47,326 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-17 11:46:49,557 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-17 11:47:59,089 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-17 11:48:00,437 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-17 11:48:01,326 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-17 11:48:01,575 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-17 11:48:01,670 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-17 11:48:01,772 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-17 11:48:01,891 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-17 11:48:02,642 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-17 11:48:02,948 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-17 11:48:03,222 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-17 11:48:03,360 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-17 11:48:03,442 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-17 11:48:03,538 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-17 11:48:03,640 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-17 11:48:04,350 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-17 11:48:04,446 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-17 11:48:04,711 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-17 11:48:04,861 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Lopez'
+2025-10-17 11:48:04,948 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Maria'
+2025-10-17 11:48:05,039 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-17 11:48:05,121 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-17 11:48:05,814 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-17 11:48:08,073 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-17 11:48:31,938 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-17 11:48:33,240 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-17 11:48:34,884 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-17 11:48:35,050 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-17 11:48:35,179 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-17 11:48:35,281 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-17 11:48:35,414 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-17 11:48:36,167 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-17 11:48:36,244 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-17 11:48:36,516 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-17 11:48:36,649 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-17 11:48:36,730 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-17 11:48:36,809 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-17 11:48:36,892 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-17 11:48:37,596 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-17 11:48:37,675 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-17 11:48:37,950 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-17 11:48:38,082 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Lopez'
+2025-10-17 11:48:38,155 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Maria'
+2025-10-17 11:48:38,237 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-17 11:48:38,298 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-17 11:48:39,014 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-17 11:48:41,273 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-17 11:51:32,194 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-17 11:51:33,492 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-17 11:51:36,655 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-17 11:51:36,836 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-17 11:51:36,951 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-17 11:51:37,071 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-17 11:51:37,191 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-17 11:51:37,886 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-17 11:51:37,983 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-17 11:51:38,973 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-17 11:51:39,126 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-17 11:51:39,238 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-17 11:51:39,352 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-17 11:51:39,450 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-17 11:51:40,162 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-17 11:51:40,228 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-17 11:51:41,010 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-17 11:51:41,179 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Lopez'
+2025-10-17 11:51:41,314 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Maria'
+2025-10-17 11:51:41,446 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-17 11:51:41,559 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-17 11:51:42,243 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-17 11:51:44,502 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-17 11:55:42,695 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-17 11:55:44,121 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-17 11:55:46,419 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-17 11:55:46,589 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-17 11:55:46,742 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-17 11:55:46,923 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-17 11:55:47,059 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-17 11:55:47,775 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-17 11:55:47,854 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-17 11:55:50,272 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-17 11:55:50,418 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-17 11:55:50,496 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-17 11:55:50,571 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-17 11:55:50,643 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-17 11:55:51,323 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-17 11:55:51,389 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-17 11:55:54,316 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-17 11:55:54,458 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Lopez'
+2025-10-17 11:55:54,533 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Maria'
+2025-10-17 11:55:54,653 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-17 11:55:54,732 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-17 11:55:55,412 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-17 11:55:57,684 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-17 12:19:39,660 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-17 12:19:41,009 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-17 12:19:42,100 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-17 12:19:42,370 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-17 12:19:42,471 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-17 12:19:42,569 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-17 12:19:42,685 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-17 12:19:43,408 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-17 12:19:43,631 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-17 12:19:43,978 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-17 12:19:44,199 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-17 12:19:44,325 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-17 12:19:44,424 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-17 12:19:44,524 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-17 12:19:45,198 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-17 12:19:45,233 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-17 12:19:45,570 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-17 12:19:45,792 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Lopez'
+2025-10-17 12:19:45,869 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Maria'
+2025-10-17 12:19:45,952 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-17 12:19:46,037 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-17 12:19:46,731 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-17 12:19:49,039 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-17 12:20:39,883 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-17 12:20:41,192 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-17 12:20:42,003 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-17 12:20:42,232 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-17 12:20:42,345 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-17 12:20:42,451 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-17 12:20:42,547 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-17 12:20:43,268 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-17 12:20:43,330 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-17 12:20:43,606 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-17 12:20:43,734 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-17 12:20:43,813 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-17 12:20:43,920 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-17 12:20:43,996 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-17 12:20:44,694 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-17 12:20:44,741 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-17 12:20:45,010 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-17 12:20:45,156 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Lopez'
+2025-10-17 12:20:45,232 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Maria'
+2025-10-17 12:20:45,346 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-17 12:20:45,430 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-17 12:20:46,146 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-17 12:20:48,387 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-20 16:47:41,256 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-20 16:47:46,008 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 16:47:48,021 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 16:47:48,351 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-20 16:47:48,576 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-20 16:47:48,824 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-20 16:47:49,118 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-20 16:47:49,322 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-20 16:47:50,114 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 16:47:50,117 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-20 16:47:50,947 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'ravi.kumar1@testmail.com'
+2025-10-20 16:47:51,211 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-20 16:47:52,022 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-20 16:47:52,702 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 16:47:53,157 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 16:47:53,465 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-20 16:47:53,708 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-20 16:47:53,951 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@testmail.com'
+2025-10-20 16:47:54,150 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-20 16:47:54,345 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-20 16:47:55,127 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 16:47:55,131 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-20 16:47:55,418 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'maria.lopez2@testmail.com'
+2025-10-20 16:47:55,788 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-20 16:47:56,681 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-20 16:47:56,830 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 16:47:57,311 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 16:47:57,557 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Lopez'
+2025-10-20 16:47:57,827 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Maria'
+2025-10-20 16:47:58,017 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@stmail.com'
+2025-10-20 16:47:58,270 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-20 16:47:58,426 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-20 16:47:59,251 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 16:47:59,253 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-20 16:47:59,703 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'maria.lopez2@stmail.com'
+2025-10-20 16:47:59,936 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-20 16:48:00,734 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-20 16:48:03,285 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-20 16:49:16,444 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-20 16:49:18,123 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 16:49:19,333 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 16:49:19,653 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-20 16:49:19,852 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-20 16:49:20,128 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-20 16:49:20,362 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-20 16:49:20,592 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-20 16:49:21,386 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 16:49:21,388 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-20 16:49:21,857 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'ravi.kumar1@testmail.com'
+2025-10-20 16:49:22,160 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-20 16:49:22,996 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-20 16:49:23,576 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 16:49:24,168 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 16:49:24,456 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-20 16:49:24,698 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-20 16:49:24,938 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@testmail.com'
+2025-10-20 16:49:25,246 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-20 16:49:25,451 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-20 16:49:26,230 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 16:49:26,233 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-20 16:49:26,517 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'maria.lopez2@testmail.com'
+2025-10-20 16:49:26,798 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-20 16:49:27,635 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-20 16:49:27,794 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 16:49:28,258 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 16:49:28,508 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Lopez'
+2025-10-20 16:49:28,695 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Maria'
+2025-10-20 16:49:28,943 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@stmail.com'
+2025-10-20 16:49:29,256 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-20 16:49:29,480 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-20 16:49:30,298 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 16:49:30,298 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-20 16:49:30,542 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'maria.lopez2@stmail.com'
+2025-10-20 16:49:30,875 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-20 16:49:31,673 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-20 16:49:34,127 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-20 17:20:58,862 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-20 17:21:00,538 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:21:01,891 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:21:02,182 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-20 17:21:02,368 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-20 17:21:02,581 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-20 17:21:02,817 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-20 17:21:02,982 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-20 17:21:03,796 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 17:21:03,797 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-20 17:21:04,019 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'ravi.kumar1@testmail.com'
+2025-10-20 17:21:04,187 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-20 17:21:04,950 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-20 17:21:05,585 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:21:06,038 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:21:06,311 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-20 17:21:06,512 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-20 17:21:06,689 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@testmail.com'
+2025-10-20 17:21:06,870 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-20 17:21:07,012 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-20 17:21:07,744 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 17:21:07,745 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-20 17:21:07,966 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'maria.lopez2@testmail.com'
+2025-10-20 17:21:08,157 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-20 17:21:08,941 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-20 17:21:09,075 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:21:09,530 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:21:09,792 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Lopez'
+2025-10-20 17:21:10,030 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Maria'
+2025-10-20 17:21:10,203 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@stmail.com'
+2025-10-20 17:21:10,424 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-20 17:21:10,549 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-20 17:21:11,303 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 17:21:11,305 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-20 17:21:11,522 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'maria.lopez2@stmail.com'
+2025-10-20 17:21:11,734 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-20 17:21:12,518 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-20 17:21:14,993 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-20 17:29:19,957 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-20 17:29:21,335 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:29:23,901 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:29:24,416 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-20 17:29:24,584 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-20 17:29:24,733 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-20 17:29:24,878 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-20 17:29:25,648 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 17:29:25,741 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:29:26,162 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:29:26,386 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-20 17:29:26,577 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-20 17:29:26,792 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-20 17:29:26,996 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-20 17:29:27,811 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 17:29:27,898 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:29:28,655 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:29:28,909 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Lopez'
+2025-10-20 17:29:29,109 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Maria'
+2025-10-20 17:29:29,316 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-20 17:29:29,505 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-20 17:29:30,297 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 17:29:32,612 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-20 17:36:05,410 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-20 17:36:06,706 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:36:08,172 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:36:08,630 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-20 17:36:08,738 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-20 17:36:08,825 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-20 17:36:08,955 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-20 17:36:09,050 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-20 17:36:09,759 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 17:36:19,071 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:36:19,115 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:36:21,216 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-20 17:36:33,401 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-20 17:36:34,749 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:36:36,355 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:36:36,791 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-20 17:36:36,884 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-20 17:36:36,970 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-20 17:36:37,073 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-20 17:36:37,758 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 17:36:37,977 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:36:38,540 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:36:38,706 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-20 17:36:38,774 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-20 17:36:38,856 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@testmail.com'
+2025-10-20 17:36:38,972 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-20 17:36:39,662 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 17:36:39,719 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:36:40,298 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:36:40,477 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Lopez'
+2025-10-20 17:36:40,541 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Maria'
+2025-10-20 17:36:40,624 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@stmail.com'
+2025-10-20 17:36:40,729 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-20 17:36:41,418 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 17:36:43,688 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-20 17:37:32,708 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-20 17:37:34,042 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:37:35,182 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:37:35,374 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-20 17:37:35,476 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-20 17:37:35,558 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-20 17:37:35,679 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-20 17:37:35,760 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'test123'
+2025-10-20 17:37:36,457 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 17:37:36,508 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:37:36,928 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:37:37,095 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-20 17:37:37,195 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-20 17:37:37,281 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@testmail.com'
+2025-10-20 17:37:37,396 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-20 17:37:37,480 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'test123'
+2025-10-20 17:37:38,166 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 17:37:38,220 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:37:38,640 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:37:38,815 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Lopez'
+2025-10-20 17:37:38,926 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Maria'
+2025-10-20 17:37:39,040 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@stmail.com'
+2025-10-20 17:37:39,149 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-20 17:37:39,232 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'test123'
+2025-10-20 17:37:39,951 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 17:37:42,195 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-20 17:38:48,926 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-20 17:38:50,258 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:38:51,526 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:38:51,735 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-20 17:38:51,827 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-20 17:38:51,917 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-20 17:38:52,037 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-20 17:38:52,114 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'test123'
+2025-10-20 17:38:52,797 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 17:38:52,850 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:38:53,254 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:38:53,409 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-20 17:38:53,491 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-20 17:38:53,571 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@testmail.com'
+2025-10-20 17:38:53,672 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-20 17:38:53,750 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'test123'
+2025-10-20 17:38:54,417 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 17:38:54,472 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:38:54,876 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:38:55,048 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Lopez'
+2025-10-20 17:38:55,144 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Maria'
+2025-10-20 17:38:55,244 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@stmail.com'
+2025-10-20 17:38:55,371 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-20 17:38:55,464 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'test123'
+2025-10-20 17:38:56,174 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 17:38:58,404 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-20 17:40:28,045 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-20 17:40:29,346 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:40:30,709 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:40:30,934 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-20 17:40:31,066 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-20 17:40:31,158 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-20 17:40:31,311 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-20 17:40:31,417 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-20 17:40:32,125 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 17:40:47,496 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:40:47,905 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:40:48,080 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-20 17:40:48,205 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-20 17:40:48,354 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@testmail.com'
+2025-10-20 17:40:48,482 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-20 17:40:48,594 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-20 17:40:51,866 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 17:40:56,216 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:40:58,412 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-20 17:43:55,733 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-20 17:43:57,050 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:43:59,998 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:44:00,583 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-20 17:44:00,683 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-20 17:44:00,761 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-20 17:44:00,866 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-20 17:44:01,086 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:44:01,525 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:44:01,685 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-20 17:44:01,757 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-20 17:44:01,847 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@testmail.com'
+2025-10-20 17:44:01,979 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#321'
+2025-10-20 17:44:02,026 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:44:02,435 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:44:02,585 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Lopez'
+2025-10-20 17:44:02,656 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Maria'
+2025-10-20 17:44:02,733 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@stmail.com'
+2025-10-20 17:44:02,834 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2024'
+2025-10-20 17:44:05,065 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-20 17:45:16,794 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-20 17:45:18,149 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:45:19,340 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:45:19,778 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-20 17:45:19,883 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-20 17:45:19,967 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-20 17:45:20,066 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2025'
+2025-10-20 17:45:20,141 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-20 17:45:20,829 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 17:45:20,880 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:45:21,425 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:45:21,592 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-20 17:45:21,671 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-20 17:45:21,747 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@testmail.com'
+2025-10-20 17:45:21,848 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#3215'
+2025-10-20 17:45:21,939 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-20 17:45:22,626 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 17:45:22,677 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-20 17:45:23,106 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-20 17:45:23,256 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Lopez'
+2025-10-20 17:45:23,335 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Maria'
+2025-10-20 17:45:23,423 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@stmail.com'
+2025-10-20 17:45:23,532 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@20245'
+2025-10-20 17:45:23,612 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-20 17:45:24,282 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-20 17:45:26,545 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-23 11:15:12,367 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-23 11:18:56,050 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-23 11:18:58,785 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-23 11:19:02,833 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-23 11:19:03,387 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-23 11:19:03,508 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-23 11:19:03,630 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-23 11:19:03,759 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2025'
+2025-10-23 11:19:03,883 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2024'
+2025-10-23 11:19:04,575 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-23 11:19:04,633 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-23 11:19:05,716 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-23 11:19:06,458 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-23 11:19:06,541 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-23 11:19:06,623 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@testmail.com'
+2025-10-23 11:19:06,743 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#3215'
+2025-10-23 11:19:06,823 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#321'
+2025-10-23 11:19:07,554 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-23 11:19:07,646 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-23 11:19:10,209 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-23 11:23:40,733 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-23 11:23:41,992 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-23 11:23:45,465 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-23 11:23:45,883 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-23 11:23:45,993 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-23 11:23:46,086 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-23 11:23:46,218 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2025'
+2025-10-23 11:23:46,308 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2025'
+2025-10-23 11:23:47,029 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-23 11:23:47,030 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-23 11:23:47,540 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'saitest.com'
+2025-10-23 11:23:47,614 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-23 11:23:48,321 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-23 11:23:48,434 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-23 11:23:48,836 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-23 11:23:49,056 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-23 11:23:49,126 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-23 11:23:49,209 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@testmail.com'
+2025-10-23 11:23:49,324 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#3215'
+2025-10-23 11:23:49,424 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#3215'
+2025-10-23 11:23:50,154 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-23 11:23:50,157 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-23 11:23:50,341 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'saitest.com'
+2025-10-23 11:23:50,412 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-23 11:23:51,087 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-23 11:23:51,165 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-23 11:23:51,568 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-23 11:23:51,753 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Lopez'
+2025-10-23 11:23:51,829 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Maria'
+2025-10-23 11:23:51,925 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@stmail.com'
+2025-10-23 11:23:52,048 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@20245'
+2025-10-23 11:23:52,143 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@20245'
+2025-10-23 11:23:52,864 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-23 11:23:52,864 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-23 11:23:53,035 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'saitest.com'
+2025-10-23 11:23:53,120 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-23 11:23:53,827 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-23 11:23:56,120 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-23 11:24:55,404 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-23 11:24:56,699 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-23 11:24:58,405 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-23 11:24:58,916 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-23 11:24:59,037 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-23 11:24:59,128 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-23 11:24:59,264 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2025'
+2025-10-23 11:24:59,353 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2025'
+2025-10-23 11:25:00,070 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-23 11:25:00,071 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-23 11:25:00,516 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'saitest.com'
+2025-10-23 11:25:00,601 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-23 11:25:01,304 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-23 11:25:01,382 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-23 11:25:01,786 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-23 11:25:01,940 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-23 11:25:02,018 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-23 11:25:02,102 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@testmail.com'
+2025-10-23 11:25:02,210 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#3215'
+2025-10-23 11:25:02,296 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#3215'
+2025-10-23 11:25:02,987 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-23 11:25:02,987 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-23 11:25:03,179 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'saitest.com'
+2025-10-23 11:25:03,248 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-23 11:25:03,905 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-23 11:25:03,987 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-23 11:25:04,469 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-23 11:25:04,636 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Lopez'
+2025-10-23 11:25:04,719 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Maria'
+2025-10-23 11:25:04,835 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@stmail.com'
+2025-10-23 11:25:05,020 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@20245'
+2025-10-23 11:25:05,113 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@20245'
+2025-10-23 11:25:05,778 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-23 11:25:05,780 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-23 11:25:05,958 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'saitest.com'
+2025-10-23 11:25:06,029 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-23 11:25:06,745 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-23 11:25:09,018 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-23 11:26:40,862 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-23 11:26:42,153 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-23 11:26:44,980 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-23 11:26:45,627 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-23 11:26:45,743 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-23 11:26:45,823 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-23 11:26:45,940 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2025'
+2025-10-23 11:26:46,025 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2025'
+2025-10-23 11:26:46,742 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-23 11:26:46,744 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-23 11:26:47,224 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'saitest.com'
+2025-10-23 11:26:47,303 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-23 11:26:47,985 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-23 11:26:48,071 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-23 11:26:48,492 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-23 11:26:48,651 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-23 11:26:48,727 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-23 11:26:48,801 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@testmail.com'
+2025-10-23 11:26:48,905 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#3215'
+2025-10-23 11:26:49,020 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#3215'
+2025-10-23 11:26:49,704 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-23 11:26:49,706 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-23 11:26:49,866 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'saitest.com'
+2025-10-23 11:26:49,936 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-23 11:26:50,621 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-23 11:26:50,697 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-23 11:26:51,213 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-23 11:26:51,373 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Lopez'
+2025-10-23 11:26:51,452 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Maria'
+2025-10-23 11:26:51,529 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@stmail.com'
+2025-10-23 11:26:51,633 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@20245'
+2025-10-23 11:26:51,709 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@20245'
+2025-10-23 11:26:52,415 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-23 11:26:52,416 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-23 11:26:52,561 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'saitest.com'
+2025-10-23 11:26:52,634 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-23 11:26:53,302 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-23 11:26:55,630 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-23 11:27:46,173 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-23 11:27:47,447 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-23 11:27:48,966 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-23 11:27:49,446 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-23 11:27:49,561 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-23 11:27:49,645 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-23 11:27:49,757 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2025'
+2025-10-23 11:27:49,842 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2025'
+2025-10-23 11:27:50,546 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-23 11:27:50,548 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-23 11:27:51,060 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'saitest.com'
+2025-10-23 11:27:51,138 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-23 11:27:51,809 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-23 11:27:51,895 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-23 11:27:52,321 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-23 11:27:52,467 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-23 11:27:52,554 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-23 11:27:52,646 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@testmail.com'
+2025-10-23 11:27:52,751 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#3215'
+2025-10-23 11:27:52,837 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#3215'
+2025-10-23 11:27:53,516 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-23 11:27:53,517 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-23 11:27:53,666 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'saitest.com'
+2025-10-23 11:27:53,731 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-23 11:27:54,419 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-23 11:27:54,506 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-23 11:27:55,055 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-23 11:27:55,206 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Lopez'
+2025-10-23 11:27:55,284 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Maria'
+2025-10-23 11:27:55,365 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@stmail.com'
+2025-10-23 11:27:55,483 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@20245'
+2025-10-23 11:27:55,587 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@20245'
+2025-10-23 11:27:56,331 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-23 11:27:56,334 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-23 11:27:56,483 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'saitest.com'
+2025-10-23 11:27:56,547 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-23 11:27:57,237 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-23 11:27:59,481 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-23 11:32:10,668 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-23 11:32:11,934 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-23 11:32:16,475 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-23 11:32:16,666 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-23 11:32:16,769 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-23 11:32:16,869 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-23 11:32:17,016 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2025'
+2025-10-23 11:32:17,103 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2025'
+2025-10-23 11:32:17,811 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-23 11:32:17,812 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-23 11:32:17,954 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'saitest.com'
+2025-10-23 11:32:18,032 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-23 11:32:18,702 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-23 11:32:18,826 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-23 11:32:19,289 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-23 11:32:19,447 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-23 11:32:19,527 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-23 11:32:19,609 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@testmail.com'
+2025-10-23 11:32:19,735 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#3215'
+2025-10-23 11:32:19,847 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#3215'
+2025-10-23 11:32:20,553 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-23 11:32:20,555 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-23 11:32:20,757 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'saitest.com'
+2025-10-23 11:32:20,832 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-23 11:32:21,514 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-23 11:32:21,583 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-23 11:32:22,041 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-23 11:32:22,250 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Lopez'
+2025-10-23 11:32:22,332 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Maria'
+2025-10-23 11:32:22,417 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@stmail.com'
+2025-10-23 11:32:22,531 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@20245'
+2025-10-23 11:32:22,630 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@20245'
+2025-10-23 11:32:23,395 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-23 11:32:23,397 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-23 11:32:23,548 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'saitest.com'
+2025-10-23 11:32:23,618 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-23 11:32:24,300 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-23 11:32:26,584 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-23 11:32:50,537 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-23 11:32:54,051 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-23 11:33:47,042 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-23 11:33:50,496 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-23 11:42:54,094 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-23 11:42:55,372 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-23 11:42:56,576 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-23 11:42:56,787 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Ravi'
+2025-10-23 11:42:56,885 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Kumar'
+2025-10-23 11:42:57,000 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'ravi.kumar1@testmail.com'
+2025-10-23 11:42:57,123 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@2025'
+2025-10-23 11:42:57,241 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@2025'
+2025-10-23 11:42:57,996 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-23 11:42:57,997 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-23 11:42:58,163 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'saitest.com'
+2025-10-23 11:42:58,263 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-23 11:42:58,948 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-23 11:42:59,004 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-23 11:42:59,445 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-23 11:42:59,601 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Maria'
+2025-10-23 11:42:59,676 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Lopez'
+2025-10-23 11:42:59,762 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@testmail.com'
+2025-10-23 11:42:59,877 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Maria#3215'
+2025-10-23 11:42:59,960 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Maria#3215'
+2025-10-23 11:43:00,698 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-23 11:43:00,699 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-23 11:43:00,856 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'saitest.com'
+2025-10-23 11:43:00,924 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-23 11:43:01,612 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-23 11:43:01,628 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/
+2025-10-23 11:43:02,204 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/register.html
+2025-10-23 11:43:02,365 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'first'): 'Lopez'
+2025-10-23 11:43:02,434 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'last'): 'Maria'
+2025-10-23 11:43:02,533 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'email'): 'maria.lopez2@stmail.com'
+2025-10-23 11:43:02,670 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'pass'): 'Ravi@20245'
+2025-10-23 11:43:02,766 | INFO | MainProcess | MainThread | BasePage | Typing into ('id', 'confirm'): 'Ravi@20245'
+2025-10-23 11:43:03,538 | INFO | MainProcess | MainThread | BasePage | Clicked: ('id', 'submit')
+2025-10-23 11:43:03,540 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-23 11:43:03,717 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'saitest.com'
+2025-10-23 11:43:03,789 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-23 11:43:04,466 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-23 11:43:06,684 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-23 11:47:47,627 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-23 11:47:49,206 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-23 11:47:51,746 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'saitest.com'
+2025-10-23 11:47:51,943 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-23 11:47:52,769 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-23 11:47:55,152 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===
+2025-10-23 11:49:59,285 | INFO | MainProcess | MainThread | pytest | === Pytest session started ===
+2025-10-23 11:50:00,831 | INFO | MainProcess | MainThread | BasePage | Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+2025-10-23 11:50:02,125 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='you@example.com']"): 'saitest.com'
+2025-10-23 11:50:02,327 | INFO | MainProcess | MainThread | BasePage | Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+2025-10-23 11:50:03,225 | INFO | MainProcess | MainThread | BasePage | Clicked: ('xpath', "//button[normalize-space()='Login']")
+2025-10-23 11:50:05,561 | INFO | MainProcess | MainThread | pytest | === Pytest session finished ===

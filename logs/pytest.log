@@ -1,11 +1,6 @@
-INFO     pytest:conftest.py:34 === Pytest session started ===
-INFO     BasePage:base_page.py:53 Navigating to: https://demowebshop.tricentis.com/
-INFO     BasePage:base_page.py:53 Navigating to: https://demowebshop.tricentis.com/register
-INFO     BasePage:base_page.py:82 Clicked: ('id', 'gender-male')
-INFO     BasePage:base_page.py:143 Typing into ('id', 'FirstName'): ''
-INFO     BasePage:base_page.py:143 Typing into ('id', 'LastName'): ''
-INFO     BasePage:base_page.py:143 Typing into ('id', 'Email'): ''
-INFO     BasePage:base_page.py:143 Typing into ('id', 'Password'): ''
-INFO     BasePage:base_page.py:143 Typing into ('id', 'ConfirmPassword'): ''
-INFO     BasePage:base_page.py:82 Clicked: ('id', 'register-button')
-INFO     pytest:conftest.py:36 === Pytest session finished ===
+INFO     pytest:conftest.py:81 === Pytest session started ===
+INFO     BasePage:base_page.py:53 Navigating to: https://yuvanbank-qa-r1-test.netlify.app/login.html
+INFO     BasePage:base_page.py:143 Typing into ('css selector', "input[placeholder='you@example.com']"): 'saitest.com'
+INFO     BasePage:base_page.py:143 Typing into ('css selector', "input[placeholder='Enter password']"): 'WrongPassword123'
+INFO     BasePage:base_page.py:82 Clicked: ('xpath', "//button[normalize-space()='Login']")
+INFO     pytest:conftest.py:83 === Pytest session finished ===

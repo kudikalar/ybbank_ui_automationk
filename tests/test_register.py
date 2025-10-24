@@ -9,6 +9,8 @@ from utils.data_reader import read_excel
 # Read by sheet name
 test_data = read_excel("data/register_test_data.xlsx", sheet_name="Sheet1")
 test_data1 = read_excel("data/register_test_data.xlsx", sheet_name=2)
+test_data3 = read_excel("data/register_test_data.xlsx", sheet_name="Sheet3")
+
 
 @allure.feature("Registration")
 class TestRegister:
@@ -114,3 +116,23 @@ class TestRegister:
 
         cnf_password_error_text = rp.get_cnf_password_error_text()
         assert cnf_password_error_text == "Passwords do not match."
+
+    @allure.story("Verify first name accepts characters only")
+    @pytest.mark.function
+    @pytest.mark.YWT53
+    @pytest.mark.parametrize("data", test_data3)
+    def test_Verify_first_name_accepts_characters_only(self, driver, data, env):
+        hp = HomePage(driver, env)
+        hp.open_home()
+
+        rp = RegisterPage(driver, env)
+        rp.open_register_page()
+        rp.enter_first_name(data["FirstName"])
+        rp.enter_last_name(data["LastName"])
+        rp.enter_email_address(data["Email"])
+        rp.enter_password(data["Password"])
+        rp.enter_confirm_password(data["ConfirmPassword"])
+        rp.click_register_button()
+
+        first_name_error_text = rp.get_first_name_error_text()
+        assert first_name_error_text == "Use 3–25 letters (A–Z only)."

@@ -104,12 +104,6 @@ class TestRegister:
 
         rp = RegisterPage(driver, env)
         rp.open_register_page()
-        # Intentionally do NOT set required fields to trigger validation
-        # rp.enter_first_name(data["FirstName"])
-        # rp.enter_last_name(data["LastName"])
-        # rp.enter_email_address(data["Email"])
-        # rp.enter_password(data["Password"])
-        # rp.enter_confirm_password(data["ConfirmPassword"])
         rp.click_register_button()
 
         error_text = rp.get_first_name_error_text()
@@ -122,8 +116,3 @@ class TestRegister:
         assert error_text == "Password is required."
         error_text = rp.get_confirm1_password_text()
         assert error_text == "Confirm Password is required."
-
-
-
-
-

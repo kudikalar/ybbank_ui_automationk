@@ -114,3 +114,23 @@ class TestRegister:
 
         cnf_password_error_text = rp.get_cnf_password_error_text()
         assert cnf_password_error_text == "Passwords do not match."
+
+    @allure.story("Verify system prevents SQL injection in email field")
+    @pytest.mark.smoke
+    @pytest.mark.YWT49
+    @pytest.mark.parametrize("data", test_data)
+    def test_verify_system_prevent_sql_input_in_email(self, driver, data, env):
+        hp = HomePage(driver, env)
+        hp.open_home()
+
+        rp = RegisterPage(driver, env)
+        rp.open_register_page()
+
+        rp.enter_first_name(data["FirstName"])
+        rp.enter_last_name(data["LastName"])
+        rp.enter_email_address(data["Invalid_Email"])
+        rp.enter_password(data["Password"])
+        rp.enter_confirm_password(data["ConfirmPassword"])
+
+        error_text = rp.email_validation_error()
+        assert error_text == "Enter a valid email address."

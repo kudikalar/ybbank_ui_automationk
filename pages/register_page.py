@@ -13,6 +13,7 @@ class RegisterPage(BasePage):
     EMAIL_VALIDATION_ERROR = (By.ID,"emailErr")
     ERROR_MESSAGE = (By.ID, "emailErr")
     CNF_PASSWORD_ERROR_MESSAGE = (By.ID, "confirmErr")
+    PASSWORD_ERROR_MESSAGE = (By.ID, "passErr")
 
     def __init__(self, driver, env):
         super().__init__(driver, env)
@@ -31,3 +32,4 @@ class RegisterPage(BasePage):
     def email_validation_error(self):    return self.text_of(self.EMAIL_VALIDATION_ERROR)
     def get_email_error_text(self):   return    self.text_of(self.ERROR_MESSAGE).strip()
     def get_cnf_password_error_text(self):   return self.text_of(self.CNF_PASSWORD_ERROR_MESSAGE).strip()
+    def get_password_error_text(self): return self.text_of(self.PASSWORD_ERROR_MESSAGE)

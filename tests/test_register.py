@@ -8,7 +8,7 @@ from utils.assertions import assert_equals
 from utils.data_reader import read_excel
 # Read by sheet name
 test_data = read_excel("data/register_test_data.xlsx", sheet_name="Sheet1")
-test_data1 = read_excel("data/register_test_data.xlsx", sheet_name=2)
+test_data1 = read_excel("data/register_test_data.xlsx", sheet_name="Sheet3")
 
 @allure.feature("Registration")
 class TestRegister:
@@ -114,3 +114,23 @@ class TestRegister:
 
         cnf_password_error_text = rp.get_cnf_password_error_text()
         assert cnf_password_error_text == "Passwords do not match."
+
+    @allure.story("Verify error displayed when password lacks special character")
+    @pytest.mark.functional
+    @pytest.mark.YWT12
+    @pytest.mark.parametrize("data", test_data1)
+    def test_verify_password_missing_special_character(self, driver, data, env):
+        hp = HomePage(driver, env)
+        hp.open_home()
+
+        rp = RegisterPage(driver, env)
+        rp.open_register_page()
+        rp.enter_first_name(data["FirstName"])
+        rp.enter_last_name(data["LastName"])
+        rp.enter_email_address(data["Email"])
+        rp.enter_password(data["Password"])
+        rp.enter_confirm_password(data["ConfirmPassword"])
+        rp.click_register_button()
+
+        cnf_password_error_text1 = rp.get_password_error_text()
+        assert cnf_password_error_text1 == "6–25 chars; include number & special."

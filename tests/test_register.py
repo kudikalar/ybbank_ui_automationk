@@ -134,3 +134,25 @@ class TestRegister:
 
         error_text = rp.email_validation_error()
         assert error_text == "Enter a valid email address."
+
+    @allure.story("Verify user should get an error message of password is required")
+    @pytest.mark.smoke
+    @pytest.mark.YWT108
+    @pytest.mark.parametrize("data", test_data)
+    def test_verify_error_message_when_password_is_required(self, driver, data, env):
+        hp = HomePage(driver, env)
+        hp.open_home()
+
+        rp = RegisterPage(driver, env)
+        rp.open_register_page()
+
+        rp.enter_first_name(data["FirstName"])
+        rp.enter_last_name(data["LastName"])
+        rp.enter_email_address(data["Email"])
+        rp.click_register_button()
+
+        password_required_text = rp.get_password_error_text()
+        assert password_required_text=="Password is required."
+
+        confirm_password_required_text = rp.get_cnf_password_error_text()
+        assert confirm_password_required_text=="Confirm Password is required."

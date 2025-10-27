@@ -18,6 +18,7 @@ class LoginPage(BasePage):
     PASSWORD_REQUIRED_ERROR = (By.XPATH, "//*[text()='Password is required.']")
     LOGIN_INVALID_CRED_ERROR = (By.XPATH, "//*[contains(text(),'incorrect') or contains(text(),'Invalid')]")
     LOGIN_INVALID_EMAIL_ERROR = (By.XPATH, "//div[contains(text(),'Invalid email format.')]")
+    INVALID_CREDENTIALS_ERROR = (By.XPATH, "//*[@id='global']")
 
     LOGIN_SUCCESS_BANNER = (By.XPATH, "//*[contains(text(),'Welcome to our store') or contains(@class,'welcome')]")
 
@@ -83,3 +84,6 @@ class LoginPage(BasePage):
 
     def verify_logout_button_visible(self):
         return self.is_visible(self.LOGOUT_BTN)
+
+    def verify_invalid_credentials(self):
+        return self.text_of(self.INVALID_CREDENTIALS_ERROR)

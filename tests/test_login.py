@@ -132,3 +132,15 @@ class TestLogin:
             msg="Should show invalid credentials message"
         )
 
+    @allure.story("Verify login functionality with Non Registered email")
+    @pytest.mark.smoke
+    @pytest.mark.parametrize("data", test_data)
+    def test_login_with_non_registered_email(self,driver,data,env):
+
+        lp = LoginPage(driver, env)
+        lp.open_login_page()
+        lp.enter_email_address(data["Email"])
+        lp.enter_password(data["Password"])
+        lp.click_login_btn()
+
+        assert lp.verify_invalid_credentials() == "Invalid credentials. Please try again."

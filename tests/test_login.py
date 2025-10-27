@@ -141,7 +141,7 @@ class TestLogin:
 
         lp.enter_email_address("saitest.com")
         lp.enter_password("WrongPassword123")
-        lp.click_login_btn() 
+        lp.click_login_btn()
 
         lp.wait_visible(lp.LOGIN_INVALID_CRED_ERROR)
         assert_equals(

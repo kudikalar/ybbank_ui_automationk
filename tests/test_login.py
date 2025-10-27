@@ -132,3 +132,20 @@ class TestLogin:
             msg="Should show invalid credentials message"
         )
 
+    @allure.story("Verify validation for invalid email format (missing @)")
+    @pytest.mark.regression
+    @pytest.mark.T28
+    def test_verify_validation_for_invalid_email_format_missing_at(self, driver, env):
+        lp = LoginPage(driver, env)
+        lp.open_login_page()
+
+        lp.enter_email_address("saitest.com")
+        lp.enter_password("WrongPassword123")
+        lp.click_login_btn()
+
+        lp.wait_visible(lp.LOGIN_INVALID_CRED_ERROR)
+        assert_equals(
+            "Invalid email format.",
+            lp.invalid_email_error(),
+            msg="Should show invalid email format message"
+        )

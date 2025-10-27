@@ -139,14 +139,13 @@ class TestLogin:
         lp = LoginPage(driver, env)
         lp.open_login_page()
 
-        lp.enter_email_address("saitest.com")  # missing '@'
+        lp.enter_email_address("saitest.com")
         lp.enter_password("WrongPassword123")
         lp.click_login_btn()
 
-        # Prefer using your BasePage wait helper
-        lp.wait_visible(lp.LOGIN_INVALID_CRED_ERROR)  # or lp.INVALID_EMAIL_ERROR if you have one
+        lp.wait_visible(lp.LOGIN_INVALID_CRED_ERROR)
         assert_equals(
             "Invalid email format.",
-            lp.invalid_email_error(),  # or lp.invalid_email_error() if available
+            lp.invalid_email_error(),
             msg="Should show invalid email format message"
         )

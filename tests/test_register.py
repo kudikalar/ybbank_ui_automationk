@@ -115,7 +115,7 @@ class TestRegister:
         cnf_password_error_text = rp.get_cnf_password_error_text()
         assert cnf_password_error_text == "Passwords do not match."
 
-    @allure.story("Verify error displayed when password lacks special character")
+    @allure.story("Verify error displayed when special character is missing in password field")
     @pytest.mark.functional
     @pytest.mark.YWT12
     @pytest.mark.parametrize("data", test_data1)
